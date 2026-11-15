@@ -1,20 +1,47 @@
-import { Button } from "@/components/ui/button"
+import * as React from "react"
+
+import { Toaster } from "@/components/ui/toast"
+import { TooltipProvider } from "@/components/ui/tooltip"
+import { CartDrawer } from "@/components/shop/cart-drawer"
+import { CheckoutDialog } from "@/components/shop/checkout-dialog"
+import { Footer } from "@/components/shop/footer"
+import { Header } from "@/components/shop/header"
+import { FavoritesPage } from "@/pages/favorites"
+import { HomePage } from "@/pages/home"
+import { MenuPage } from "@/pages/menu"
+import { OrdersPage } from "@/pages/orders"
+import { ProductPage } from "@/pages/product"
+import { usePath, parse } from "@/lib/router"
 
 export function App() {
+  const path = usePath()
+  const route = parse(path)
+  const key = path.split("?")[0]
+
+  // Reset scroll on page change (product page also scrolls itself).
+  React.useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [key])
+
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+    <Toaster>
+      <TooltipProvider>
+        <div className="flex min-h-svh flex-col">
+          <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-background focus:px-3 focus:py-2 focus:shadow-lg">Skip to content</a>
+          <Header />
+          <main id="main" className="flex-1">
+            {route.name === "home" && <HomePage />}
+            {route.name === "menu" && <MenuPage key={route.category ?? "all"} category={route.category} />}
+            {route.name === "product" && <ProductPage id={route.id} />}
+            {route.name === "favorites" && <FavoritesPage />}
+            {route.name === "orders" && <OrdersPage />}
+          </main>
+          <Footer />
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+        <CartDrawer />
+        <CheckoutDialog />
+      </TooltipProvider>
+    </Toaster>
   )
 }
 
