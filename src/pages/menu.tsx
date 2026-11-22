@@ -23,7 +23,7 @@ const SORTS: { value: Sort; label: string }[] = [
   { value: "price-desc", label: "Price: high to low" },
   { value: "newest", label: "Newest" },
 ]
-const PRICES = [{ id: "any", label: "Any", max: Infinity }, { id: "10", label: "Under $10", max: 10 }, { id: "15", label: "Under $15", max: 15 }, { id: "20", label: "Under $20", max: 20 }]
+const PRICES = [{ id: "any", label: "Any", max: Infinity }, { id: "10", label: "Under 10 DH", max: 10 }, { id: "15", label: "Under 15 DH", max: 15 }, { id: "20", label: "Under 20 DH", max: 20 }]
 
 export function MenuPage({ category }: { category?: string }) {
   const path = usePath()

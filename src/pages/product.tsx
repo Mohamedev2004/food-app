@@ -143,7 +143,7 @@ function Detail({ id }: { id: string }) {
           </div>
 
           <ul className="flex flex-col gap-2 rounded-xl bg-muted/50 p-4 text-sm">
-            <li className="flex items-center gap-2"><HugeiconsIcon icon={DeliveryTruck01Icon} className="size-4 text-primary" strokeWidth={2} />Free delivery on orders over $35</li>
+            <li className="flex items-center gap-2"><HugeiconsIcon icon={DeliveryTruck01Icon} className="size-4 text-primary" strokeWidth={2} />Free delivery on orders over 35 DH</li>
             <li className="flex items-center gap-2"><HugeiconsIcon icon={Leaf01Icon} className="size-4 text-primary" strokeWidth={2} />Cooked fresh to order — never reheated</li>
           </ul>
 

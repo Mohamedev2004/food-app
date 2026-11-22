@@ -1,3 +1,52 @@
+export const LOGO = {
+  fileName: "borito-crispy-logo.png",
+  image: "borito-crispy-logo.png",
+  alt: "Borito Crispy logo",
+  brandName: "Borito Crispy",
+  phone: "0755741094",
+  email: "BoritoCrispy@gmail.com",
+} as const
+
+export type HeroPhoto = {
+  id: string
+  slot: string
+  title: string
+  subtitle: string
+  image: string
+  ctaLabel: string
+  productId: string
+}
+
+export const HERO_PHOTOS: HeroPhoto[] = [
+  {
+    id: "hero-1",
+    slot: "Hero Image 1 - Main Feature",
+    title: "Mexi Bowl",
+    subtitle: "Freshly loaded bowl with seasoned rice, beans, corn, avocado and crispy toppings.",
+    image: "mexi-bowl.png",
+    ctaLabel: "Order Mexi Bowl",
+    productId: "mexi-bowl",
+  },
+  {
+    id: "hero-2",
+    slot: "Hero Image 2 - Value Proposition",
+    title: "Hot. Fast. Fresh. Delivered in 30 mins.",
+    subtitle: "Bouri Crispy Burrito — golden, crunchy and cooked to order.",
+    image: "bouri-crispy.png",
+    ctaLabel: "Order Bouri Crispy",
+    productId: "bouri-crispy",
+  },
+  {
+    id: "hero-3",
+    slot: "Hero Image 3 - Family Feast",
+    title: "Family Feast Pack",
+    subtitle: "Sharing bowls, golden fries and a bottle of Coca-Cola for the whole table.",
+    image: "family-feast-pack.png",
+    ctaLabel: "Get Family Pack",
+    productId: "family-pack",
+  },
+]
+
 export type TagId =
   | "bestseller"
   | "new"
@@ -76,12 +125,12 @@ export type Product = {
 const ONE: SizeOption[] = [{ id: "regular", label: "Standard", extra: 0 }]
 
 export const PRODUCTS: Product[] = [
-  // Salades
+  // Salades[cite: 37]
   {
     id: "nicoise-avocado",
     name: "Nicoise Avocado",
     category: "salades",
-    price: 35,
+    price: 40,
     image: "niswaz-avocado.png",
     summary: "Fresh sliced avocado, guacamole, sweetcorn, beans and mixed greens.",
     description:
@@ -117,7 +166,7 @@ export const PRODUCTS: Product[] = [
     id: "nicoise-bahja",
     name: "Nicoise Bahja",
     category: "salades",
-    price: 32,
+    price: 35,
     image: "niswaz-bahja.png",
     summary: "Classic Nicoise with boiled eggs, tuna, olives, sweetcorn and crisp veggies.",
     description:
@@ -135,7 +184,7 @@ export const PRODUCTS: Product[] = [
     id: "nicoise-crispy",
     name: "Nicoise Crispy",
     category: "salades",
-    price: 35,
+    price: 40,
     image: "niswaz-crispy.png",
     summary: "Crunchy golden chicken tenders over fresh Nicoise salad with jalapenos.",
     description:
@@ -150,17 +199,17 @@ export const PRODUCTS: Product[] = [
     createdAt: 4,
   },
 
-  // Family
+  // Family[cite: 37]
   {
     id: "family-pack",
-    name: "Family Feast Pack",
+    name: "Family",
     category: "family",
     price: 130,
     image: "family-feast-pack.png",
-    summary: "3 large bowls (kefta bowl, Nicoise Bahja salad, frite poulet) and a 1L Coca-Cola bottle.",
+    summary: "Sharing bowls, basket of golden fries and a Coca-Cola bottle.",
     description:
-      "Built for sharing: includes a grilled kefta bowl, a fresh Niswaz Bahja salad bowl, a loaded Frite Poulet bowl and a bottle of Coca-Cola.",
-    ingredients: ["Kefta bowl", "Niswaz Bahja salad", "Frite Poulet", "Coca-Cola"],
+      "Built for sharing: includes assorted bowls, a generous basket of golden fries and a bottle of Coca-Cola.",
+    ingredients: ["Assorted bowls", "Golden fries", "Coca-Cola"],
     calories: 2450,
     prepMinutes: 22,
     tags: ["bestseller", "chefs-pick"],
@@ -170,12 +219,12 @@ export const PRODUCTS: Product[] = [
     createdAt: 5,
   },
 
-  // Burritos
+  // Burritos[cite: 37, 38]
   {
-    id: "burrito-kafta",
-    name: "Burrito Kafta",
+    id: "bouri-kefta",
+    name: "Bouri Kefta",
     category: "burritos",
-    price: 40,
+    price: 45,
     image: "burrito-kafta.png",
     summary: "Grilled flour tortilla stuffed with spiced kefta, potatoes, rice and sauce.",
     description:
@@ -208,10 +257,28 @@ export const PRODUCTS: Product[] = [
     createdAt: 7,
   },
   {
+    id: "bouri-poulet",
+    name: "Bouri Poulet",
+    category: "burritos",
+    price: 45,
+    image: "burrito-avocado.png",
+    summary: "Marinated chicken, spiced rice, cheese and house sauce in a toasted wrap.",
+    description:
+      "Tender marinated chicken wrapped in a warm tortilla with seasoned rice, crisp veggies and signature sauce.",
+    ingredients: ["Flour tortilla", "Marinated chicken", "Seasoned rice", "Cheese", "House sauce"],
+    calories: 730,
+    prepMinutes: 14,
+    tags: ["high-protein"],
+    sizes: ONE,
+    rating: 4.7,
+    likes: 210,
+    createdAt: 8,
+  },
+  {
     id: "bouri-crispy",
     name: "Bouri Crispy",
     category: "burritos",
-    price: 40,
+    price: 45,
     image: "bouri-crispy.png",
     summary: "Deep-fried golden breaded burrito stuffed with crispy chicken, rice and cheese.",
     description:
@@ -223,15 +290,15 @@ export const PRODUCTS: Product[] = [
     sizes: ONE,
     rating: 4.9,
     likes: 518,
-    createdAt: 8,
+    createdAt: 9,
   },
 
-  // Rice Bowls
+  // Rice Bowls[cite: 6, 27, 37]
   {
     id: "bowl-crispy",
     name: "Bowl Crispy",
     category: "rice-bowls",
-    price: 40,
+    price: 50,
     image: "bowl-crispy.png",
     summary: "Seasoned rice topped with sliced crispy chicken and signature sauces.",
     description:
@@ -243,31 +310,31 @@ export const PRODUCTS: Product[] = [
     sizes: ONE,
     rating: 4.8,
     likes: 342,
-    createdAt: 9,
+    createdAt: 10,
   },
   {
-    id: "chicken-bowl",
-    name: "Chicken Bowl",
+    id: "bowl-poulet",
+    name: "Bowl Poulet",
     category: "rice-bowls",
-    price: 40,
+    price: 50,
     image: "chicken-bowl.png",
-    summary: "Marinated grilled chicken chunks and pasta/rice with signature sauces.",
+    summary: "Marinated grilled chicken chunks over seasoned rice with roasted wedges.",
     description:
-      "Juicy chicken pieces served over seasoned rice and pasta with fresh garnish and a selection of house dipping sauces.",
-    ingredients: ["Seasoned rice", "Pasta", "Chicken", "Fresh garnish", "House sauces"],
+      "Juicy chicken pieces served over seasoned rice with potato wedges and creamy house sauce.",
+    ingredients: ["Seasoned rice", "Grilled chicken", "Potato wedges", "House sauce"],
     calories: 760,
     prepMinutes: 15,
     tags: ["high-protein"],
     sizes: ONE,
     rating: 4.7,
     likes: 219,
-    createdAt: 10,
+    createdAt: 11,
   },
   {
     id: "bowl-kafta",
     name: "Bowl Kafta",
     category: "rice-bowls",
-    price: 45,
+    price: 50,
     image: "bowl-kafta.png",
     summary: "Grilled spiced kefta patties over seasoned rice, pickles and herbs.",
     description:
@@ -279,7 +346,25 @@ export const PRODUCTS: Product[] = [
     sizes: ONE,
     rating: 4.7,
     likes: 205,
-    createdAt: 11,
+    createdAt: 12,
+  },
+  {
+    id: "bowl-mixte",
+    name: "Bowl Mixte",
+    category: "rice-bowls",
+    price: 50,
+    image: "mixibo.png",
+    summary: "Mixed bowl with crispy chicken, grilled kefta and seasoned rice.",
+    description:
+      "A loaded mixed bowl combining crispy chicken and grilled kefta over seasoned rice, finished with pickles and house sauces.",
+    ingredients: ["Seasoned rice", "Crispy chicken", "Grilled kefta", "Pickles", "House sauces"],
+    calories: 860,
+    prepMinutes: 16,
+    tags: ["bestseller", "high-protein"],
+    sizes: ONE,
+    rating: 4.9,
+    likes: 376,
+    createdAt: 13,
   },
   {
     id: "mexi-bowl",
@@ -297,28 +382,10 @@ export const PRODUCTS: Product[] = [
     sizes: ONE,
     rating: 4.9,
     likes: 376,
-    createdAt: 12,
-  },
-  {
-    id: "mixibo",
-    name: "Mixibo",
-    category: "rice-bowls",
-    price: 45,
-    image: "mixibo.png",
-    summary: "Mixed bowl with crispy chicken, seasoned rice and rich house sauces.",
-    description:
-      "A loaded mixed bowl combining crispy chicken strips over seasoned rice, finished with white and dark sauces and served with house dips.",
-    ingredients: ["Seasoned rice", "Crispy chicken", "White sauce", "Dark sauce", "Dipping sauces"],
-    calories: 860,
-    prepMinutes: 16,
-    tags: ["bestseller", "high-protein"],
-    sizes: ONE,
-    rating: 4.8,
-    likes: 318,
-    createdAt: 13,
+    createdAt: 14,
   },
 
-  // Cheesy Fries
+  // Cheesy Fries[cite: 15, 17, 37, 38]
   {
     id: "burger-crispy",
     name: "Burger Crispy",
@@ -327,15 +394,51 @@ export const PRODUCTS: Product[] = [
     image: "burger-crispy.png",
     summary: "Double crispy chicken burger with cheddar, sauce, lettuce and fries.",
     description:
-      "Two crunchy fried chicken fillets stacked with melted cheddar, creamy sauce, fresh lettuce and sesame bun, served with crinkle fries and sauces.",
-    ingredients: ["Crispy chicken fillets", "Sesame bun", "Cheddar", "Creamy sauce", "Lettuce", "Crinkle fries"],
+      "Two crunchy fried chicken fillets stacked with melted cheddar, creamy sauce, fresh lettuce and sesame bun, served with golden fries and sauces.",
+    ingredients: ["Crispy chicken fillets", "Sesame bun", "Cheddar", "Creamy sauce", "Lettuce", "Fries"],
     calories: 960,
     prepMinutes: 15,
     tags: ["bestseller", "high-protein"],
     sizes: ONE,
     rating: 4.8,
     likes: 390,
-    createdAt: 14,
+    createdAt: 15,
+  },
+  {
+    id: "frite-kefta",
+    name: "Frite Kefta",
+    category: "cheesy-fries",
+    price: 35,
+    image: "frite-crispy.png",
+    summary: "Golden fries loaded with seasoned kefta, melted cheese and sauce.",
+    description:
+      "Crispy fries topped with seasoned kefta, melted cheese sauce and house drizzle.",
+    ingredients: ["French fries", "Seasoned kefta", "Cheese sauce", "House drizzle"],
+    calories: 840,
+    prepMinutes: 12,
+    tags: ["high-protein"],
+    sizes: ONE,
+    rating: 4.7,
+    likes: 245,
+    createdAt: 16,
+  },
+  {
+    id: "frite-poulet",
+    name: "Frite Poulet",
+    category: "cheesy-fries",
+    price: 35,
+    image: "potato-and-chicken.png",
+    summary: "Crispy fries topped with savoury chicken, cheese and house sauce.",
+    description:
+      "Hot golden fries loaded with seasoned chicken bites, melted cheese and creamy house sauce.",
+    ingredients: ["French fries", "Seasoned chicken", "Cheese", "House sauce"],
+    calories: 820,
+    prepMinutes: 12,
+    tags: ["high-protein"],
+    sizes: ONE,
+    rating: 4.7,
+    likes: 238,
+    createdAt: 17,
   },
   {
     id: "frite-crispy",
@@ -353,33 +456,33 @@ export const PRODUCTS: Product[] = [
     sizes: ONE,
     rating: 4.9,
     likes: 435,
-    createdAt: 15,
+    createdAt: 18,
   },
   {
-    id: "potato-and-chicken",
-    name: "Potato & Chicken",
+    id: "frita-crispy",
+    name: "Frita Crispy",
     category: "cheesy-fries",
     price: 35,
-    image: "potato-and-chicken.png",
-    summary: "Seasoned potato wedges topped with savoury chicken, peppers and herbs.",
+    image: "frita-crispy.png",
+    summary: "Crispy fries loaded with crispy chicken, pickles, herbs and sauces.",
     description:
-      "Golden potato wedges loaded with seasoned chicken bites, green peppers, fresh herbs and creamy sauce, served with dips.",
-    ingredients: ["Potato wedges", "Seasoned chicken", "Green peppers", "Fresh herbs", "Creamy sauce"],
-    calories: 830,
-    prepMinutes: 13,
-    tags: ["high-protein"],
+      "A generous bowl of golden fries loaded with crispy chicken bites, pickles, herbs and rich sauces.",
+    ingredients: ["French fries", "Crispy chicken", "Pickles", "Herbs", "Sauces"],
+    calories: 870,
+    prepMinutes: 12,
+    tags: ["bestseller"],
     sizes: ONE,
-    rating: 4.7,
-    likes: 252,
-    createdAt: 16,
+    rating: 4.8,
+    likes: 312,
+    createdAt: 19,
   },
 
-  // Tacos
+  // Tacos[cite: 38]
   {
-    id: "tacos-kefte",
-    name: "Tacos Kefte",
+    id: "tacos-kefta",
+    name: "Tacos Kefta",
     category: "tacos",
-    price: 35,
+    price: 40,
     image: "tacos-kefte.png",
     summary: "Grilled French tacos filled with spiced kefta, fries and cheese sauce.",
     description:
@@ -391,7 +494,25 @@ export const PRODUCTS: Product[] = [
     sizes: ONE,
     rating: 4.7,
     likes: 310,
-    createdAt: 17,
+    createdAt: 20,
+  },
+  {
+    id: "tacos-poulet",
+    name: "Tacos Poulet",
+    category: "tacos",
+    price: 40,
+    image: "tacos-mix.png",
+    summary: "Toasted French tacos with marinated chicken, fries and cheese sauce.",
+    description:
+      "Golden-pressed tortilla stuffed with tender marinated chicken, french fries and rich cheese sauce, served alongside extra fries and dip.",
+    ingredients: ["Tortilla", "Marinated chicken", "Fries", "Cheese sauce", "Dipping sauce"],
+    calories: 890,
+    prepMinutes: 14,
+    tags: ["high-protein"],
+    sizes: ONE,
+    rating: 4.7,
+    likes: 280,
+    createdAt: 21,
   },
   {
     id: "tacos-crispy",
@@ -409,13 +530,13 @@ export const PRODUCTS: Product[] = [
     sizes: ONE,
     rating: 4.8,
     likes: 382,
-    createdAt: 18,
+    createdAt: 22,
   },
   {
-    id: "tacos-mix",
-    name: "Tacos Mix",
+    id: "tacos-mixte",
+    name: "Tacos Mixte",
     category: "tacos",
-    price: 38,
+    price: 40,
     image: "tacos-mix.png",
     summary: "Mixed meat French tacos with kefta, chicken, fries and cheese sauce.",
     description:
@@ -427,50 +548,122 @@ export const PRODUCTS: Product[] = [
     sizes: ONE,
     rating: 4.9,
     likes: 419,
-    createdAt: 19,
+    createdAt: 23,
   },
 
-  // Half Half
+  // Half Half[cite: 38]
   {
-    id: "half-half-chicken-bowl",
-    name: "Half Half Chicken Bowl",
+    id: "half-kefta",
+    name: "Half Kefta",
     category: "half-half",
     price: 40,
-    image: "chicken-bowl.png",
-    summary: "Half fresh salad & pasta, half crispy/grilled chicken with sauces.",
+    image: "nicoise-kofta.png",
+    summary: "Half fresh Nicoise salad, half fries topped with grilled kefta.",
     description:
-      "A balanced combo bowl pairing fresh greens and pasta with tender chicken and creamy sauces, served with house dips.",
-    ingredients: ["Mixed greens", "Pasta", "Chicken", "Creamy sauces", "Dipping sauces"],
+      "A balanced combo bowl pairing fresh Nicoise greens with fries and grilled kefta, finished with house sauces.",
+    ingredients: ["Nicoise salad", "French fries", "Grilled kefta", "House sauces"],
     calories: 760,
     prepMinutes: 13,
-    tags: ["chefs-pick", "high-protein"],
+    tags: ["high-protein"],
     sizes: ONE,
     rating: 4.7,
-    likes: 241,
-    createdAt: 20,
+    likes: 224,
+    createdAt: 24,
   },
-
-  // Twisters
   {
-    id: "twister-crispy-roll",
-    name: "Bouri Crispy Twister",
-    category: "twisters",
+    id: "half-crispy",
+    name: "Half Crispy",
+    category: "half-half",
     price: 40,
-    image: "bouri-crispy.png",
-    summary: "Crispy rolled wrap stuffed with tender chicken, rice, cheese and dips.",
+    image: "frite-crispy.png",
+    summary: "Half fresh Nicoise salad, half fries loaded with crispy chicken.",
     description:
-      "Golden crunchy rolled wrap filled with seasoned chicken, rice, melted cheese and creamy sauces, served alongside dipping bowls.",
-    ingredients: ["Crispy wrap", "Seasoned chicken", "Rice", "Melted cheese", "Dipping sauces"],
-    calories: 860,
-    prepMinutes: 15,
+      "A combo bowl combining fresh Nicoise salad and golden fries topped with crispy chicken bites and house sauce.",
+    ingredients: ["Nicoise salad", "French fries", "Crispy chicken", "House sauce"],
+    calories: 790,
+    prepMinutes: 13,
     tags: ["bestseller", "chefs-pick"],
     sizes: ONE,
     rating: 4.8,
-    likes: 294,
-    createdAt: 21,
+    likes: 298,
+    createdAt: 25,
+  },
+  {
+    id: "haf-poulet",
+    name: "Haf Poulet",
+    category: "half-half",
+    price: 40,
+    image: "chicken-bowl.png",
+    summary: "Half fresh salad, half fries topped with marinated chicken.",
+    description:
+      "Half crisp vegetable salad and half golden fries, finished with seasoned chicken and creamy sauce.",
+    ingredients: ["Fresh salad", "French fries", "Chicken", "Creamy sauce"],
+    calories: 740,
+    prepMinutes: 13,
+    tags: ["high-protein"],
+    sizes: ONE,
+    rating: 4.7,
+    likes: 212,
+    createdAt: 26,
   },
 
-  // Sandwichs
+  // Twisters[cite: 38]
+  {
+    id: "twi-kefta",
+    name: "Twi-Kefta",
+    category: "twisters",
+    price: 40,
+    image: "burrito-kafta.png",
+    summary: "Crispy rolled wrap filled with spiced kefta, cheese and fries on the side.",
+    description:
+      "A crunchy golden twister roll stuffed with seasoned kefta, melted cheese and creamy sauce, served with crispy fries and dips.",
+    ingredients: ["Crispy wrap", "Spiced kefta", "Melted cheese", "Fries", "Dipping sauces"],
+    calories: 860,
+    prepMinutes: 15,
+    tags: ["high-protein"],
+    sizes: ONE,
+    rating: 4.7,
+    likes: 195,
+    createdAt: 27,
+  },
+  {
+    id: "twi-poulet",
+    name: "Twi-Poulet",
+    category: "twisters",
+    price: 40,
+    image: "burrito-avocado.png",
+    summary: "Golden crunchy wrap stuffed with tender chicken, cheese and fries.",
+    description:
+      "Crisp rolled wrap filled with marinated chicken, cheese and signature sauce, accompanied by golden fries and dips.",
+    ingredients: ["Crispy wrap", "Marinated chicken", "Cheese", "Fries", "Dipping sauces"],
+    calories: 830,
+    prepMinutes: 15,
+    tags: ["high-protein"],
+    sizes: ONE,
+    rating: 4.7,
+    likes: 228,
+    createdAt: 28,
+  },
+  {
+    id: "twi-crispy",
+    name: "Twi-Crispy",
+    category: "twisters",
+    price: 40,
+    image: "bouri-crispy.png",
+    summary: "Crunchy rolled wrap loaded with crispy chicken, cheese and fries.",
+    description:
+      "Golden crunchy rolled wrap packed with crispy chicken tenders, melted cheese and creamy sauce, served with fries and dips.",
+    ingredients: ["Crispy wrap", "Crispy chicken", "Melted cheese", "Fries", "Dipping sauces"],
+    calories: 910,
+    prepMinutes: 15,
+    tags: ["bestseller", "chefs-pick"],
+    sizes: ONE,
+    rating: 4.9,
+    likes: 334,
+    createdAt: 29,
+  },
+
+  // Sandwichs[cite: 38]
   {
     id: "zinger-gambo",
     name: "Zinger Gambo",
@@ -487,27 +680,27 @@ export const PRODUCTS: Product[] = [
     sizes: ONE,
     rating: 4.8,
     likes: 367,
-    createdAt: 22,
+    createdAt: 30,
   },
 
-  // Extra
+  // Extra[cite: 38]
   {
-    id: "frita-crispy",
-    name: "Frita Crispy",
+    id: "frite",
+    name: "Frite",
     category: "extra",
-    price: 35,
+    price: 7,
     image: "frita-crispy.png",
-    summary: "Golden crispy fries topped with crispy chicken, pickles and sauces.",
+    summary: "Portion of hot, crispy golden french fries.",
     description:
-      "A generous bowl of golden fries loaded with crispy chicken bites, pickles, herbs and rich sauces.",
-    ingredients: ["French fries", "Crispy chicken", "Pickles", "Herbs", "Sauces"],
-    calories: 790,
-    prepMinutes: 12,
-    tags: ["bestseller"],
+      "A basket of golden, crispy french fries—the perfect addition to any order.",
+    ingredients: ["Potatoes", "Sea salt"],
+    calories: 340,
+    prepMinutes: 6,
+    tags: ["vegan", "gluten-free"],
     sizes: ONE,
-    rating: 4.7,
-    likes: 260,
-    createdAt: 23,
+    rating: 4.6,
+    likes: 180,
+    createdAt: 31,
   },
 ]
 
