@@ -103,15 +103,15 @@ export function CheckoutDialog() {
             </div>
             <div className="flex w-full flex-col gap-2">
               {waUrl && (
-                <Button variant="secondary" className="w-full" render={<a href={waUrl} target="_blank" rel="noreferrer" />} onClick={() => onOpenChange(false)}>
+                <Button variant="secondary" className="w-full whitespace-normal" render={<a href={waUrl} target="_blank" rel="noreferrer" />} onClick={() => onOpenChange(false)}>
                   {t("checkout.sendWhatsApp")}
                 </Button>
               )}
               <div className="flex w-full gap-2">
-                <Button variant="outline" className="flex-1" render={<a href={href.orders} />} onClick={() => onOpenChange(false)}>
+                <Button variant="outline" className="min-w-0 flex-1 whitespace-normal" render={<a href={href.orders} />} onClick={() => onOpenChange(false)}>
                   {t("checkout.viewMyOrders")}
                 </Button>
-                <Button className="flex-1" onClick={() => onOpenChange(false)}>{t("checkout.keepBrowsing")}</Button>
+                <Button className="min-w-0 flex-1 whitespace-normal" onClick={() => onOpenChange(false)}>{t("checkout.keepBrowsing")}</Button>
               </div>
             </div>
           </div>
@@ -125,10 +125,10 @@ export function CheckoutDialog() {
             <div className="flex flex-col gap-2">
               <p className="text-sm font-semibold">{t("checkout.deliveryZone")}</p>
               <ToggleGroup value={[deliveryZone]} onValueChange={(v) => v[0] && actions.setDeliveryZone(v[0] as "mohammedia" | "outside")} variant="outline" spacing={0} className="w-full" aria-label={t("checkout.deliveryZone")}>
-                <ToggleGroupItem value="mohammedia" className="h-10 flex-1 aria-pressed:bg-primary/10 aria-pressed:text-primary">
+                <ToggleGroupItem value="mohammedia" className="h-10 min-w-0 flex-1 shrink whitespace-normal text-center aria-pressed:bg-primary/10 aria-pressed:text-primary">
                   {t("checkout.mohammedia")} · {formatPrice(DELIVERY_FEE_MOHAMMEDIA)}
                 </ToggleGroupItem>
-                <ToggleGroupItem value="outside" className="h-10 flex-1 aria-pressed:bg-primary/10 aria-pressed:text-primary">
+                <ToggleGroupItem value="outside" className="h-10 min-w-0 flex-1 shrink whitespace-normal text-center aria-pressed:bg-primary/10 aria-pressed:text-primary">
                   {t("checkout.outside")} · {formatPrice(DELIVERY_FEE_OUTSIDE)}
                 </ToggleGroupItem>
               </ToggleGroup>
