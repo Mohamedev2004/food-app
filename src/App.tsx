@@ -12,6 +12,7 @@ import { MenuPage } from "@/pages/menu"
 import { MenusPage } from "@/pages/menus"
 import { OrdersPage } from "@/pages/orders"
 import { ProductPage } from "@/pages/product"
+import { WhatsappFloat } from "@/components/shop/whatsapp-float"
 import { usePath, parse } from "@/lib/router"
 import { useTranslation } from "react-i18next"
 
@@ -57,6 +58,7 @@ export function App() {
         </div>
         <CartDrawer />
         <CheckoutDialog />
+        <WhatsappFloat />
       </TooltipProvider>
     </Toaster>
   )
