@@ -7,16 +7,13 @@ import { cn } from "cn"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
-import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/toast"
 import { formatDate } from "@/lib/format"
 import { actions, useReviews, useStore } from "@/lib/store"
-import { RatingInput, Stars } from "./rating"
+import { Stars } from "./rating"
 
-export function Reviews({ productId, productName }: { productId: string; productName: string }) {
+export function Reviews({ productId }: { productId: string }) {
   const { t } = useTranslation()
   const reviews = useReviews(productId)
   const helpful = useStore((s) => s.helpful)
@@ -47,7 +44,6 @@ export function Reviews({ productId, productName }: { productId: string; product
           ))}
         </ul>
         <Separator />
-        <ReviewForm productId={productId} productName={productName} />
       </div>
 
       <div className="flex flex-col gap-2">
@@ -99,54 +95,4 @@ export function Reviews({ productId, productName }: { productId: string; product
   )
 }
 
-function ReviewForm({ productId, productName }: { productId: string; productName: string }) {
-  const { t } = useTranslation()
-  const [rating, setRating] = React.useState(0)
-  const [author, setAuthor] = React.useState("")
-  const [title, setTitle] = React.useState("")
-  const [body, setBody] = React.useState("")
-  const [err, setErr] = React.useState<Record<string, string>>({})
 
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const next: Record<string, string> = {}
-    if (!rating) next.rating = t("reviews.pickStarRating")
-    if (author.trim().length < 2) next.author = t("reviews.tellUsName")
-    if (body.trim().length < 10) next.body = t("reviews.shareMoreWords")
-    setErr(next)
-    if (Object.keys(next).length) return
-    actions.addReview({ productId, author: author.trim(), rating, title: title.trim() || t("reviews.myReview"), body: body.trim() })
-    setRating(0)
-    setTitle("")
-    setBody("")
-    toast.add({ title: t("reviews.thanksReview"), description: productName, type: "success" })
-  }
-
-  return (
-    <form onSubmit={submit} className="flex flex-col gap-4" noValidate>
-      <h3 className="font-heading text-lg font-semibold">{t("reviews.writeReview")}</h3>
-      <FieldGroup>
-        <Field data-invalid={!!err.rating}>
-          <FieldLabel>{t("reviews.yourRating")}</FieldLabel>
-          <RatingInput value={rating} onChange={setRating} />
-          {err.rating && <FieldError>{err.rating}</FieldError>}
-        </Field>
-        <Field data-invalid={!!err.author}>
-          <FieldLabel htmlFor="rv-name">{t("reviews.name")}</FieldLabel>
-          <Input id="rv-name" value={author} aria-invalid={!!err.author} onChange={(e) => setAuthor(e.target.value)} />
-          {err.author && <FieldError>{err.author}</FieldError>}
-        </Field>
-        <Field>
-          <FieldLabel htmlFor="rv-title">{t("reviews.headline")}</FieldLabel>
-          <Input id="rv-title" value={title} onChange={(e) => setTitle(e.target.value)} />
-        </Field>
-        <Field data-invalid={!!err.body}>
-          <FieldLabel htmlFor="rv-body">{t("reviews.comment")}</FieldLabel>
-          <Textarea id="rv-body" rows={4} value={body} aria-invalid={!!err.body} onChange={(e) => setBody(e.target.value)} />
-          {err.body && <FieldError>{err.body}</FieldError>}
-        </Field>
-      </FieldGroup>
-      <Button type="submit">{t("reviews.submitReview")}</Button>
-    </form>
-  )
-}

@@ -175,7 +175,7 @@ function Detail({ id }: { id: string }) {
       <section className="mt-16 border-t pt-12" aria-labelledby="rev-title">
         <SectionHeading eyebrow={t("product.youMightLike")} title={t("product.reviewsComments")} />
         <h2 id="rev-title" className="sr-only">{t("product.reviews")}</h2>
-        <Reviews productId={id} productName={product.name} />
+        <Reviews productId={id} />
       </section>
 
       {related.length > 0 && (

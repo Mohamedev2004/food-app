@@ -750,18 +750,21 @@ export type Review = {
   seed?: boolean
 }
 
-const NAMES = ["Amélie R.", "Youssef B.", "Sofia M.", "Daniel K.", "Lina H.", "Marcus T.", "Nora A.", "Elias P.", "Chloé D.", "Omar S."]
+const NAMES = ["Salma B.", "Karim T.", "Yasmine L.", "Bilal A.", "Imane K.", "Oussama R.", "Chaimae D.", "Hamza M.", "Nadia E.", "Ayoub N.", "Sara Q.", "Mehdi V."]
 const POSITIVE: [string, string][] = [
-  ["Worth every bite", "Arrived hot, beautifully presented and tasted even better than it looked. Ordering again this week."],
-  ["New favourite", "Generous portion, perfectly seasoned. I've already recommended it to three friends."],
-  ["So fresh", "You can really tell the ingredients are good quality. Light but still very filling."],
-  ["Great value", "Very good for the price. Packaging kept everything intact and at the right temperature."],
-  ["Comfort food done right", "Exactly what I was craving. Big flavours and nothing felt greasy or heavy."],
-  ["Chef's kiss", "Texture, seasoning, balance — everything was spot on. Easily the best on the menu."],
+  ["Arrived hot and fresh", "Ordered around 1pm and it was at my door in 40 minutes still hot. Sauce was generous — will reorder for sure."],
+  ["Best bowl in town", "The kefta was perfectly grilled and the rice was fluffy, not dry. My new weekly order."],
+  ["Big portion, fair price", "Honestly bigger than expected for 45 DH. Packaging kept everything intact, no leaks at all."],
+  ["Crispy chicken = perfect", "The chicken strips were actually crispy even after delivery. The sauce combo is addictive."],
+  ["Tastes homemade", "Reminds me of my teta's cooking. You can really tell they prep everything fresh every day."],
+  ["Great for a quick lunch", "Ordered for the office, everyone loved it. Delivery guy was fast and polite."],
+  ["Five stars deserved", "Presentation was beautiful and the taste even better. The avocado was perfectly ripe."],
+  ["Solid choice", "Everything was good — maybe a bit heavy on the sauce for my taste, but still delicious."],
 ]
 const MIXED: [string, string][] = [
-  ["Very good, a touch salty", "Loved the flavours overall. I'd ask for a bit less salt next time, but I'd still order it."],
-  ["Tasty, smaller than expected", "Delicious, though I'd go for a larger portion next time to be properly full."],
+  ["Good but a bit salty", "Flavours were great overall, just a touch too much salt in the sauce for me. Would order again with less sauce."],
+  ["Tasty, small portion", "Taste was on point but I was still hungry after. Go for the large if you're very hungry."],
+  ["Decent, delivery took a while", "The food itself was good, it just arrived about 20 minutes later than estimated. Still warm though."],
 ]
 
 /** Deterministic seed reviews so the page is lively on first visit. */
