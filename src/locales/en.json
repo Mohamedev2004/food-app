@@ -33,7 +33,7 @@
     "favorites": "Favorites",
     "orderHistory": "Order history",
     "fullMenu": "Full menu",
-    "copyright": "© {{year}} Borito Crispy.",
+    "copyright": "© {{year}} Burrito Crispy.",
     "freeDelivery": "Delivery 15–25 DH",
     "avgDelivery": "30-min average",
     "freshDaily": "Fresh daily",
@@ -164,7 +164,7 @@
     "placeOrder": "Place order · {{amount}}"
   },
   "whatsapp": {
-    "newOrder": "New order {{id}} — Borito Crispy",
+    "newOrder": "New order {{id}} — Burrito Crispy",
     "customer": "Customer",
     "phone": "Phone",
     "location": "Location",
@@ -175,9 +175,9 @@
     "title": "Our menus",
     "subtitle": "Browse our full menu — tap an image to view it full size.",
     "menu1": "Menu 1",
-    "menu1Alt": "Borito Crispy menu — page 1",
+    "menu1Alt": "Burrito Crispy menu — page 1",
     "menu2": "Menu 2",
-    "menu2Alt": "Borito Crispy menu — page 2",
+    "menu2Alt": "Burrito Crispy menu — page 2",
     "viewFullSize": "View full size"
   },
   "product": {
@@ -377,7 +377,7 @@
         "ingredients": ["Seasoned rice", "Grilled chicken", "Potato wedges", "House sauce"]
       },
       "bowl-kafta": {
-        "name": "Bowl Kafta",
+        "name": "Bowl Kefta",
         "summary": "Grilled spiced kefta patties over seasoned rice, pickles and herbs.",
         "description": "Chargrilled spiced kefta patties topped with pickles and fresh herbs over warm seasoned rice, served with dipping sauces.",
         "ingredients": ["Spiced rice", "Grilled kefta", "Pickles", "Fresh herbs", "Dipping sauces"]
@@ -387,12 +387,6 @@
         "summary": "Mixed bowl with crispy chicken, grilled kefta and seasoned rice.",
         "description": "A loaded mixed bowl combining crispy chicken and grilled kefta over seasoned rice, finished with pickles and house sauces.",
         "ingredients": ["Seasoned rice", "Crispy chicken", "Grilled kefta", "Pickles", "House sauces"]
-      },
-      "mexi-bowl": {
-        "name": "Mexi Bowl",
-        "summary": "Mexican-style bowl with seasoned rice, beans, corn, guacamole and chicken.",
-        "description": "A colourful Mexican-inspired bowl loaded with herbed rice, black beans, sweetcorn, guacamole, diced salsa, grilled chicken and creamy drizzle.",
-        "ingredients": ["Herbed rice", "Black beans", "Sweetcorn", "Guacamole", "Tomato salsa", "Grilled chicken"]
       },
       "burger-crispy": {
         "name": "Burger Crispy",
@@ -417,12 +411,6 @@
         "summary": "Loaded fries with chopped crispy chicken, pickles, cheese and sauces.",
         "description": "Crispy fries piled high with bite-sized golden crispy chicken, pickles, melted cheese sauce, herbs and dark house drizzle.",
         "ingredients": ["French fries", "Crispy chicken", "Pickles", "Cheese sauce", "Herbs", "House drizzle"]
-      },
-      "frita-crispy": {
-        "name": "Frita Crispy",
-        "summary": "Crispy fries loaded with crispy chicken, pickles, herbs and sauces.",
-        "description": "A generous bowl of golden fries loaded with crispy chicken bites, pickles, herbs and rich sauces.",
-        "ingredients": ["French fries", "Crispy chicken", "Pickles", "Herbs", "Sauces"]
       },
       "tacos-kefta": {
         "name": "Tacos Kefta",
@@ -460,8 +448,8 @@
         "description": "A combo bowl combining fresh Nicoise salad and golden fries topped with crispy chicken bites and house sauce.",
         "ingredients": ["Nicoise salad", "French fries", "Crispy chicken", "House sauce"]
       },
-      "haf-poulet": {
-        "name": "Haf Poulet",
+      "half-poulet": {
+        "name": "Half Poulet",
         "summary": "Half fresh salad, half fries topped with marinated chicken.",
         "description": "Half crisp vegetable salad and half golden fries, finished with seasoned chicken and creamy sauce.",
         "ingredients": ["Fresh salad", "French fries", "Chicken", "Creamy sauce"]
@@ -498,10 +486,10 @@
       }
     },
     "hero": {
-      "mexiBowl": {
-        "title": "Mexi Bowl",
-        "subtitle": "Freshly loaded bowl with seasoned rice, beans, corn, avocado and crispy toppings.",
-        "ctaLabel": "Order Mexi Bowl"
+      "bowlMixte": {
+        "title": "Bowl Mixte",
+        "subtitle": "Mixed bowl with crispy chicken, grilled kefta and seasoned rice.",
+        "ctaLabel": "Order Bowl Mixte"
       },
       "bouriCrispy": {
         "title": "Hot. Fast. Fresh. Delivered in 30 mins.",
@@ -516,12 +504,12 @@
     }
   },
   "seo": {
-    "home": "Borito Crispy — Fresh food delivered in Mohammedia",
-    "menu": "Menu — Borito Crispy",
-    "product": "Dish — Borito Crispy",
-    "favorites": "Favorites — Borito Crispy",
-    "orders": "My orders — Borito Crispy",
-    "menus": "Our menus — Borito Crispy"
+    "home": "Burrito Crispy — Fresh food delivered in Mohammedia",
+    "menu": "Menu — Burrito Crispy",
+    "product": "Dish — Burrito Crispy",
+    "favorites": "Favorites — Burrito Crispy",
+    "orders": "My orders — Burrito Crispy",
+    "menus": "Our menus — Burrito Crispy"
   },
   "common": {
     "minutes": "min",

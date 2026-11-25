@@ -33,7 +33,7 @@
     "favorites": "Favoritos",
     "orderHistory": "Historial de pedidos",
     "fullMenu": "Menú completo",
-    "copyright": "© {{year}} Borito Crispy.",
+    "copyright": "© {{year}} Burrito Crispy.",
     "freeDelivery": "Entrega 15–25 DH",
     "avgDelivery": "30 min de promedio",
     "freshDaily": "Fresco cada día",
@@ -164,7 +164,7 @@
     "placeOrder": "Realizar pedido · {{amount}}"
   },
   "whatsapp": {
-    "newOrder": "Nuevo pedido {{id}} — Borito Crispy",
+    "newOrder": "Nuevo pedido {{id}} — Burrito Crispy",
     "customer": "Cliente",
     "phone": "Teléfono",
     "location": "Dirección",
@@ -175,9 +175,9 @@
     "title": "Nuestros menús",
     "subtitle": "Explora nuestro menú completo — toca una imagen para verla en tamaño completo.",
     "menu1": "Menú 1",
-    "menu1Alt": "Menú de Borito Crispy — página 1",
+    "menu1Alt": "Menú de Burrito Crispy — página 1",
     "menu2": "Menú 2",
-    "menu2Alt": "Menú de Borito Crispy — página 2",
+    "menu2Alt": "Menú de Burrito Crispy — página 2",
     "viewFullSize": "Ver en grande"
   },
   "product": {
@@ -377,7 +377,7 @@
         "ingredients": ["Arroz sazonado", "Pollo a la parrilla", "Wedges de patata", "Salsa de la casa"]
       },
       "bowl-kafta": {
-        "name": "Bowl Kafta",
+        "name": "Bowl Kefta",
         "summary": "Hamburguesas de kefta a la parrilla especiada sobre arroz sazonado, pepinillos y hierbas.",
         "description": "Hamburguesas de kefta a la parrilla especiada a la parrilla cubiertas con pepinillos y hierbas frescas sobre arroz sazonado caliente, servidas con salsas para mojar.",
         "ingredients": ["Arroz especiado", "Kefta a la parrilla", "Pepinillos", "Hierbas frescas", "Salsas para mojar"]
@@ -387,12 +387,6 @@
         "summary": "Tazón mixto con pollo crujiente, kefta a la parrilla y arroz sazonado.",
         "description": "Un tazón mixto cargado que combina pollo crujiente y kefta a la parrilla sobre arroz sazonado, terminado con pepinillos y salsas de la casa.",
         "ingredients": ["Arroz sazonado", "Pollo crujiente", "Kefta a la parrilla", "Pepinillos", "Salsas de la casa"]
-      },
-      "mexi-bowl": {
-        "name": "Mexi Bowl",
-        "summary": "Tazón estilo mexicano con arroz sazonado, frijoles, maíz, guacamole y pollo.",
-        "description": "Un colorido tazón inspirado en México cargado de arroz con hierbas, frijoles negros, maíz, guacamole, salsa de tomate en dados, pollo a la parrilla y chorrito cremoso.",
-        "ingredients": ["Arroz con hierbas", "Frijoles negros", "Maíz", "Guacamole", "Salsa de tomate", "Pollo a la parrilla"]
       },
       "burger-crispy": {
         "name": "Burger Crispy",
@@ -417,12 +411,6 @@
         "summary": "Papas cargadas con pollo crujiente picado, pepinillos, queso y salsas.",
         "description": "Papas crujientes apiladas con pollo crujiente dorado en bocados, pepinillos, salsa de queso derretido, hierbas y chorrito oscuro de la casa.",
         "ingredients": ["Papas fritas", "Pollo crujiente", "Pepinillos", "Salsa de queso", "Hierbas", "Chorrito de la casa"]
-      },
-      "frita-crispy": {
-        "name": "Frita Crispy",
-        "summary": "Papas crujientes cargadas de pollo crujiente, pepinillos, hierbas y salsas.",
-        "description": "Un generoso tazón de papas doradas cargadas de trozos de pollo crujiente, pepinillos, hierbas y salsas ricas.",
-        "ingredients": ["Papas fritas", "Pollo crujiente", "Pepinillos", "Hierbas", "Salsas"]
       },
       "tacos-kefta": {
         "name": "Tacos Kefta",
@@ -460,8 +448,8 @@
         "description": "Un tazón combo que combina ensalada Nicoise fresca y papas doradas cubiertas de trozos de pollo crujiente y salsa de la casa.",
         "ingredients": ["Ensalada Nicoise", "Papas fritas", "Pollo crujiente", "Salsa de la casa"]
       },
-      "haf-poulet": {
-        "name": "Haf Poulet",
+      "half-poulet": {
+        "name": "Half Poulet",
         "summary": "Mitad ensalada fresca, mitad papas cubiertas de pollo marinado.",
         "description": "Mitad ensalada de verduras crujantes y mitad papas doradas, terminadas con pollo sazonado y salsa cremosa.",
         "ingredients": ["Ensalada fresca", "Papas fritas", "Pollo", "Salsa cremosa"]
@@ -498,10 +486,10 @@
       }
     },
     "hero": {
-      "mexiBowl": {
-        "title": "Mexi Bowl",
-        "subtitle": "Tazón recién cargado con arroz sazonado, frijoles, maíz, aguacate e ingredientes crujientes.",
-        "ctaLabel": "Pedir Mexi Bowl"
+      "bowlMixte": {
+        "title": "Bowl Mixte",
+        "subtitle": "Tazón mixto con pollo crujiente, kefta a la parrilla y arroz sazonado.",
+        "ctaLabel": "Pedir Bowl Mixte"
       },
       "bouriCrispy": {
         "title": "Caliente. Rápido. Fresco. Entregado en 30 min.",
@@ -516,12 +504,12 @@
     }
   },
   "seo": {
-    "home": "Borito Crispy — Comida fresca a domicilio en Mohammedia",
-    "menu": "Menú — Borito Crispy",
-    "product": "Plato — Borito Crispy",
-    "favorites": "Favoritos — Borito Crispy",
-    "orders": "Mis pedidos — Borito Crispy",
-    "menus": "Nuestros menús — Borito Crispy"
+    "home": "Burrito Crispy — Comida fresca a domicilio en Mohammedia",
+    "menu": "Menú — Burrito Crispy",
+    "product": "Plato — Burrito Crispy",
+    "favorites": "Favoritos — Burrito Crispy",
+    "orders": "Mis pedidos — Burrito Crispy",
+    "menus": "Nuestros menús — Burrito Crispy"
   },
   "common": {
     "minutes": "min",

@@ -33,7 +33,7 @@
     "favorites": "Favoris",
     "orderHistory": "Historique des commandes",
     "fullMenu": "Menu complet",
-    "copyright": "© {{year}} Borito Crispy.",
+    "copyright": "© {{year}} Burrito Crispy.",
     "freeDelivery": "Livraison 15–25 DH",
     "avgDelivery": "30 min en moyenne",
     "freshDaily": "Frais chaque jour",
@@ -164,7 +164,7 @@
     "placeOrder": "Passer la commande · {{amount}}"
   },
   "whatsapp": {
-    "newOrder": "Nouvelle commande {{id}} — Borito Crispy",
+    "newOrder": "Nouvelle commande {{id}} — Burrito Crispy",
     "customer": "Client",
     "phone": "Téléphone",
     "location": "Adresse",
@@ -175,9 +175,9 @@
     "title": "Nos menus",
     "subtitle": "Découvrez notre menu complet — touchez une image pour l'agrandir.",
     "menu1": "Menu 1",
-    "menu1Alt": "Menu Borito Crispy — page 1",
+    "menu1Alt": "Menu Burrito Crispy — page 1",
     "menu2": "Menu 2",
-    "menu2Alt": "Menu Borito Crispy — page 2",
+    "menu2Alt": "Menu Burrito Crispy — page 2",
     "viewFullSize": "Voir en grand"
   },
   "product": {
@@ -377,7 +377,7 @@
         "ingredients": ["Riz assaisonné", "Poulet grillé", "Wedges de pommes de terre", "Sauce maison"]
       },
       "bowl-kafta": {
-        "name": "Bowl Kafta",
+        "name": "Bowl Kefta",
         "summary": "Galettes de kefta grillée épicée sur riz assaisonné, cornichons et herbes.",
         "description": "Galettes de kefta grillées au charbon épicées garnies de cornichons et herbes fraîches sur riz assaisonné chaud, servies avec des sauces pour tremper.",
         "ingredients": ["Riz épicé", "Kefta grillée", "Cornichons", "Herbes fraîches", "Sauces pour tremper"]
@@ -387,12 +387,6 @@
         "summary": "Bol mixte avec poulet croustillant, kefta grillée et riz assaisonné.",
         "description": "Un bol mixte garni combinant poulet croustillant et kefta grillée sur riz assaisonné, terminé avec cornichons et sauces maison.",
         "ingredients": ["Riz assaisonné", "Poulet croustillant", "Kefta grillée", "Cornichons", "Sauces maison"]
-      },
-      "mexi-bowl": {
-        "name": "Mexi Bowl",
-        "summary": "Bol à la mexicaine avec riz assaisonné, haricots, maïs, guacamole et poulet.",
-        "description": "Un bol coloré inspiré du Mexique garni de riz aux herbes, haricots noirs, maïs, guacamole, salsa de tomates en dés, poulet grillé et filet crémeux.",
-        "ingredients": ["Riz aux herbes", "Haricots noirs", "Maïs", "Guacamole", "Salsa de tomates", "Poulet grillé"]
       },
       "burger-crispy": {
         "name": "Burger Crispy",
@@ -417,12 +411,6 @@
         "summary": "Frites garnies de poulet croustillant haché, cornichons, fromage et sauces.",
         "description": "Frites croustillantes empilées de poulet croustillant doré en bouchées, cornichons, sauce au fromage fondu, herbes et filet maison foncé.",
         "ingredients": ["Frites", "Poulet croustillant", "Cornichons", "Sauce au fromage", "Herbes", "Filet maison"]
-      },
-      "frita-crispy": {
-        "name": "Frita Crispy",
-        "summary": "Frites croustillantes garnies de poulet croustillant, cornichons, herbes et sauces.",
-        "description": "Un bol généreux de frites dorées garnies de morceaux de poulet croustillant, cornichons, herbes et sauces riches.",
-        "ingredients": ["Frites", "Poulet croustillant", "Cornichons", "Herbes", "Sauces"]
       },
       "tacos-kefta": {
         "name": "Tacos Kefta",
@@ -460,8 +448,8 @@
         "description": "Un bol combo combinant salade Nicoise fraîche et frites dorées garnies de morceaux de poulet croustillant et sauce maison.",
         "ingredients": ["Salade Nicoise", "Frites", "Poulet croustillant", "Sauce maison"]
       },
-      "haf-poulet": {
-        "name": "Haf Poulet",
+      "half-poulet": {
+        "name": "Half Poulet",
         "summary": "Moitié salade fraîche, moitié frites garnies de poulet mariné.",
         "description": "Moitié salade de légumes croquante et moitié frites dorées, terminée avec poulet assaisonné et sauce crémeuse.",
         "ingredients": ["Salade fraîche", "Frites", "Poulet", "Sauce crémeuse"]
@@ -498,10 +486,10 @@
       }
     },
     "hero": {
-      "mexiBowl": {
-        "title": "Mexi Bowl",
-        "subtitle": "Bol fraîchement garni de riz assaisonné, haricots, maïs, avocat et garnitures croustillantes.",
-        "ctaLabel": "Commander Mexi Bowl"
+      "bowlMixte": {
+        "title": "Bowl Mixte",
+        "subtitle": "Bol mixte avec poulet croustillant, kefta grillée et riz assaisonné.",
+        "ctaLabel": "Commander Bowl Mixte"
       },
       "bouriCrispy": {
         "title": "Chaud. Rapide. Frais. Livré en 30 min.",
@@ -516,12 +504,12 @@
     }
   },
   "seo": {
-    "home": "Borito Crispy — Cuisine fraîche livrée à Mohammedia",
-    "menu": "Menu — Borito Crispy",
-    "product": "Plat — Borito Crispy",
-    "favorites": "Favoris — Borito Crispy",
-    "orders": "Mes commandes — Borito Crispy",
-    "menus": "Nos menus — Borito Crispy"
+    "home": "Burrito Crispy — Cuisine fraîche livrée à Mohammedia",
+    "menu": "Menu — Burrito Crispy",
+    "product": "Plat — Burrito Crispy",
+    "favorites": "Favoris — Burrito Crispy",
+    "orders": "Mes commandes — Burrito Crispy",
+    "menus": "Nos menus — Burrito Crispy"
   },
   "common": {
     "minutes": "min",
