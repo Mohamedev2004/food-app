@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectVa
 import { Separator } from "@/components/ui/separator"
 import { Sheet, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
-import { CATEGORIES, getCategory, PRODUCTS, TAGS, type TagId } from "@/data/catalog"
+import { CATEGORIES, getCategory, getProduct, PRODUCTS, TAGS, type TagId } from "@/data/catalog"
 import { href, usePath } from "@/lib/router"
 import { Crumbs } from "@/components/shop/page-header"
 import { ProductCard } from "@/components/shop/product-card"
@@ -24,7 +24,12 @@ const SORTS: { value: Sort; labelKey: string }[] = [
   { value: "price-desc", labelKey: "menu.priceHighLow" },
   { value: "newest", labelKey: "menu.newest" },
 ]
-const PRICES = [{ id: "any", labelKey: "common.any", max: Infinity }, { id: "10", labelKey: "menu.under10", max: 10 }, { id: "15", labelKey: "menu.under15", max: 15 }, { id: "20", labelKey: "menu.under20", max: 20 }]
+const PRICES = [
+  { id: "any", labelKey: "common.any", min: 0, max: Infinity },
+  { id: "under40", labelKey: "menu.priceUnder40", min: 0, max: 40 },
+  { id: "40-50", labelKey: "menu.price40to50", min: 40, max: 50 },
+  { id: "50plus", labelKey: "menu.price50plus", min: 50, max: Infinity },
+]
 
 export function MenuPage({ category }: { category?: string }) {
   const { t } = useTranslation()
@@ -36,13 +41,14 @@ export function MenuPage({ category }: { category?: string }) {
   const [price, setPrice] = React.useState("any")
 
   const results = React.useMemo(() => {
-    const max = PRICES.find((p) => p.id === price)?.max ?? Infinity
+    const range = PRICES.find((p) => p.id === price) ?? PRICES[0]
     const list = PRODUCTS.filter(
       (p) =>
         (!cat || p.category === cat.id) &&
-        p.price <= max &&
+        p.price >= range.min &&
+        p.price < range.max &&
         tags.every((t) => p.tags.includes(t)) &&
-        (!q || [p.name, p.summary, p.description, ...p.tags.map((tag) => TAGS[tag].label), t(`catalog.categories.${p.category}.name`)].join(" ").toLowerCase().includes(q))
+        (!q || [getProduct(p.id)?.name ?? p.name, p.summary, p.description, ...p.tags.map((tag) => TAGS[tag].label), t(`catalog.categories.${p.category}.name`)].join(" ").toLowerCase().includes(q))
     )
     const by: Record<Sort, (a: (typeof list)[0], b: (typeof list)[0]) => number> = {
       featured: (a, b) => Number(b.tags.includes("bestseller")) - Number(a.tags.includes("bestseller")) || b.likes - a.likes,
@@ -113,7 +119,7 @@ export function MenuPage({ category }: { category?: string }) {
                   </SheetFooter>
                 </SheetContent>
               </Sheet>
-              <Select value={sort} onValueChange={(v) => setSort(v as Sort)} items={SORTS}>
+              <Select value={sort} onValueChange={(v) => setSort(v as Sort)} items={SORTS.map((s) => ({ value: s.value, label: t(s.labelKey) }))}>
                 <SelectTrigger className="w-48" aria-label={t("menu.sortBy")}>
                   <SelectValue />
                 </SelectTrigger>

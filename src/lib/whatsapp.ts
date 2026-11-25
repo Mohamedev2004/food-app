@@ -19,7 +19,7 @@ export function buildOrderMessage(order: Order): string {
     ``,
     `*${t("cart.subtotal")}*: ${formatPrice(order.subtotal)}`,
     ...(order.discount > 0 ? [`*${t("checkout.discount")}*: -${formatPrice(order.discount)}`] : []),
-    `*${t("checkout.delivery")}*: ${order.delivery === 0 ? t("checkout.free") : formatPrice(order.delivery)}`,
+    `*${t("checkout.delivery")}*: ${formatPrice(order.delivery)}`,
     `*${t("checkout.total")}*: ${formatPrice(order.total)}`,
   ].join("\n")
 }

@@ -4,7 +4,7 @@ import { CheckmarkCircle02Icon } from "@hugeicons/core-free-icons"
 import { useTranslation } from "react-i18next"
 
 import { Button } from "@/components/ui/button"
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
@@ -101,7 +101,7 @@ export function CheckoutDialog() {
                 <span className="tabular-nums">{formatPrice(done.total)}</span>
               </div>
             </div>
-            <DialogFooter className="w-full flex-col gap-2 sm:justify-center">
+            <div className="flex w-full flex-col gap-2">
               {waUrl && (
                 <Button variant="secondary" className="w-full" render={<a href={waUrl} target="_blank" rel="noreferrer" />} onClick={() => onOpenChange(false)}>
                   {t("checkout.sendWhatsApp")}
@@ -113,7 +113,7 @@ export function CheckoutDialog() {
                 </Button>
                 <Button className="flex-1" onClick={() => onOpenChange(false)}>{t("checkout.keepBrowsing")}</Button>
               </div>
-            </DialogFooter>
+            </div>
           </div>
         ) : (
           <form onSubmit={submit} className="flex flex-col gap-5" noValidate>
@@ -164,7 +164,7 @@ export function CheckoutDialog() {
               <Separator className="my-1" />
               <div className="flex justify-between text-muted-foreground">
                 <span>{t("checkout.delivery")}</span>
-                <span className="tabular-nums">{delivery === 0 ? t("checkout.free") : formatPrice(delivery)}</span>
+                <span className="tabular-nums">{formatPrice(delivery)}</span>
               </div>
               {cart.lines.length > 0 && (
                 <div className="flex justify-between text-muted-foreground">

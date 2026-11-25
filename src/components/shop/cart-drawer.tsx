@@ -102,7 +102,7 @@ export function CartDrawer() {
             <div className="flex flex-col gap-4 border-t bg-background p-5">
               <dl className="flex flex-col gap-2 text-sm">
                 <Row label={t("cart.subtotal")} value={formatPrice(cart.subtotal)} />
-                <Row label={t("cart.delivery")} value={cart.delivery === 0 ? t("cart.free") : formatPrice(cart.delivery)} />
+                <Row label={t("cart.delivery")} value={formatPrice(cart.delivery)} />
                 <Separator />
                 <div className="flex items-baseline justify-between text-base font-semibold">
                   <dt>{t("cart.total")}</dt>

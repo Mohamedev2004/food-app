@@ -99,9 +99,9 @@
     "newest": "Más recientes",
     "dishCount": "{{count}} plato",
     "dishesCount": "{{count}} platos",
-    "under10": "Menos de 10 DH",
-    "under15": "Menos de 15 DH",
-    "under20": "Menos de 20 DH"
+    "priceUnder40": "Menos de 40 DH",
+    "price40to50": "40–50 DH",
+    "price50plus": "Más de 50 DH"
   },
   "cart": {
     "yourCart": "Tu carrito",
@@ -218,7 +218,10 @@
     "yourFavorites": "Tus favoritos",
     "nothingSaved": "Nada guardado todavía",
     "tapHeart": "Toca el corazón en cualquier plato para guardarlo aquí.",
-    "exploreMenu": "Explorar el menú"
+    "exploreMenu": "Explorar el menú",
+    "addedToFavorites": "Guardado en favoritos",
+    "saveAria": "Guardar {{name}} en favoritos",
+    "removeAria": "Quitar {{name}} de favoritos"
   },
   "orders": {
     "yourOrders": "Tus pedidos",

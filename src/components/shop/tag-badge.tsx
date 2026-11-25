@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge"
 import { useTranslation } from "react-i18next"
-import { TAGS, type TagId } from "@/data/catalog"
+import { type TagId } from "@/data/catalog"
 
 export function TagBadge({ tag }: { tag: TagId }) {
   const { t } = useTranslation()

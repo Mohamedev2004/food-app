@@ -720,6 +720,7 @@ export const getProduct = (id: string) => {
     summary: i18n.t(`catalog.products.${id}.summary`, { defaultValue: product.summary }),
     description: i18n.t(`catalog.products.${id}.description`, { defaultValue: product.description }),
     ingredients: translatedIngredients && Array.isArray(translatedIngredients) ? translatedIngredients : product.ingredients,
+    sizes: product.sizes.map((s) => ({ ...s, label: i18n.t(`common.${s.id === "regular" ? "standard" : s.id}`, { defaultValue: s.label }) })),
   }
 }
 export const getCategory = (id: string) => {
@@ -734,7 +735,7 @@ export const getCategory = (id: string) => {
 
 /** Local image URL for a renamed dish asset. */
 export function imageUrl(fileName: string, _width?: number, _height?: number) {
-  return `/public/${fileName}`
+  return `/${fileName}`
 }
 
 export type Review = {

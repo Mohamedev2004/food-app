@@ -99,9 +99,9 @@
     "newest": "الأحدث",
     "dishCount": "{{count}} طبق",
     "dishesCount": "{{count}} طبق",
-    "under10": "أقل من 10 درهم",
-    "under15": "أقل من 15 درهم",
-    "under20": "أقل من 20 درهم"
+    "priceUnder40": "أقل من 40 درهم",
+    "price40to50": "40–50 درهم",
+    "price50plus": "50 درهم فأكثر"
   },
   "cart": {
     "yourCart": "سلتك",
@@ -218,7 +218,10 @@
     "yourFavorites": "مفضلاتك",
     "nothingSaved": "لم يُحفظ شيء بعد",
     "tapHeart": "اضغط على القلب على أي طبق للاحتفاظ به هنا لاحقاً.",
-    "exploreMenu": "استكشف القائمة"
+    "exploreMenu": "استكشف القائمة",
+    "addedToFavorites": "تم الحفظ في المفضلة",
+    "saveAria": "حفظ {{name}} في المفضلة",
+    "removeAria": "إزالة {{name}} من المفضلة"
   },
   "orders": {
     "yourOrders": "طلباتك",

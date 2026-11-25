@@ -99,9 +99,9 @@
     "newest": "Newest",
     "dishCount": "{{count}} dish",
     "dishesCount": "{{count}} dishes",
-    "under10": "Under 10 DH",
-    "under15": "Under 15 DH",
-    "under20": "Under 20 DH"
+    "priceUnder40": "Under 40 DH",
+    "price40to50": "40–50 DH",
+    "price50plus": "50+ DH"
   },
   "cart": {
     "yourCart": "Your cart",
@@ -218,7 +218,10 @@
     "yourFavorites": "Your favorites",
     "nothingSaved": "Nothing saved yet",
     "tapHeart": "Tap the heart on any dish to keep it here for later.",
-    "exploreMenu": "Explore the menu"
+    "exploreMenu": "Explore the menu",
+    "addedToFavorites": "Saved to favorites",
+    "saveAria": "Save {{name}} to favorites",
+    "removeAria": "Remove {{name}} from favorites"
   },
   "orders": {
     "yourOrders": "Your orders",

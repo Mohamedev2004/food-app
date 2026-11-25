@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { flyToCart } from "@/lib/fly-to-cart"
 import { notifyAdded } from "@/lib/notify"
-import { getCategory, type Product } from "@/data/catalog"
+import { getProduct, type Product } from "@/data/catalog"
 import { formatPrice } from "@/lib/format"
 import { actions, useLikes, useRating } from "@/lib/store"
 import { href } from "@/lib/router"
@@ -16,8 +16,9 @@ import { Stars } from "./rating"
 import { TagBadge } from "./tag-badge"
 import { QuickView } from "./quick-view"
 
-export function ProductCard({ product, priority }: { product: Product; priority?: boolean }) {
+export function ProductCard({ product: rawProduct, priority }: { product: Product; priority?: boolean }) {
   const { t } = useTranslation()
+  const product = getProduct(rawProduct.id) ?? rawProduct
   const { avg, count } = useRating(product.id)
   const { count: likes, liked } = useLikes(product.id)
   const shown = product.tags.slice(0, 2)
