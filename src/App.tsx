@@ -13,8 +13,19 @@ import { MenusPage } from "@/pages/menus"
 import { OrdersPage } from "@/pages/orders"
 import { ProductPage } from "@/pages/product"
 import { usePath, parse } from "@/lib/router"
+import { useTranslation } from "react-i18next"
+
+const SEO_TITLE_KEYS: Record<string, string> = {
+  home: "seo.home",
+  menu: "seo.menu",
+  product: "seo.product",
+  favorites: "seo.favorites",
+  orders: "seo.orders",
+  menus: "seo.menus",
+}
 
 export function App() {
+  const { t, i18n } = useTranslation()
   const path = usePath()
   const route = parse(path)
   const key = path.split("?")[0]
@@ -24,11 +35,15 @@ export function App() {
     window.scrollTo({ top: 0 })
   }, [key])
 
+  React.useEffect(() => {
+    document.title = t(SEO_TITLE_KEYS[route.name] ?? "seo.home")
+  }, [route.name, t, i18n.language])
+
   return (
     <Toaster>
       <TooltipProvider>
         <div className="flex min-h-svh flex-col">
-          <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-background focus:px-3 focus:py-2 focus:shadow-lg">Skip to content</a>
+          <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:inset-s-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-background focus:px-3 focus:py-2 focus:shadow-lg">Skip to content</a>
           <Header />
           <main id="main" className="flex-1">
             {route.name === "home" && <HomePage />}

@@ -7,6 +7,12 @@ import "./i18n"
 import App from "./App.tsx"
 import { ThemeProvider } from "@/components/theme-provider.tsx"
 
+// Redirect legacy hash URLs (#/menu) to path URLs (/menu).
+if (window.location.hash.startsWith("#/")) {
+  const legacy = window.location.hash.slice(1)
+  window.history.replaceState(null, "", legacy.includes("?") ? legacy : legacy + window.location.search)
+}
+
 function AppWithI18n() {
   const { i18n } = useTranslation()
   

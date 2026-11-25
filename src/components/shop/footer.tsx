@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 import { Separator } from "@/components/ui/separator"
 import { CATEGORIES } from "@/data/catalog"
 import { href } from "@/lib/router"
-import { Logo } from "./header"
+import { Logo } from "./logo"
 
 export function Footer() {
   const { t } = useTranslation()

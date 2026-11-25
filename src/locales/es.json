@@ -48,8 +48,7 @@
     "avgDelivery": "Entrega prom.",
     "dishes": "Platos",
     "deliveryFee": "Tarifa de entrega",
-    "hotIn30": "Caliente en 30 min",
-    "orItsOnUs": "o es por nuestra cuenta",
+    "hotIn": "Caliente en 30 min",
     "browse": "Explorar",
     "whatCraving": "¿Qué se te antoja?",
     "categories": "Categorías",
@@ -515,6 +514,14 @@
         "ctaLabel": "Obtener Pack Familia"
       }
     }
+  },
+  "seo": {
+    "home": "Borito Crispy — Comida fresca a domicilio en Mohammedia",
+    "menu": "Menú — Borito Crispy",
+    "product": "Plato — Borito Crispy",
+    "favorites": "Favoritos — Borito Crispy",
+    "orders": "Mis pedidos — Borito Crispy",
+    "menus": "Nuestros menús — Borito Crispy"
   },
   "common": {
     "minutes": "min",

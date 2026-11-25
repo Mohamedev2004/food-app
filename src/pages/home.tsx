@@ -118,13 +118,12 @@ export function HomePage() {
               </div>
             </div>
 
-            <div className="mt-4 flex items-center gap-3 rounded-2xl border bg-background/95 px-4 py-3 shadow-lg backdrop-blur sm:absolute sm:end-4 sm:-bottom-5 sm:mt-0">
+            <div className="mt-4 flex items-center gap-3 rounded-2xl border bg-background/95 px-4 py-3 shadow-lg backdrop-blur sm:absolute sm:end-4 sm:bottom-4 sm:mt-0 sm:max-w-56">
               <span className="grid size-10 shrink-0 place-items-center rounded-full bg-primary/10 text-primary">
                 <HugeiconsIcon icon={Clock01Icon} strokeWidth={2} />
               </span>
               <div className="text-sm leading-tight">
-                <p className="font-semibold">{t("home.hotIn30")}</p>
-                <p className="text-muted-foreground">{t("home.orItsOnUs")}</p>
+                <p className="font-semibold">{t("home.hotIn")}</p>
               </div>
             </div>
           </div>

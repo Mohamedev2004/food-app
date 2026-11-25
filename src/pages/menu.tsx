@@ -10,7 +10,7 @@ import { Separator } from "@/components/ui/separator"
 import { Sheet, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { CATEGORIES, getCategory, getProduct, PRODUCTS, TAGS, type TagId } from "@/data/catalog"
-import { href, usePath } from "@/lib/router"
+import { href, navigate, usePath } from "@/lib/router"
 import { Crumbs } from "@/components/shop/page-header"
 import { ProductCard } from "@/components/shop/product-card"
 import { Grid } from "./home"
@@ -142,7 +142,7 @@ export function MenuPage({ category }: { category?: string }) {
                 <EmptyDescription>{t("menu.tryRemovingFilter")}</EmptyDescription>
               </EmptyHeader>
               <EmptyContent>
-                <Button onClick={() => { reset(); window.location.hash = cat ? href.category(cat.id) : href.menu }}>{t("menu.resetFilters")}</Button>
+                <Button onClick={() => { reset(); navigate(cat ? href.category(cat.id) : href.menu) }}>{t("menu.resetFilters")}</Button>
               </EmptyContent>
             </Empty>
           ) : (

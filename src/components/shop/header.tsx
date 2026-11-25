@@ -11,19 +11,11 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 import { useTheme } from "@/components/theme-provider"
 import { CATEGORIES } from "@/data/catalog"
-import { href, parse, usePath } from "@/lib/router"
+import { href, navigate, parse, usePath } from "@/lib/router"
 import { useCartSummary, useStore } from "@/lib/store"
 import { openCart } from "@/lib/ui-state"
 import { formatPrice } from "@/lib/format"
-
-export function Logo({ className }: { className?: string }) {
-  return (
-    <a href={href.home} className={"inline-flex items-center gap-2 font-heading text-xl font-bold tracking-tight " + (className ?? "")} aria-label="Borito Crispy — home">
-      <img src="/borito-crispy-logo.svg" alt="Borito Crispy" className="size-8 object-contain" />
-      Borito Crispy
-    </a>
-  )
-}
+import { Logo } from "./logo"
 
 function SearchBox({ className, onDone }: { className?: string; onDone?: () => void }) {
   const { t } = useTranslation()
@@ -41,7 +33,7 @@ function SearchBox({ className, onDone }: { className?: string; onDone?: () => v
         e.preventDefault()
         const cat = parse(path.split("?")[0])
         const base = cat.name === "menu" && cat.category ? href.category(cat.category) : href.menu
-        window.location.hash = q.trim() ? `${base}?q=${encodeURIComponent(q.trim())}` : base
+        navigate(q.trim() ? `${base}?q=${encodeURIComponent(q.trim())}` : base)
         onDone?.()
       }}
     >

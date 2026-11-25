@@ -1,14 +1,36 @@
 import { useSyncExternalStore } from "react"
 
-/** Minimal hash router: #/  #/menu  #/category/:id  #/product/:id  #/favorites  #/orders */
+/** Minimal history router: /  /menu  /category/:id  /product/:id  /favorites  /orders  /menus */
 const subscribe = (cb: () => void) => {
-  window.addEventListener("hashchange", cb)
-  return () => window.removeEventListener("hashchange", cb)
+  window.addEventListener("popstate", cb)
+  return () => window.removeEventListener("popstate", cb)
 }
-const read = () => window.location.hash.replace(/^#/, "") || "/"
+const read = () => window.location.pathname + window.location.search
 
 export function usePath() {
   return useSyncExternalStore(subscribe, read, () => "/")
+}
+
+export function navigate(to: string) {
+  if (to === window.location.pathname + window.location.search) return
+  window.history.pushState(null, "", to)
+  window.dispatchEvent(new PopStateEvent("popstate"))
+}
+
+// Intercept clicks on internal links so they use client-side navigation.
+if (typeof window !== "undefined") {
+  window.addEventListener("click", (e) => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+    const anchor = (e.target as HTMLElement).closest?.("a[href]") as HTMLAnchorElement | null
+    if (!anchor || anchor.target || anchor.hasAttribute("download")) return
+    const raw = anchor.getAttribute("href") ?? ""
+    if (!raw || raw.startsWith("#")) return
+    const url = new URL(anchor.href)
+    if (url.origin !== window.location.origin) return
+    if (url.pathname.startsWith("/api/")) return
+    e.preventDefault()
+    navigate(url.pathname + url.search + url.hash)
+  })
 }
 
 export type Route =
@@ -32,13 +54,13 @@ export function parse(path: string): Route {
 }
 
 export const href = {
-  home: "#/",
-  menu: "#/menu",
-  category: (id: string) => `#/category/${id}`,
-  product: (id: string) => `#/product/${id}`,
-  favorites: "#/favorites",
-  orders: "#/orders",
-  menus: "#/menus",
+  home: "/",
+  menu: "/menu",
+  category: (id: string) => `/category/${id}`,
+  product: (id: string) => `/product/${id}`,
+  favorites: "/favorites",
+  orders: "/orders",
+  menus: "/menus",
 }
 
 export function useRoute(): Route {
