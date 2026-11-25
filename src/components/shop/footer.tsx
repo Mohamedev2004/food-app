@@ -1,11 +1,17 @@
 import { HugeiconsIcon } from "@hugeicons/react"
-import { DeliveryTruck01Icon, Leaf01Icon, SecurityCheckIcon, Clock01Icon } from "@hugeicons/core-free-icons"
+import { Clock01Icon, DeliveryTruck01Icon, Facebook01Icon, InstagramIcon, Leaf01Icon, SecurityCheckIcon, TiktokIcon } from "@hugeicons/core-free-icons"
 import { useTranslation } from "react-i18next"
 
 import { Separator } from "@/components/ui/separator"
 import { CATEGORIES } from "@/data/catalog"
 import { href } from "@/lib/router"
 import { Logo } from "./logo"
+
+const SOCIAL_LINKS = [
+  { label: "Instagram", href: "https://www.instagram.com/boritocrispy", icon: InstagramIcon, className: "border-pink-500/40 text-pink-500 hover:bg-pink-500/10 hover:text-pink-500" },
+  { label: "TikTok", href: "https://www.tiktok.com/@boritocrispy", icon: TiktokIcon, className: "border-neutral-900/40 text-neutral-900 hover:bg-neutral-900/10 hover:text-neutral-900 dark:border-white/40 dark:text-white dark:hover:bg-white/10 dark:hover:text-white" },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61596114417166", icon: Facebook01Icon, className: "border-blue-600/40 text-blue-600 hover:bg-blue-600/10 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-400" },
+]
 
 export function Footer() {
   const { t } = useTranslation()
@@ -15,6 +21,21 @@ export function Footer() {
         <div className="flex max-w-sm flex-col gap-4">
           <Logo />
           <p className="text-sm text-muted-foreground">{t("footer.tagline")}</p>
+          <ul className="flex items-center gap-2">
+            {SOCIAL_LINKS.map((s) => (
+              <li key={s.label}>
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={s.label}
+                  className={"grid size-9 place-items-center rounded-full border transition-colors " + s.className}
+                >
+                  <HugeiconsIcon icon={s.icon} className="size-4" strokeWidth={2} />
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
         <nav aria-label={t("nav.categories")} className="flex flex-col gap-2 text-sm">
           <p className="font-semibold">{t("footer.menu")}</p>
