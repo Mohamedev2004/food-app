@@ -1,0 +1,533 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "menu": "Menú",
+    "categories": "Categorías",
+    "orders": "Pedidos",
+    "menus": "Menús",
+    "favorites": "Favoritos",
+    "fullMenu": "Menú completo",
+    "myOrders": "Mis pedidos",
+    "skipToContent": "Saltar al contenido",
+    "searchPlaceholder": "Buscar platos, etiquetas…",
+    "searchAria": "Buscar en el menú",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mobile": "Móvil",
+    "primary": "Principal",
+    "browseCategories": "Explorar categorías"
+  },
+  "header": {
+    "freeDelivery": "Envío gratis sobre {{amount}}",
+    "toggleTheme": "Cambiar tema",
+    "lightMode": "Modo claro",
+    "darkMode": "Modo oscuro",
+    "favoritesAria": "Favoritos ({{count}})",
+    "cartAria": "Abrir carrito, {{count}} artículos",
+    "cart": "Carrito"
+  },
+  "footer": {
+    "tagline": "Comida de chef de un barrio acogedor. Ingredientes frescos, porciones honestas, entregadas calientes.",
+    "menu": "Menú",
+    "yourAccount": "Tu cuenta",
+    "favorites": "Favoritos",
+    "orderHistory": "Historial de pedidos",
+    "fullMenu": "Menú completo",
+    "copyright": "© {{year}} Borito Crispy.",
+    "freeDelivery": "Entrega 15–25 DH",
+    "avgDelivery": "30 min de promedio",
+    "freshDaily": "Fresco cada día",
+    "payOnDelivery": "Paga al recibir"
+  },
+  "home": {
+    "ratedBadge": "Calificado 4.8 por más de 12,000 vecinos hambrientos",
+    "heroTitle": "Comida real, preparada fresca, en tu puerta.",
+    "heroSubtitle": "Burritos, tazones de arroz, tacos, ensaladas y papas con queso hechos por nuestros chefs desde nuestra cocina abierta — cocinados al pedido y entregados en unos 30 minutos.",
+    "orderNow": "Pedir ahora",
+    "seeBestsellers": "Ver más vendidos",
+    "avgDelivery": "Entrega prom.",
+    "dishes": "Platos",
+    "deliveryFee": "Tarifa de entrega",
+    "hotIn30": "Caliente en 30 min",
+    "orItsOnUs": "o es por nuestra cuenta",
+    "browse": "Explorar",
+    "whatCraving": "¿Qué se te antoja?",
+    "categories": "Categorías",
+    "dishesCount": "{{count}} platos",
+    "mostLoved": "Los más amados",
+    "bestsellers": "Más vendidos",
+    "viewAll": "Ver todo",
+    "firstOrder": "Envío gratis",
+    "take10Off": "Tarifas de envío sencillas",
+    "promoText": "Dentro de Mohammedia la entrega es de 15 DH, fuera 25 DH.",
+    "startOrdering": "Empezar a pedir",
+    "staffFavourites": "Favoritos del personal",
+    "chefsPicks": "Selección del chef",
+    "justLanded": "Recién llegado",
+    "newOnMenu": "Nuevo en el menú",
+    "seeFullMenu": "Ver el menú completo",
+    "pickUpWhereLeft": "Retoma donde lo dejaste",
+    "freshDaily": "Fresco cada día",
+    "freshDailyDesc": "Ingredientes preparados frescos cada día para cada tazón, burrito y taco.",
+    "fastTracked": "Rápido y rastreado",
+    "fastTrackedDesc": "Cocinado al pedido y en tu puerta en unos 30 minutos.",
+    "payWhenArrives": "Paga cuando llegue",
+    "payWhenArrivesDesc": "No necesitas tarjeta. Paga contra entrega."
+  },
+  "menu": {
+    "resultsFor": "Resultados para “{{query}}”",
+    "fullMenu": "Menú completo",
+    "everythingWeCook": "Todo lo que cocinamos, en un solo lugar.",
+    "all": "Todos",
+    "filters": "Filtros",
+    "clearAll": "Limpiar todo",
+    "narrowDown": "Reduce el menú.",
+    "clear": "Limpiar",
+    "showDishes": "Mostrar {{count}} platos",
+    "sortBy": "Ordenar por",
+    "noDishesMatch": "Ningún plato coincide",
+    "tryRemovingFilter": "Intenta quitar un filtro o buscar otra cosa.",
+    "resetFilters": "Restablecer filtros",
+    "dietaryLabels": "Dieta y etiquetas",
+    "price": "Precio",
+    "tagsAria": "Etiquetas",
+    "priceAria": "Precio",
+    "featured": "Destacado",
+    "mostLiked": "Más gustados",
+    "priceLowHigh": "Precio: menor a mayor",
+    "priceHighLow": "Precio: mayor a menor",
+    "newest": "Más recientes",
+    "dishCount": "{{count}} plato",
+    "dishesCount": "{{count}} platos",
+    "under10": "Menos de 10 DH",
+    "under15": "Menos de 15 DH",
+    "under20": "Menos de 20 DH"
+  },
+  "cart": {
+    "yourCart": "Tu carrito",
+    "items": "{{count}} artículo",
+    "itemsPlural": "{{count}} artículos",
+    "reviewOrder": "Revisa tu pedido antes de pagar.",
+    "closeCart": "Cerrar carrito",
+    "cartEmpty": "Tu carrito está vacío",
+    "hungryBrowse": "¿Hambre? Explora el menú y añade algo delicioso.",
+    "browseMenu": "Explorar el menú",
+    "addMoreForFree": "Añade {{amount}} más para envío gratis",
+    "freeDeliveryUnlocked": "¡Has desbloqueado el envío gratis! 🎉",
+    "progressToFree": "Progreso hacia envío gratis",
+    "each": "cada uno",
+    "quantityOf": "Cantidad de {{name}}",
+    "removeItem": "Quitar {{name}}",
+    "removedFromCart": "Quitado del carrito",
+    "undo": "Deshacer",
+    "subtotal": "Subtotal",
+    "discount": "Descuento ({{code}})",
+    "delivery": "Envío",
+    "free": "Gratis",
+    "total": "Total",
+    "checkout": "Pagar · {{amount}}",
+    "clearCart": "Vaciar carrito",
+    "promoCode": "Código promocional",
+    "promoAria": "Código promocional",
+    "apply": "Aplicar",
+    "promoApplied": "Código aplicado",
+    "invalidCode": "Ese código no es válido. Prueba WELCOME10.",
+    "remove": "Quitar"
+  },
+  "checkout": {
+    "orderConfirmed": "¡Pedido confirmado!",
+    "thanksOrder": "Gracias {{name}}. El pedido {{id}} se está preparando — {{message}}",
+    "deliveryMessage": "espero en unos {{time}}.",
+    "pickupMessage": "estará listo para recoger en unos 20 minutos.",
+    "totalPaid": "Total pagado por {{mode}}",
+    "viewMyOrders": "Ver mis pedidos",
+    "sendWhatsApp": "Enviar pedido por WhatsApp",
+    "keepBrowsing": "Seguir explorando",
+    "checkout": "Pagar",
+    "payOnMode": "Paga al {{mode}} — no necesitas tarjeta.",
+    "fulfilment": "Entrega",
+    "delivery": "la entrega",
+    "pickup": "la recogida",
+    "fullName": "Nombre completo",
+    "phone": "Teléfono",
+    "deliveryAddress": "Dirección de entrega",
+    "deliveryZone": "Zona de entrega",
+    "estimatedTime": "Tiempo estimado",
+    "mohammedia": "Mohammedia",
+    "outside": "Fuera de Mohammedia",
+    "pleaseEnterName": "Por favor ingresa tu nombre.",
+    "enterValidPhone": "Ingresa un número de teléfono válido.",
+    "needAddress": "Necesitamos una dirección para entregar.",
+    "discount": "Descuento",
+    "free": "Gratis",
+    "total": "Total",
+    "placingOrder": "Realizando pedido…",
+    "placeOrder": "Realizar pedido · {{amount}}"
+  },
+  "whatsapp": {
+    "newOrder": "Nuevo pedido {{id}} — Borito Crispy",
+    "customer": "Cliente",
+    "phone": "Teléfono",
+    "location": "Dirección",
+    "pickupAtRestaurant": "Recogida en el restaurante",
+    "items": "Artículos"
+  },
+  "menus": {
+    "title": "Nuestros menús",
+    "subtitle": "Explora nuestro menú completo — toca una imagen para verla en tamaño completo.",
+    "menu1": "Menú 1",
+    "menu1Alt": "Menú de Borito Crispy — página 1",
+    "menu2": "Menú 2",
+    "menu2Alt": "Menú de Borito Crispy — página 2",
+    "viewFullSize": "Ver en grande"
+  },
+  "product": {
+    "dishNotFound": "Plato no encontrado",
+    "itemRemoved": "Este artículo puede haber sido eliminado del menú.",
+    "backToMenu": "Volver al menú",
+    "prepTime": "Tiempo de preparación",
+    "calories": "Calorías",
+    "delivery": "Entrega",
+    "reviews": "reseñas",
+    "likes": "me gusta",
+    "save": "Ahorra {{percent}}%",
+    "size": "Tamaño",
+    "addToCart": "Añadir al carrito · {{amount}}",
+    "like": "Me gusta",
+    "liked": "Te gusta",
+    "unlike": "No me gusta",
+    "freeDeliveryOver": "Entrega 15 DH en Mohammedia · 25 DH fuera",
+    "cookedFresh": "Cocinado fresco al pedido — nunca recalentado",
+    "details": "Detalles",
+    "ingredients": "Ingredientes",
+    "reviewsTab": "Reseñas ({{count}})",
+    "allergyNote": "Por favor indícanos tus alergias en las notas de entrega.",
+    "verifiedReviews": "{{count}} reseña verificada",
+    "verifiedReviewsPlural": "{{count}} reseñas verificadas",
+    "average": "· promedio de {{avg}}. Desplázate para leerlas todas.",
+    "reviewsComments": "Reseñas y comentarios",
+    "youMightLike": "También te puede gustar",
+    "pairsWell": "Combina bien con",
+    "viewProduct": "Ver {{name}}",
+    "addToCartAria": "Añadir {{name}} al carrito",
+    "quickView": "Vista rápida",
+    "min": "min",
+    "kcal": "kcal"
+  },
+  "favorites": {
+    "yourFavorites": "Tus favoritos",
+    "nothingSaved": "Nada guardado todavía",
+    "tapHeart": "Toca el corazón en cualquier plato para guardarlo aquí.",
+    "exploreMenu": "Explorar el menú"
+  },
+  "orders": {
+    "yourOrders": "Tus pedidos",
+    "noOrdersYet": "Sin pedidos todavía",
+    "whenPlaceOrder": "Cuando realices un pedido aparecerá aquí.",
+    "startOrdering": "Empezar a pedir",
+    "delivery": "Envío",
+    "pickup": "Recogida",
+    "total": "Total"
+  },
+  "reviews": {
+    "reviewsCount": "{{count}} reseña",
+    "reviewsCountPlural": "{{count}} reseñas",
+    "ratingBreakdown": "Desglose de calificaciones",
+    "whatPeopleSaying": "Lo que la gente dice",
+    "sortReviews": "Ordenar reseñas",
+    "newest": "Más recientes",
+    "highest": "Más altas",
+    "lowest": "Más bajas",
+    "you": "Tú",
+    "helpful": "Útil ({{count}})",
+    "reviewDeleted": "Reseña eliminada",
+    "delete": "Eliminar",
+    "writeReview": "Escribir una reseña",
+    "yourRating": "Tu calificación",
+    "pickStarRating": "Elige una calificación de estrellas.",
+    "tellUsName": "Dinos tu nombre.",
+    "shareMoreWords": "Comparte unas palabras más (10+ caracteres).",
+    "myReview": "Mi reseña",
+    "thanksReview": "¡Gracias por tu reseña!",
+    "name": "Nombre",
+    "headline": "Titular (opcional)",
+    "comment": "Comentario",
+    "submitReview": "Enviar reseña"
+  },
+  "catalog": {
+    "tags": {
+      "bestseller": "Más vendido",
+      "new": "Nuevo",
+      "vegan": "Vegano",
+      "vegetarian": "Vegetariano",
+      "spicy": "Picante",
+      "gluten-free": "Sin gluten",
+      "chefs-pick": "Selección del chef",
+      "high-protein": "Alto en proteína"
+    },
+    "categories": {
+      "salades": {
+        "name": "Ensaladas",
+        "blurb": "Tazones Nicoise frescos con tu elección de ingredientes"
+      },
+      "family": {
+        "name": "Familia",
+        "blurb": "Festín generoso para compartir en toda la mesa"
+      },
+      "burritos": {
+        "name": "Burritos",
+        "blurb": "Burritos a la parrilla y crujientes rellenos"
+      },
+      "rice-bowls": {
+        "name": "Tazones de arroz",
+        "blurb": "Tazones de arroz sustanciosos sazonados"
+      },
+      "cheesy-fries": {
+        "name": "Papas con queso",
+        "blurb": "Papas con queso rellenas y hamburguesa crujiente"
+      },
+      "tacos": {
+        "name": "Tacos",
+        "blurb": "Tacos a la parrilla estilo francés servidos con papas"
+      },
+      "half-half": {
+        "name": "Mitad y mitad",
+        "blurb": "Lo mejor de ambos mundos en un solo tazón"
+      },
+      "twisters": {
+        "name": "Twisters",
+        "blurb": "Rollos crujientes servidos con papas"
+      },
+      "sandwichs": {
+        "name": "Sándwiches",
+        "blurb": "Sándwich Zinger crujiente apilado"
+      },
+      "extra": {
+        "name": "Extra",
+        "blurb": "Papas doradas crujientes como acompañamiento"
+      }
+    },
+    "products": {
+      "nicoise-avocado": {
+        "name": "Nicoise Avocado",
+        "summary": "Aguacate fresco en rodajas, guacamole, maíz, frijoles y verduras mixtas.",
+        "description": "Un vibrante tazón de ensalada Nicoise cubierto con aguacate fresco en rodajas, guacamole, maíz, frijoles rojos, tomates cherry, pepino, repollo rojo y aderezo cremoso sobre verduras frescas.",
+        "ingredients": ["Aguacate", "Guacamole", "Maíz", "Frijoles rojos", "Tomates cherry", "Pepino", "Repollo rojo"]
+      },
+      "nicoise-kefta": {
+        "name": "Nicoise Kefta",
+        "summary": "Kefta a la parrilla sazonada sobre verduras Nicoise crujientes, patatas y frijoles.",
+        "description": "Kefta de res a la parrilla especiada servida sobre una cama colorida de verduras mixtas, frijoles rojos, patatas asadas, tomates cherry, repollo rojo, pepino y aderezo de la casa.",
+        "ingredients": ["Kefta a la parrilla", "Verduras mixtas", "Frijoles rojos", "Patatas asadas", "Repollo rojo", "Tomates cherry", "Pepino"]
+      },
+      "nicoise-bahja": {
+        "name": "Nicoise Bahja",
+        "summary": "Nicoise clásica con huevos cocidos, atún, aceitunas, maíz y verduras crujientes.",
+        "description": "Un tazón Nicoise tradicional y refrescante cargado con huevos cocidos partidos, atún, aceitunas verdes, maíz, frijoles rojos, repollo rojo, tomates cherry y pepino.",
+        "ingredients": ["Huevo cocido", "Atún", "Aceitunas", "Maíz", "Frijoles rojos", "Repollo rojo", "Tomates cherry", "Pepino"]
+      },
+      "nicoise-crispy": {
+        "name": "Nicoise Crispy",
+        "summary": "Tenders de pollo dorados crujientes sobre ensalada Nicoise fresca con jalapeños.",
+        "description": "Tiras de pollo empanizadas crujientes servidas calientes sobre una ensalada fresca de maíz, tomates cherry, repollo rojo, pepino, frijoles rojos, jalapeños y salsa.",
+        "ingredients": ["Pollo crujiente", "Maíz", "Frijoles rojos", "Repollo rojo", "Tomates cherry", "Pepino", "Jalapeños"]
+      },
+      "family-pack": {
+        "name": "Familia",
+        "summary": "Tazones para compartir, canasta de papas doradas y una botella de Coca-Cola.",
+        "description": "Hecho para compartir: incluye tazones variados, una generosa canasta de papas doradas y una botella de Coca-Cola.",
+        "ingredients": ["Tazones variados", "Papas doradas", "Coca-Cola"]
+      },
+      "bouri-kefta": {
+        "name": "Bouri Kefta",
+        "summary": "Tortilla de harina a la parrilla rellena de kefta especiada, patatas, arroz y salsa.",
+        "description": "Una tortilla caliente tostada rellena de kefta a la parrilla sazonada, patatas doradas, arroz especiado esponjoso, verduras crujientes y salsas cremosas de la casa.",
+        "ingredients": ["Tortilla de harina", "Kefta a la parrilla", "Patatas", "Arroz sazonado", "Lechuga", "Salsas de la casa"]
+      },
+      "burrito-avocado": {
+        "name": "Burrito Avocado",
+        "summary": "Aguacate cremoso, pollo tierno, arroz sazonado y queso derretido.",
+        "description": "Tortilla a la parrilla rellena de aguacate fresco, pollo marinado tierno, arroz sazonado, verduras crujientes y rica salsa de la casa.",
+        "ingredients": ["Tortilla de harina", "Aguacate", "Pollo", "Arroz sazonado", "Queso", "Salsa de la casa"]
+      },
+      "bouri-poulet": {
+        "name": "Bouri Poulet",
+        "summary": "Pollo marinado, arroz especiado, queso y salsa de la casa en un wrap tostado.",
+        "description": "Pollo marinado tierno envuelto en una tortilla caliente con arroz sazonado, verduras crujientes y salsa de la casa.",
+        "ingredients": ["Tortilla de harina", "Pollo marinado", "Arroz sazonado", "Queso", "Salsa de la casa"]
+      },
+      "bouri-crispy": {
+        "name": "Bouri Crispy",
+        "summary": "Burrito empanizado dorado frito relleno de pollo crujiente, arroz y queso.",
+        "description": "Nuestro burrito empanizado crujiente frito a la perfección dorada, relleno de tenders de pollo crujientes, arroz sazonado, queso derretido y servido con salsas para mojar.",
+        "ingredients": ["Tortilla empanizada", "Pollo crujiente", "Arroz sazonado", "Queso derretido", "Salsas para mojar"]
+      },
+      "bowl-crispy": {
+        "name": "Bowl Crispy",
+        "summary": "Arroz sazonado cubierto con pollo crujiente en rodajas y salsas de la casa.",
+        "description": "Un sustancioso tazón de arroz especiado coronado con tiras de pollo crujiente doradas y un generoso chorrito de salsas cremosas y oscuras de la casa.",
+        "ingredients": ["Arroz especiado", "Pollo crujiente", "Salsa blanca", "Salsa oscura de la casa"]
+      },
+      "bowl-poulet": {
+        "name": "Bowl Poulet",
+        "summary": "Trozos de pollo a la parrilla marinado sobre arroz sazonado con wedges asados.",
+        "description": "Piezas de pollo jugosas servidas sobre arroz sazonado con wedges de patata y salsa cremosa de la casa.",
+        "ingredients": ["Arroz sazonado", "Pollo a la parrilla", "Wedges de patata", "Salsa de la casa"]
+      },
+      "bowl-kafta": {
+        "name": "Bowl Kafta",
+        "summary": "Hamburguesas de kefta a la parrilla especiada sobre arroz sazonado, pepinillos y hierbas.",
+        "description": "Hamburguesas de kefta a la parrilla especiada a la parrilla cubiertas con pepinillos y hierbas frescas sobre arroz sazonado caliente, servidas con salsas para mojar.",
+        "ingredients": ["Arroz especiado", "Kefta a la parrilla", "Pepinillos", "Hierbas frescas", "Salsas para mojar"]
+      },
+      "bowl-mixte": {
+        "name": "Bowl Mixte",
+        "summary": "Tazón mixto con pollo crujiente, kefta a la parrilla y arroz sazonado.",
+        "description": "Un tazón mixto cargado que combina pollo crujiente y kefta a la parrilla sobre arroz sazonado, terminado con pepinillos y salsas de la casa.",
+        "ingredients": ["Arroz sazonado", "Pollo crujiente", "Kefta a la parrilla", "Pepinillos", "Salsas de la casa"]
+      },
+      "mexi-bowl": {
+        "name": "Mexi Bowl",
+        "summary": "Tazón estilo mexicano con arroz sazonado, frijoles, maíz, guacamole y pollo.",
+        "description": "Un colorido tazón inspirado en México cargado de arroz con hierbas, frijoles negros, maíz, guacamole, salsa de tomate en dados, pollo a la parrilla y chorrito cremoso.",
+        "ingredients": ["Arroz con hierbas", "Frijoles negros", "Maíz", "Guacamole", "Salsa de tomate", "Pollo a la parrilla"]
+      },
+      "burger-crispy": {
+        "name": "Burger Crispy",
+        "summary": "Hamburguesa doble de pollo crujiente con cheddar, salsa, lechuga y papas.",
+        "description": "Dos filetes de pollo frito crujiente apilados con cheddar derretido, salsa cremosa, lechuga fresca y pan con sésamo, servidos con papas doradas y salsas.",
+        "ingredients": ["Filetes de pollo crujientes", "Pan con sésamo", "Cheddar", "Salsa cremosa", "Lechuga", "Papas"]
+      },
+      "frite-kefta": {
+        "name": "Frite Kefta",
+        "summary": "Papas doradas cargadas de kefta sazonada, queso derretido y salsa.",
+        "description": "Papas crujientes cubiertas con kefta sazonada, salsa de queso derretido y chorrito de la casa.",
+        "ingredients": ["Papas fritas", "Kefta sazonada", "Salsa de queso", "Chorrito de la casa"]
+      },
+      "frite-poulet": {
+        "name": "Frite Poulet",
+        "summary": "Papas crujientes cubiertas de pollo sabroso, queso y salsa de la casa.",
+        "description": "Papas doradas calientes cargadas de trozos de pollo sazonado, queso derretido y salsa cremosa de la casa.",
+        "ingredients": ["Papas fritas", "Pollo sazonado", "Queso", "Salsa de la casa"]
+      },
+      "frite-crispy": {
+        "name": "Frite Crispy",
+        "summary": "Papas cargadas con pollo crujiente picado, pepinillos, queso y salsas.",
+        "description": "Papas crujientes apiladas con pollo crujiente dorado en bocados, pepinillos, salsa de queso derretido, hierbas y chorrito oscuro de la casa.",
+        "ingredients": ["Papas fritas", "Pollo crujiente", "Pepinillos", "Salsa de queso", "Hierbas", "Chorrito de la casa"]
+      },
+      "frita-crispy": {
+        "name": "Frita Crispy",
+        "summary": "Papas crujientes cargadas de pollo crujiente, pepinillos, hierbas y salsas.",
+        "description": "Un generoso tazón de papas doradas cargadas de trozos de pollo crujiente, pepinillos, hierbas y salsas ricas.",
+        "ingredients": ["Papas fritas", "Pollo crujiente", "Pepinillos", "Hierbas", "Salsas"]
+      },
+      "tacos-kefta": {
+        "name": "Tacos Kefta",
+        "summary": "Tacos franceses a la parrilla rellenos de kefta especiada, papas y salsa de queso.",
+        "description": "Tortilla de harina prensada y tostada rellena de kefta a la parrilla, papas crujientes y salsa de queso derretido, servida con papas extra y salsas para mojar.",
+        "ingredients": ["Tortilla", "Kefta a la parrilla", "Papas", "Salsa de queso", "Salsas para mojar"]
+      },
+      "tacos-poulet": {
+        "name": "Tacos Poulet",
+        "summary": "Tacos franceses tostados con pollo marinado, papas y salsa de queso.",
+        "description": "Tortilla prensada dorada rellena de pollo marinado tierno, papas fritas y rica salsa de queso, servida con papas extra y salsa para mojar.",
+        "ingredients": ["Tortilla", "Pollo marinado", "Papas", "Salsa de queso", "Salsa para mojar"]
+      },
+      "tacos-crispy": {
+        "name": "Tacos Crispy",
+        "summary": "Tacos a la parrilla llenos de tenders de pollo crujientes, papas y salsa de queso.",
+        "description": "Tortilla prensada rellena de tiras de pollo empanizadas crujientes, papas y salsa de queso cremosa, servida con un lado de papas doradas y salsas.",
+        "ingredients": ["Tortilla", "Pollo crujiente", "Papas", "Salsa de queso", "Salsas para mojar"]
+      },
+      "tacos-mixte": {
+        "name": "Tacos Mixte",
+        "summary": "Tacos franceses de carne mixta con kefta, pollo, papas y salsa de queso.",
+        "description": "Una sustanciosa mezcla de kefta especiada y pollo tierno envueltos con papas y salsa de queso derretido en una tortilla prensada, servidos con papas y salsas.",
+        "ingredients": ["Tortilla", "Kefta a la parrilla", "Pollo", "Papas", "Salsa de queso", "Salsas para mojar"]
+      },
+      "half-kefta": {
+        "name": "Half Kefta",
+        "summary": "Mitad ensalada Nicoise fresca, mitad papas cubiertas de kefta a la parrilla.",
+        "description": "Un tazón combo equilibrado que combina verduras Nicoise frescas con papas y kefta a la parrilla, terminado con salsas de la casa.",
+        "ingredients": ["Ensalada Nicoise", "Papas fritas", "Kefta a la parrilla", "Salsas de la casa"]
+      },
+      "half-crispy": {
+        "name": "Half Crispy",
+        "summary": "Mitad ensalada Nicoise fresca, mitad papas cargadas de pollo crujiente.",
+        "description": "Un tazón combo que combina ensalada Nicoise fresca y papas doradas cubiertas de trozos de pollo crujiente y salsa de la casa.",
+        "ingredients": ["Ensalada Nicoise", "Papas fritas", "Pollo crujiente", "Salsa de la casa"]
+      },
+      "haf-poulet": {
+        "name": "Haf Poulet",
+        "summary": "Mitad ensalada fresca, mitad papas cubiertas de pollo marinado.",
+        "description": "Mitad ensalada de verduras crujantes y mitad papas doradas, terminadas con pollo sazonado y salsa cremosa.",
+        "ingredients": ["Ensalada fresca", "Papas fritas", "Pollo", "Salsa cremosa"]
+      },
+      "twi-kefta": {
+        "name": "Twi-Kefta",
+        "summary": "Wrap crujiente enrollado relleno de kefta especiada, queso y papas como acompañamiento.",
+        "description": "Un rollo twister dorado crujiente relleno de kefta sazonada, queso derretido y salsa cremosa, servido con papas crujientes y salsas.",
+        "ingredients": ["Wrap crujiente", "Kefta especiada", "Queso derretido", "Papas", "Salsas para mojar"]
+      },
+      "twi-poulet": {
+        "name": "Twi-Poulet",
+        "summary": "Wrap crujiente dorado relleno de pollo tierno, queso y papas.",
+        "description": "Wrap enrollado crujiente relleno de pollo marinado, queso y salsa de la casa, acompañado de papas doradas y salsas.",
+        "ingredients": ["Wrap crujiente", "Pollo marinado", "Queso", "Papas", "Salsas para mojar"]
+      },
+      "twi-crispy": {
+        "name": "Twi-Crispy",
+        "summary": "Wrap enrollado crujiente cargado de pollo crujiente, queso y papas.",
+        "description": "Wrap enrollado dorado crujiente cargado de tenders de pollo crujientes, queso derretido y salsa cremosa, servido con papas y salsas.",
+        "ingredients": ["Wrap crujiente", "Pollo crujiente", "Queso derretido", "Papas", "Salsas para mojar"]
+      },
+      "zinger-gambo": {
+        "name": "Zinger Gambo",
+        "summary": "Sándwich jumbo cargado de pollo Zinger crujiente, queso, tomate, lechuga y papas.",
+        "description": "Un sándwich largo tostado de sésamo cargado de filetes de pollo Zinger crujientes, queso derretido, rodajas de tomate frescas y lechuga crujiente, servido con papas y salsas.",
+        "ingredients": ["Sándwich largo de sésamo", "Pollo Zinger crujiente", "Queso", "Tomate", "Lechuga", "Papas", "Salsas"]
+      },
+      "frite": {
+        "name": "Frite",
+        "summary": "Porción de papas fritas doradas crujientes calientes.",
+        "description": "Una canasta de papas fritas doradas y crujientes — la adición perfecta para cualquier pedido.",
+        "ingredients": ["Patatas", "Sal marina"]
+      }
+    },
+    "hero": {
+      "mexiBowl": {
+        "title": "Mexi Bowl",
+        "subtitle": "Tazón recién cargado con arroz sazonado, frijoles, maíz, aguacate e ingredientes crujientes.",
+        "ctaLabel": "Pedir Mexi Bowl"
+      },
+      "bouriCrispy": {
+        "title": "Caliente. Rápido. Fresco. Entregado en 30 min.",
+        "subtitle": "Burrito Bouri Crispy — dorado, crujiente y cocinado al pedido.",
+        "ctaLabel": "Pedir Bouri Crispy"
+      },
+      "familyPack": {
+        "title": "Pack Familia Festín",
+        "subtitle": "Tazones para compartir, papas doradas y una botella de Coca-Cola para toda la mesa.",
+        "ctaLabel": "Obtener Pack Familia"
+      }
+    }
+  },
+  "common": {
+    "minutes": "min",
+    "kcal": "kcal",
+    "addToCart": "Añadir al carrito",
+    "viewCart": "Ver carrito",
+    "addedToCart": "Añadido al carrito",
+    "removedFromCart": "Quitado del carrito",
+    "undo": "Deshacer",
+    "free": "Gratis",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "discount": "Descuento",
+    "delivery": "Entrega",
+    "pickup": "Recogida",
+    "standard": "Estándar",
+    "any": "Todos"
+  }
+}

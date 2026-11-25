@@ -9,6 +9,7 @@ import { Header } from "@/components/shop/header"
 import { FavoritesPage } from "@/pages/favorites"
 import { HomePage } from "@/pages/home"
 import { MenuPage } from "@/pages/menu"
+import { MenusPage } from "@/pages/menus"
 import { OrdersPage } from "@/pages/orders"
 import { ProductPage } from "@/pages/product"
 import { usePath, parse } from "@/lib/router"
@@ -35,6 +36,7 @@ export function App() {
             {route.name === "product" && <ProductPage id={route.id} />}
             {route.name === "favorites" && <FavoritesPage />}
             {route.name === "orders" && <OrdersPage />}
+            {route.name === "menus" && <MenusPage />}
           </main>
           <Footer />
         </div>

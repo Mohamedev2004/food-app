@@ -16,7 +16,7 @@ export type Order = {
   delivery: number
   discount: number
   total: number
-  customer: { name: string; phone: string; address: string; mode: "delivery" | "pickup" }
+  customer: { name: string; phone: string; address: string; mode: "delivery" | "pickup"; deliveryZone?: DeliveryZone }
 }
 
 type State = {
@@ -26,8 +26,8 @@ type State = {
   helpful: string[]
   reviews: Review[]
   orders: Order[]
-  coupon: string | null
   recent: string[]
+  deliveryZone: "mohammedia" | "outside"
 }
 
 const KEY = "saveur:v1"
@@ -39,8 +39,8 @@ const initial = (): State => ({
   helpful: [],
   reviews: [],
   orders: [],
-  coupon: null,
   recent: [],
+  deliveryZone: "mohammedia",
 })
 
 function load(): State {
@@ -123,7 +123,7 @@ export const actions = {
     set((s) => (s.cart.some((l) => l.key === line.key) ? s : { ...s, cart: [...s.cart, line] }))
   },
   clearCart() {
-    set((s) => ({ ...s, cart: [], coupon: null }))
+    set((s) => ({ ...s, cart: [] }))
   },
   toggleFavorite(id: string) {
     set((s) => ({ ...s, favorites: toggle(s.favorites, id) }))
@@ -143,14 +143,14 @@ export const actions = {
   deleteReview(id: string) {
     set((s) => ({ ...s, reviews: s.reviews.filter((r) => r.id !== id) }))
   },
-  setCoupon(code: string | null) {
-    set((s) => ({ ...s, coupon: code }))
-  },
   viewed(id: string) {
     set((s) => ({ ...s, recent: [id, ...s.recent.filter((x) => x !== id)].slice(0, 8) }))
   },
   placeOrder(order: Order) {
-    set((s) => ({ ...s, orders: [order, ...s.orders].slice(0, 20), cart: [], coupon: null }))
+    set((s) => ({ ...s, orders: [order, ...s.orders].slice(0, 20), cart: [] }))
+  },
+  setDeliveryZone(zone: "mohammedia" | "outside") {
+    set((s) => ({ ...s, deliveryZone: zone }))
   },
 }
 
@@ -177,16 +177,25 @@ export function useLikes(productId: string) {
   return { liked, count: base + (liked ? 1 : 0) }
 }
 
-export const COUPONS: Record<string, { label: string; percent: number }> = {
-  WELCOME10: { label: "10% off your order", percent: 10 },
-  FOODIE15: { label: "15% off your order", percent: 15 },
+export const DELIVERY_FEE_MOHAMMEDIA = 15
+export const DELIVERY_FEE_OUTSIDE = 25
+export const COOKING_MINUTES = 30
+// TODO: set the shop's WhatsApp number — country code + number, digits only (e.g. "2126XXXXXXXX")
+export const WHATSAPP_NUMBER = "212755741094"
+export const DELIVERY_TIME: Record<DeliveryZone, { min: number; max: number }> = {
+  mohammedia: { min: 7, max: 20 },
+  outside: { min: 15, max: 45 },
 }
-export const FREE_DELIVERY_AT = 35
-export const DELIVERY_FEE = 3.9
+export type DeliveryZone = "mohammedia" | "outside"
+
+export function deliveryEta(zone: DeliveryZone) {
+  const d = DELIVERY_TIME[zone]
+  return { min: COOKING_MINUTES + d.min, max: COOKING_MINUTES + d.max }
+}
 
 export function useCartSummary() {
   const cart = useStore((s) => s.cart)
-  const coupon = useStore((s) => s.coupon)
+  const deliveryZone = useStore((s) => s.deliveryZone)
   const lines = cart.flatMap((l) => {
     const p = getProduct(l.productId)
     if (!p) return []
@@ -196,11 +205,10 @@ export function useCartSummary() {
   })
   const count = lines.reduce((a, l) => a + l.qty, 0)
   const subtotal = lines.reduce((a, l) => a + l.total, 0)
-  const percent = coupon ? (COUPONS[coupon]?.percent ?? 0) : 0
-  const discount = +(subtotal * (percent / 100)).toFixed(2)
-  const delivery = subtotal === 0 || subtotal - discount >= FREE_DELIVERY_AT ? 0 : DELIVERY_FEE
-  const total = subtotal - discount + delivery
-  return { lines, count, subtotal, discount, delivery, total, coupon, remaining: Math.max(0, FREE_DELIVERY_AT - (subtotal - discount)) }
+  const deliveryFee = deliveryZone === "mohammedia" ? DELIVERY_FEE_MOHAMMEDIA : DELIVERY_FEE_OUTSIDE
+  const delivery = subtotal === 0 ? 0 : deliveryFee
+  const total = subtotal + delivery
+  return { lines, count, subtotal, delivery, total, deliveryZone, deliveryFee, deliveryTime: DELIVERY_TIME[deliveryZone], eta: deliveryEta(deliveryZone) }
 }
 
 export { PRODUCTS }

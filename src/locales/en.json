@@ -1,0 +1,533 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "categories": "Categories",
+    "orders": "Orders",
+    "menus": "Menus",
+    "favorites": "Favorites",
+    "fullMenu": "Full menu",
+    "myOrders": "My orders",
+    "skipToContent": "Skip to content",
+    "searchPlaceholder": "Search dishes, tags…",
+    "searchAria": "Search the menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobile": "Mobile",
+    "primary": "Primary",
+    "browseCategories": "Browse categories"
+  },
+  "header": {
+    "freeDelivery": "Free delivery over {{amount}}",
+    "toggleTheme": "Toggle theme",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode",
+    "favoritesAria": "Favorites ({{count}})",
+    "cartAria": "Open cart, {{count}} items",
+    "cart": "Cart"
+  },
+  "footer": {
+    "tagline": "Chef-made food from a neighbourhood kitchen. Fresh ingredients, honest portions, delivered hot.",
+    "menu": "Menu",
+    "yourAccount": "Your account",
+    "favorites": "Favorites",
+    "orderHistory": "Order history",
+    "fullMenu": "Full menu",
+    "copyright": "© {{year}} Borito Crispy.",
+    "freeDelivery": "Delivery 15–25 DH",
+    "avgDelivery": "30-min average",
+    "freshDaily": "Fresh daily",
+    "payOnDelivery": "Pay on delivery"
+  },
+  "home": {
+    "ratedBadge": "Rated 4.8 by 12,000+ hungry neighbours",
+    "heroTitle": "Real food, made fresh, at your door.",
+    "heroSubtitle": "Chef-crafted burritos, rice bowls, tacos, salads and cheesy fries from our open kitchen — cooked to order and delivered in about 30 minutes.",
+    "orderNow": "Order now",
+    "seeBestsellers": "See bestsellers",
+    "avgDelivery": "Avg. delivery",
+    "dishes": "Dishes",
+    "deliveryFee": "Delivery fee",
+    "hotIn30": "Hot in 30 min",
+    "orItsOnUs": "or it's on us",
+    "browse": "Browse",
+    "whatCraving": "What are you craving?",
+    "categories": "Categories",
+    "dishesCount": "{{count}} dishes",
+    "mostLoved": "Most loved",
+    "bestsellers": "Bestsellers",
+    "viewAll": "View all",
+    "firstOrder": "Free delivery",
+    "take10Off": "Delivery fees that make sense",
+    "promoText": "Inside Mohammedia delivery is 15 DH, outside it's 25 DH.",
+    "startOrdering": "Start ordering",
+    "staffFavourites": "Staff favourites",
+    "chefsPicks": "Chef's picks",
+    "justLanded": "Just landed",
+    "newOnMenu": "New on the menu",
+    "seeFullMenu": "See the full menu",
+    "pickUpWhereLeft": "Pick up where you left off",
+    "freshDaily": "Fresh every day",
+    "freshDailyDesc": "Ingredients prepared fresh daily for every bowl, burrito and taco.",
+    "fastTracked": "Fast & tracked",
+    "fastTrackedDesc": "Cooked to order and at your door in about 30 minutes.",
+    "payWhenArrives": "Pay when it arrives",
+    "payWhenArrivesDesc": "No card needed. Pay on delivery."
+  },
+  "menu": {
+    "resultsFor": "Results for “{{query}}”",
+    "fullMenu": "Full menu",
+    "everythingWeCook": "Everything we cook, in one place.",
+    "all": "All",
+    "filters": "Filters",
+    "clearAll": "Clear all",
+    "narrowDown": "Narrow down the menu.",
+    "clear": "Clear",
+    "showDishes": "Show {{count}} dishes",
+    "sortBy": "Sort by",
+    "noDishesMatch": "No dishes match",
+    "tryRemovingFilter": "Try removing a filter or searching for something else.",
+    "resetFilters": "Reset filters",
+    "dietaryLabels": "Dietary & labels",
+    "price": "Price",
+    "tagsAria": "Tags",
+    "priceAria": "Price",
+    "featured": "Featured",
+    "mostLiked": "Most liked",
+    "priceLowHigh": "Price: low to high",
+    "priceHighLow": "Price: high to low",
+    "newest": "Newest",
+    "dishCount": "{{count}} dish",
+    "dishesCount": "{{count}} dishes",
+    "under10": "Under 10 DH",
+    "under15": "Under 15 DH",
+    "under20": "Under 20 DH"
+  },
+  "cart": {
+    "yourCart": "Your cart",
+    "items": "{{count}} item",
+    "itemsPlural": "{{count}} items",
+    "reviewOrder": "Review your order before checkout.",
+    "closeCart": "Close cart",
+    "cartEmpty": "Your cart is empty",
+    "hungryBrowse": "Hungry? Browse the menu and add something delicious.",
+    "browseMenu": "Browse the menu",
+    "addMoreForFree": "Add {{amount}} more for free delivery",
+    "freeDeliveryUnlocked": "You've unlocked free delivery 🎉",
+    "progressToFree": "Progress to free delivery",
+    "each": "each",
+    "quantityOf": "Quantity of {{name}}",
+    "removeItem": "Remove {{name}}",
+    "removedFromCart": "Removed from cart",
+    "undo": "Undo",
+    "subtotal": "Subtotal",
+    "discount": "Discount ({{code}})",
+    "delivery": "Delivery",
+    "free": "Free",
+    "total": "Total",
+    "checkout": "Checkout · {{amount}}",
+    "clearCart": "Clear cart",
+    "promoCode": "Promo code",
+    "promoAria": "Promo code",
+    "apply": "Apply",
+    "promoApplied": "Promo applied",
+    "invalidCode": "That code isn't valid. Try WELCOME10.",
+    "remove": "Remove"
+  },
+  "checkout": {
+    "orderConfirmed": "Order confirmed!",
+    "thanksOrder": "Thanks {{name}}. Order {{id}} is being prepared — {{message}}",
+    "deliveryMessage": "expect it in about {{time}}.",
+    "pickupMessage": "it'll be ready for pickup in about 20 minutes.",
+    "totalPaid": "Total paid on {{mode}}",
+    "viewMyOrders": "View my orders",
+    "sendWhatsApp": "Send order via WhatsApp",
+    "keepBrowsing": "Keep browsing",
+    "checkout": "Checkout",
+    "payOnMode": "Pay on {{mode}} — no card needed.",
+    "fulfilment": "Fulfilment",
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "fullName": "Full name",
+    "phone": "Phone",
+    "deliveryAddress": "Delivery address",
+    "deliveryZone": "Delivery zone",
+    "estimatedTime": "Estimated time",
+    "mohammedia": "Mohammedia",
+    "outside": "Outside Mohammedia",
+    "pleaseEnterName": "Please enter your name.",
+    "enterValidPhone": "Enter a valid phone number.",
+    "needAddress": "We need an address to deliver to.",
+    "discount": "Discount",
+    "free": "Free",
+    "total": "Total",
+    "placingOrder": "Placing order…",
+    "placeOrder": "Place order · {{amount}}"
+  },
+  "whatsapp": {
+    "newOrder": "New order {{id}} — Borito Crispy",
+    "customer": "Customer",
+    "phone": "Phone",
+    "location": "Location",
+    "pickupAtRestaurant": "Pickup at restaurant",
+    "items": "Items"
+  },
+  "menus": {
+    "title": "Our menus",
+    "subtitle": "Browse our full menu — tap an image to view it full size.",
+    "menu1": "Menu 1",
+    "menu1Alt": "Borito Crispy menu — page 1",
+    "menu2": "Menu 2",
+    "menu2Alt": "Borito Crispy menu — page 2",
+    "viewFullSize": "View full size"
+  },
+  "product": {
+    "dishNotFound": "Dish not found",
+    "itemRemoved": "This item may have been removed from the menu.",
+    "backToMenu": "Back to menu",
+    "prepTime": "Prep time",
+    "calories": "Calories",
+    "delivery": "Delivery",
+    "reviews": "reviews",
+    "likes": "likes",
+    "save": "Save {{percent}}%",
+    "size": "Size",
+    "addToCart": "Add to cart · {{amount}}",
+    "like": "Like",
+    "liked": "Liked",
+    "unlike": "Unlike",
+    "freeDeliveryOver": "Delivery 15 DH inside Mohammedia · 25 DH outside",
+    "cookedFresh": "Cooked fresh to order — never reheated",
+    "details": "Details",
+    "ingredients": "Ingredients",
+    "reviewsTab": "Reviews ({{count}})",
+    "allergyNote": "Please tell us about allergies in the delivery notes.",
+    "verifiedReviews": "{{count}} verified review",
+    "verifiedReviewsPlural": "{{count}} verified reviews",
+    "average": "· {{avg}} average. Scroll down to read them all.",
+    "reviewsComments": "Reviews & comments",
+    "youMightLike": "You might also like",
+    "pairsWell": "Pairs well with",
+    "viewProduct": "View {{name}}",
+    "addToCartAria": "Add {{name}} to cart",
+    "quickView": "Quick view",
+    "min": "min",
+    "kcal": "kcal"
+  },
+  "favorites": {
+    "yourFavorites": "Your favorites",
+    "nothingSaved": "Nothing saved yet",
+    "tapHeart": "Tap the heart on any dish to keep it here for later.",
+    "exploreMenu": "Explore the menu"
+  },
+  "orders": {
+    "yourOrders": "Your orders",
+    "noOrdersYet": "No orders yet",
+    "whenPlaceOrder": "When you place an order it will show up here.",
+    "startOrdering": "Start ordering",
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "total": "Total"
+  },
+  "reviews": {
+    "reviewsCount": "{{count}} review",
+    "reviewsCountPlural": "{{count}} reviews",
+    "ratingBreakdown": "Rating breakdown",
+    "whatPeopleSaying": "What people are saying",
+    "sortReviews": "Sort reviews",
+    "newest": "Newest",
+    "highest": "Highest",
+    "lowest": "Lowest",
+    "you": "You",
+    "helpful": "Helpful ({{count}})",
+    "reviewDeleted": "Review deleted",
+    "delete": "Delete",
+    "writeReview": "Write a review",
+    "yourRating": "Your rating",
+    "pickStarRating": "Pick a star rating.",
+    "tellUsName": "Tell us your name.",
+    "shareMoreWords": "Share a few more words (10+ characters).",
+    "myReview": "My review",
+    "thanksReview": "Thanks for your review!",
+    "name": "Name",
+    "headline": "Headline (optional)",
+    "comment": "Comment",
+    "submitReview": "Submit review"
+  },
+  "catalog": {
+    "tags": {
+      "bestseller": "Bestseller",
+      "new": "New",
+      "vegan": "Vegan",
+      "vegetarian": "Vegetarian",
+      "spicy": "Spicy",
+      "gluten-free": "Gluten-free",
+      "chefs-pick": "Chef's pick",
+      "high-protein": "High protein"
+    },
+    "categories": {
+      "salades": {
+        "name": "Salades",
+        "blurb": "Fresh Nicoise bowls with your choice of topping"
+      },
+      "family": {
+        "name": "Family",
+        "blurb": "Generous sharing feast for the whole table"
+      },
+      "burritos": {
+        "name": "Burritos",
+        "blurb": "Loaded grilled & crispy burritos"
+      },
+      "rice-bowls": {
+        "name": "Rice Bowls",
+        "blurb": "Hearty seasoned rice bowls"
+      },
+      "cheesy-fries": {
+        "name": "Cheesy Fries",
+        "blurb": "Loaded cheesy fries and crispy burger"
+      },
+      "tacos": {
+        "name": "Tacos",
+        "blurb": "French-style grilled tacos served with fries"
+      },
+      "half-half": {
+        "name": "Half Half",
+        "blurb": "The best of both worlds in one bowl"
+      },
+      "twisters": {
+        "name": "Twisters",
+        "blurb": "Crispy rolled wraps served with fries"
+      },
+      "sandwichs": {
+        "name": "Sandwichs",
+        "blurb": "Crispy stacked Zinger sandwich"
+      },
+      "extra": {
+        "name": "Extra",
+        "blurb": "Golden crispy fries on the side"
+      }
+    },
+    "products": {
+      "nicoise-avocado": {
+        "name": "Nicoise Avocado",
+        "summary": "Fresh sliced avocado, guacamole, sweetcorn, beans and mixed greens.",
+        "description": "A vibrant Nicoise salad bowl topped with ripe sliced avocado, guacamole, sweetcorn, kidney beans, cherry tomatoes, cucumber, red cabbage and creamy dressing over fresh greens.",
+        "ingredients": ["Avocado", "Guacamole", "Sweetcorn", "Kidney beans", "Cherry tomatoes", "Cucumber", "Red cabbage"]
+      },
+      "nicoise-kefta": {
+        "name": "Nicoise Kefta",
+        "summary": "Seasoned grilled kefta over crisp Nicoise vegetables, potatoes and beans.",
+        "description": "Spiced grilled beef kefta served atop a colourful bed of mixed greens, kidney beans, roasted potatoes, cherry tomatoes, red cabbage, cucumber and house dressing.",
+        "ingredients": ["Grilled kefta", "Mixed greens", "Kidney beans", "Roasted potatoes", "Red cabbage", "Cherry tomatoes", "Cucumber"]
+      },
+      "nicoise-bahja": {
+        "name": "Nicoise Bahja",
+        "summary": "Classic Nicoise with boiled eggs, tuna, olives, sweetcorn and crisp veggies.",
+        "description": "A traditional, refreshing Nicoise bowl loaded with halved boiled eggs, tuna, green olives, sweetcorn, kidney beans, red cabbage, cherry tomatoes and cucumber.",
+        "ingredients": ["Boiled egg", "Tuna", "Olives", "Sweetcorn", "Kidney beans", "Red cabbage", "Cherry tomatoes", "Cucumber"]
+      },
+      "nicoise-crispy": {
+        "name": "Nicoise Crispy",
+        "summary": "Crunchy golden chicken tenders over fresh Nicoise salad with jalapenos.",
+        "description": "Crispy breaded chicken strips served warm over a fresh salad of sweetcorn, cherry tomatoes, red cabbage, cucumber, kidney beans, jalapenos and sauce.",
+        "ingredients": ["Crispy chicken", "Sweetcorn", "Kidney beans", "Red cabbage", "Cherry tomatoes", "Cucumber", "Jalapenos"]
+      },
+      "family-pack": {
+        "name": "Family",
+        "summary": "Sharing bowls, basket of golden fries and a Coca-Cola bottle.",
+        "description": "Built for sharing: includes assorted bowls, a generous basket of golden fries and a bottle of Coca-Cola.",
+        "ingredients": ["Assorted bowls", "Golden fries", "Coca-Cola"]
+      },
+      "bouri-kefta": {
+        "name": "Bouri Kefta",
+        "summary": "Grilled flour tortilla stuffed with spiced kefta, potatoes, rice and sauce.",
+        "description": "A warm toasted tortilla packed with seasoned grilled kefta, golden potatoes, fluffy spiced rice, crisp greens and creamy signature sauces.",
+        "ingredients": ["Flour tortilla", "Grilled kefta", "Potatoes", "Seasoned rice", "Lettuce", "Signature sauces"]
+      },
+      "burrito-avocado": {
+        "name": "Burrito Avocado",
+        "summary": "Creamy avocado, tender chicken, seasoned rice and melted cheese.",
+        "description": "Grilled tortilla loaded with fresh avocado, tender marinated chicken, seasoned rice, crisp veggies and rich house sauce.",
+        "ingredients": ["Flour tortilla", "Avocado", "Chicken", "Seasoned rice", "Cheese", "House sauce"]
+      },
+      "bouri-poulet": {
+        "name": "Bouri Poulet",
+        "summary": "Marinated chicken, spiced rice, cheese and house sauce in a toasted wrap.",
+        "description": "Tender marinated chicken wrapped in a warm tortilla with seasoned rice, crisp veggies and signature sauce.",
+        "ingredients": ["Flour tortilla", "Marinated chicken", "Seasoned rice", "Cheese", "House sauce"]
+      },
+      "bouri-crispy": {
+        "name": "Bouri Crispy",
+        "summary": "Deep-fried golden breaded burrito stuffed with crispy chicken, rice and cheese.",
+        "description": "Our crunchy breaded burrito fried to golden perfection, filled with crispy chicken tenders, seasoned rice, melted cheese and served with dipping sauces.",
+        "ingredients": ["Breaded tortilla", "Crispy chicken", "Seasoned rice", "Melted cheese", "Dipping sauces"]
+      },
+      "bowl-crispy": {
+        "name": "Bowl Crispy",
+        "summary": "Seasoned rice topped with sliced crispy chicken and signature sauces.",
+        "description": "A hearty bowl of spiced rice crowned with golden crispy chicken strips and a generous drizzle of creamy and dark house sauces.",
+        "ingredients": ["Spiced rice", "Crispy chicken", "White sauce", "Dark house sauce"]
+      },
+      "bowl-poulet": {
+        "name": "Bowl Poulet",
+        "summary": "Marinated grilled chicken chunks over seasoned rice with roasted wedges.",
+        "description": "Juicy chicken pieces served over seasoned rice with potato wedges and creamy house sauce.",
+        "ingredients": ["Seasoned rice", "Grilled chicken", "Potato wedges", "House sauce"]
+      },
+      "bowl-kafta": {
+        "name": "Bowl Kafta",
+        "summary": "Grilled spiced kefta patties over seasoned rice, pickles and herbs.",
+        "description": "Chargrilled spiced kefta patties topped with pickles and fresh herbs over warm seasoned rice, served with dipping sauces.",
+        "ingredients": ["Spiced rice", "Grilled kefta", "Pickles", "Fresh herbs", "Dipping sauces"]
+      },
+      "bowl-mixte": {
+        "name": "Bowl Mixte",
+        "summary": "Mixed bowl with crispy chicken, grilled kefta and seasoned rice.",
+        "description": "A loaded mixed bowl combining crispy chicken and grilled kefta over seasoned rice, finished with pickles and house sauces.",
+        "ingredients": ["Seasoned rice", "Crispy chicken", "Grilled kefta", "Pickles", "House sauces"]
+      },
+      "mexi-bowl": {
+        "name": "Mexi Bowl",
+        "summary": "Mexican-style bowl with seasoned rice, beans, corn, guacamole and chicken.",
+        "description": "A colourful Mexican-inspired bowl loaded with herbed rice, black beans, sweetcorn, guacamole, diced salsa, grilled chicken and creamy drizzle.",
+        "ingredients": ["Herbed rice", "Black beans", "Sweetcorn", "Guacamole", "Tomato salsa", "Grilled chicken"]
+      },
+      "burger-crispy": {
+        "name": "Burger Crispy",
+        "summary": "Double crispy chicken burger with cheddar, sauce, lettuce and fries.",
+        "description": "Two crunchy fried chicken fillets stacked with melted cheddar, creamy sauce, fresh lettuce and sesame bun, served with golden fries and sauces.",
+        "ingredients": ["Crispy chicken fillets", "Sesame bun", "Cheddar", "Creamy sauce", "Lettuce", "Fries"]
+      },
+      "frite-kefta": {
+        "name": "Frite Kefta",
+        "summary": "Golden fries loaded with seasoned kefta, melted cheese and sauce.",
+        "description": "Crispy fries topped with seasoned kefta, melted cheese sauce and house drizzle.",
+        "ingredients": ["French fries", "Seasoned kefta", "Cheese sauce", "House drizzle"]
+      },
+      "frite-poulet": {
+        "name": "Frite Poulet",
+        "summary": "Crispy fries topped with savoury chicken, cheese and house sauce.",
+        "description": "Hot golden fries loaded with seasoned chicken bites, melted cheese and creamy house sauce.",
+        "ingredients": ["French fries", "Seasoned chicken", "Cheese", "House sauce"]
+      },
+      "frite-crispy": {
+        "name": "Frite Crispy",
+        "summary": "Loaded fries with chopped crispy chicken, pickles, cheese and sauces.",
+        "description": "Crispy fries piled high with bite-sized golden crispy chicken, pickles, melted cheese sauce, herbs and dark house drizzle.",
+        "ingredients": ["French fries", "Crispy chicken", "Pickles", "Cheese sauce", "Herbs", "House drizzle"]
+      },
+      "frita-crispy": {
+        "name": "Frita Crispy",
+        "summary": "Crispy fries loaded with crispy chicken, pickles, herbs and sauces.",
+        "description": "A generous bowl of golden fries loaded with crispy chicken bites, pickles, herbs and rich sauces.",
+        "ingredients": ["French fries", "Crispy chicken", "Pickles", "Herbs", "Sauces"]
+      },
+      "tacos-kefta": {
+        "name": "Tacos Kefta",
+        "summary": "Grilled French tacos filled with spiced kefta, fries and cheese sauce.",
+        "description": "Pressed and toasted flour tortilla packed with grilled kefta, crispy fries and melted cheese sauce, served with extra fries and dipping sauces.",
+        "ingredients": ["Tortilla", "Grilled kefta", "Fries", "Cheese sauce", "Dipping sauces"]
+      },
+      "tacos-poulet": {
+        "name": "Tacos Poulet",
+        "summary": "Toasted French tacos with marinated chicken, fries and cheese sauce.",
+        "description": "Golden-pressed tortilla stuffed with tender marinated chicken, french fries and rich cheese sauce, served alongside extra fries and dip.",
+        "ingredients": ["Tortilla", "Marinated chicken", "Fries", "Cheese sauce", "Dipping sauce"]
+      },
+      "tacos-crispy": {
+        "name": "Tacos Crispy",
+        "summary": "Grilled tacos packed with crunchy chicken tenders, fries and cheese sauce.",
+        "description": "Pressed tortilla loaded with crispy breaded chicken strips, fries and creamy cheese sauce, plated with a side of golden fries and dips.",
+        "ingredients": ["Tortilla", "Crispy chicken", "Fries", "Cheese sauce", "Dipping sauces"]
+      },
+      "tacos-mixte": {
+        "name": "Tacos Mixte",
+        "summary": "Mixed meat French tacos with kefta, chicken, fries and cheese sauce.",
+        "description": "A hearty mix of spiced kefta and tender chicken wrapped with fries and molten cheese sauce in a pressed tortilla, served with fries and sauces.",
+        "ingredients": ["Tortilla", "Grilled kefta", "Chicken", "Fries", "Cheese sauce", "Dipping sauces"]
+      },
+      "half-kefta": {
+        "name": "Half Kefta",
+        "summary": "Half fresh Nicoise salad, half fries topped with grilled kefta.",
+        "description": "A balanced combo bowl pairing fresh Nicoise greens with fries and grilled kefta, finished with house sauces.",
+        "ingredients": ["Nicoise salad", "French fries", "Grilled kefta", "House sauces"]
+      },
+      "half-crispy": {
+        "name": "Half Crispy",
+        "summary": "Half fresh Nicoise salad, half fries loaded with crispy chicken.",
+        "description": "A combo bowl combining fresh Nicoise salad and golden fries topped with crispy chicken bites and house sauce.",
+        "ingredients": ["Nicoise salad", "French fries", "Crispy chicken", "House sauce"]
+      },
+      "haf-poulet": {
+        "name": "Haf Poulet",
+        "summary": "Half fresh salad, half fries topped with marinated chicken.",
+        "description": "Half crisp vegetable salad and half golden fries, finished with seasoned chicken and creamy sauce.",
+        "ingredients": ["Fresh salad", "French fries", "Chicken", "Creamy sauce"]
+      },
+      "twi-kefta": {
+        "name": "Twi-Kefta",
+        "summary": "Crispy rolled wrap filled with spiced kefta, cheese and fries on the side.",
+        "description": "A crunchy golden twister roll stuffed with seasoned kefta, melted cheese and creamy sauce, served with crispy fries and dips.",
+        "ingredients": ["Crispy wrap", "Spiced kefta", "Melted cheese", "Fries", "Dipping sauces"]
+      },
+      "twi-poulet": {
+        "name": "Twi-Poulet",
+        "summary": "Golden crunchy wrap stuffed with tender chicken, cheese and fries.",
+        "description": "Crisp rolled wrap filled with marinated chicken, cheese and signature sauce, accompanied by golden fries and dips.",
+        "ingredients": ["Crispy wrap", "Marinated chicken", "Cheese", "Fries", "Dipping sauces"]
+      },
+      "twi-crispy": {
+        "name": "Twi-Crispy",
+        "summary": "Crunchy rolled wrap loaded with crispy chicken, cheese and fries.",
+        "description": "Golden crunchy rolled wrap packed with crispy chicken tenders, melted cheese and creamy sauce, served with fries and dips.",
+        "ingredients": ["Crispy wrap", "Crispy chicken", "Melted cheese", "Fries", "Dipping sauces"]
+      },
+      "zinger-gambo": {
+        "name": "Zinger Gambo",
+        "summary": "Jumbo sub loaded with crispy Zinger chicken, cheese, tomato, lettuce and fries.",
+        "description": "A long toasted sesame sub packed with crunchy Zinger chicken fillets, melted cheese, fresh tomato slices and crisp lettuce, served with fries and sauces.",
+        "ingredients": ["Long sesame sub", "Crispy Zinger chicken", "Cheese", "Tomato", "Lettuce", "Fries", "Sauces"]
+      },
+      "frite": {
+        "name": "Frite",
+        "summary": "Portion of hot, crispy golden french fries.",
+        "description": "A basket of golden, crispy french fries—the perfect addition to any order.",
+        "ingredients": ["Potatoes", "Sea salt"]
+      }
+    },
+    "hero": {
+      "mexiBowl": {
+        "title": "Mexi Bowl",
+        "subtitle": "Freshly loaded bowl with seasoned rice, beans, corn, avocado and crispy toppings.",
+        "ctaLabel": "Order Mexi Bowl"
+      },
+      "bouriCrispy": {
+        "title": "Hot. Fast. Fresh. Delivered in 30 mins.",
+        "subtitle": "Bouri Crispy Burrito — golden, crunchy and cooked to order.",
+        "ctaLabel": "Order Bouri Crispy"
+      },
+      "familyPack": {
+        "title": "Family Feast Pack",
+        "subtitle": "Sharing bowls, golden fries and a bottle of Coca-Cola for the whole table.",
+        "ctaLabel": "Get Family Pack"
+      }
+    }
+  },
+  "common": {
+    "minutes": "min",
+    "kcal": "kcal",
+    "addToCart": "Add to cart",
+    "viewCart": "View cart",
+    "addedToCart": "Added to cart",
+    "removedFromCart": "Removed from cart",
+    "undo": "Undo",
+    "free": "Free",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "standard": "Standard",
+    "any": "Any"
+  }
+}

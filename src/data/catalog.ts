@@ -1,6 +1,8 @@
+import i18n from "@/i18n"
+
 export const LOGO = {
-  fileName: "borito-crispy-logo.png",
-  image: "borito-crispy-logo.png",
+  fileName: "borito-crispy-logo.svg",
+  image: "borito-crispy-logo.svg",
   alt: "Borito Crispy logo",
   brandName: "Borito Crispy",
   phone: "0755741094",
@@ -38,12 +40,12 @@ export const HERO_PHOTOS: HeroPhoto[] = [
   },
   {
     id: "hero-3",
-    slot: "Hero Image 3 - Family Feast",
-    title: "Family Feast Pack",
-    subtitle: "Sharing bowls, golden fries and a bottle of Coca-Cola for the whole table.",
-    image: "family-feast-pack.png",
-    ctaLabel: "Get Family Pack",
-    productId: "family-pack",
+    slot: "Hero Image 3 - Rice Bowl",
+    title: "Bowl Crispy",
+    subtitle: "Seasoned rice topped with golden crispy chicken and signature sauces.",
+    image: "bowl-crispy.png",
+    ctaLabel: "Order Bowl Crispy",
+    productId: "bowl-crispy",
   },
 ]
 
@@ -66,6 +68,10 @@ export const TAGS: Record<TagId, { label: string }> = {
   "gluten-free": { label: "Gluten-free" },
   "chefs-pick": { label: "Chef's pick" },
   "high-protein": { label: "High protein" },
+}
+
+export function getTagLabel(tag: TagId): string {
+  return i18n.t(`catalog.tags.${tag}`)
 }
 
 export type CategoryId =
@@ -704,8 +710,27 @@ export const PRODUCTS: Product[] = [
   },
 ]
 
-export const getProduct = (id: string) => PRODUCTS.find((p) => p.id === id)
-export const getCategory = (id: string) => CATEGORIES.find((c) => c.id === id)
+export const getProduct = (id: string) => {
+  const product = PRODUCTS.find((p) => p.id === id)
+  if (!product) return undefined
+  const translatedIngredients = i18n.t(`catalog.products.${id}.ingredients`, { returnObjects: true }) as string[] | undefined
+  return {
+    ...product,
+    name: i18n.t(`catalog.products.${id}.name`, { defaultValue: product.name }),
+    summary: i18n.t(`catalog.products.${id}.summary`, { defaultValue: product.summary }),
+    description: i18n.t(`catalog.products.${id}.description`, { defaultValue: product.description }),
+    ingredients: translatedIngredients && Array.isArray(translatedIngredients) ? translatedIngredients : product.ingredients,
+  }
+}
+export const getCategory = (id: string) => {
+  const category = CATEGORIES.find((c) => c.id === id)
+  if (!category) return undefined
+  return {
+    ...category,
+    name: i18n.t(`catalog.categories.${id}.name`, { defaultValue: category.name }),
+    blurb: i18n.t(`catalog.categories.${id}.blurb`, { defaultValue: category.blurb }),
+  }
+}
 
 /** Local image URL for a renamed dish asset. */
 export function imageUrl(fileName: string, _width?: number, _height?: number) {

@@ -17,6 +17,7 @@ export type Route =
   | { name: "product"; id: string }
   | { name: "favorites" }
   | { name: "orders" }
+  | { name: "menus" }
 
 export function parse(path: string): Route {
   const [p] = path.split("?")
@@ -26,6 +27,7 @@ export function parse(path: string): Route {
   if (seg[0] === "product" && seg[1]) return { name: "product", id: seg[1] }
   if (seg[0] === "favorites") return { name: "favorites" }
   if (seg[0] === "orders") return { name: "orders" }
+  if (seg[0] === "menus") return { name: "menus" }
   return { name: "home" }
 }
 
@@ -36,6 +38,7 @@ export const href = {
   product: (id: string) => `#/product/${id}`,
   favorites: "#/favorites",
   orders: "#/orders",
+  menus: "#/menus",
 }
 
 export function useRoute(): Route {

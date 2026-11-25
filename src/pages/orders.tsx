@@ -1,5 +1,6 @@
 import { HugeiconsIcon } from "@hugeicons/react"
 import { ShoppingBag01Icon } from "@hugeicons/core-free-icons"
+import { useTranslation } from "react-i18next"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -13,19 +14,20 @@ import { LazyImage } from "@/components/shop/lazy-image"
 import { Crumbs } from "@/components/shop/page-header"
 
 export function OrdersPage() {
+  const { t } = useTranslation()
   const orders = useStore((s) => s.orders)
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
-      <Crumbs items={[{ label: "Home", href: href.home }, { label: "Orders" }]} />
-      <h1 className="mt-4 mb-6 font-heading text-3xl font-bold tracking-tight sm:text-4xl">Your orders</h1>
+      <Crumbs items={[{ label: t("nav.home"), href: href.home }, { label: t("nav.orders") }]} />
+      <h1 className="mt-4 mb-6 font-heading text-3xl font-bold tracking-tight sm:text-4xl">{t("orders.yourOrders")}</h1>
       {orders.length === 0 ? (
         <Empty className="rounded-2xl border border-dashed">
           <EmptyHeader>
             <EmptyMedia variant="icon"><HugeiconsIcon icon={ShoppingBag01Icon} strokeWidth={2} /></EmptyMedia>
-            <EmptyTitle>No orders yet</EmptyTitle>
-            <EmptyDescription>When you place an order it will show up here.</EmptyDescription>
+            <EmptyTitle>{t("orders.noOrdersYet")}</EmptyTitle>
+            <EmptyDescription>{t("orders.whenPlaceOrder")}</EmptyDescription>
           </EmptyHeader>
-          <EmptyContent><Button render={<a href={href.menu} />}>Start ordering</Button></EmptyContent>
+          <EmptyContent><Button render={<a href={href.menu} />}>{t("orders.startOrdering")}</Button></EmptyContent>
         </Empty>
       ) : (
         <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -33,7 +35,7 @@ export function OrdersPage() {
             <li key={o.id}>
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2">{o.id}<Badge variant="secondary">{o.customer.mode === "delivery" ? "Delivery" : "Pickup"}</Badge></CardTitle>
+                  <CardTitle className="flex items-center gap-2">{o.id}<Badge variant="secondary">{o.customer.mode === "delivery" ? t("orders.delivery") : t("orders.pickup")}</Badge></CardTitle>
                   <CardDescription>{formatDate(o.date)} · {o.customer.name}</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -58,7 +60,7 @@ export function OrdersPage() {
                   </ul>
                 </CardContent>
                 <CardFooter className="justify-between font-semibold">
-                  <span>Total</span>
+                  <span>{t("orders.total")}</span>
                   <span className="tabular-nums">{formatPrice(o.total)}</span>
                 </CardFooter>
               </Card>

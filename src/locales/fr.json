@@ -1,0 +1,533 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "categories": "Catégories",
+    "orders": "Commandes",
+    "menus": "Menus",
+    "favorites": "Favoris",
+    "fullMenu": "Menu complet",
+    "myOrders": "Mes commandes",
+    "skipToContent": "Aller au contenu",
+    "searchPlaceholder": "Rechercher des plats, tags…",
+    "searchAria": "Rechercher dans le menu",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mobile": "Mobile",
+    "primary": "Principal",
+    "browseCategories": "Parcourir les catégories"
+  },
+  "header": {
+    "freeDelivery": "Livraison gratuite dès {{amount}}",
+    "toggleTheme": "Changer de thème",
+    "lightMode": "Mode clair",
+    "darkMode": "Mode sombre",
+    "favoritesAria": "Favoris ({{count}})",
+    "cartAria": "Ouvrir le panier, {{count}} articles",
+    "cart": "Panier"
+  },
+  "footer": {
+    "tagline": "Cuisine de chef dans un quartier chaleureux. Ingrédients frais, portions honnêtes, livrés chauds.",
+    "menu": "Menu",
+    "yourAccount": "Votre compte",
+    "favorites": "Favoris",
+    "orderHistory": "Historique des commandes",
+    "fullMenu": "Menu complet",
+    "copyright": "© {{year}} Borito Crispy.",
+    "freeDelivery": "Livraison 15–25 DH",
+    "avgDelivery": "30 min en moyenne",
+    "freshDaily": "Frais chaque jour",
+    "payOnDelivery": "Payez à la livraison"
+  },
+  "home": {
+    "ratedBadge": "Noté 4,8 par plus de 12 000 voisins affamés",
+    "heroTitle": "Vraie nourriture, préparée fraîche, à votre porte.",
+    "heroSubtitle": "Burritos, bols de riz, tacos, salades et frites au fromage faits par nos chefs depuis notre cuisine ouverte — cuits à la commande et livrés en environ 30 minutes.",
+    "orderNow": "Commander maintenant",
+    "seeBestsellers": "Voir les best-sellers",
+    "avgDelivery": "Livraison moy.",
+    "dishes": "Plats",
+    "deliveryFee": "Frais de livraison",
+    "hotIn30": "Chauds en 30 min",
+    "orItsOnUs": "ou c'est offert",
+    "browse": "Parcourir",
+    "whatCraving": "Qu'est-ce qui vous fait envie ?",
+    "categories": "Catégories",
+    "dishesCount": "{{count}} plats",
+    "mostLoved": "Les plus aimés",
+    "bestsellers": "Best-sellers",
+    "viewAll": "Voir tout",
+    "firstOrder": "Livraison gratuite",
+    "take10Off": "Des frais de livraison tout simples",
+    "promoText": "À l'intérieur de Mohammedia la livraison est de 15 DH, à l'extérieur 25 DH.",
+    "startOrdering": "Commencer à commander",
+    "staffFavourites": "Favoris du personnel",
+    "chefsPicks": "Choix du chef",
+    "justLanded": "Nouveautés",
+    "newOnMenu": "Nouveau au menu",
+    "seeFullMenu": "Voir le menu complet",
+    "pickUpWhereLeft": "Reprenez où vous vous étiez arrêté",
+    "freshDaily": "Frais chaque jour",
+    "freshDailyDesc": "Ingrédients préparés frais chaque jour pour chaque bol, burrito et taco.",
+    "fastTracked": "Rapide & suivi",
+    "fastTrackedDesc": "Cuit à la commande et à votre porte en environ 30 minutes.",
+    "payWhenArrives": "Payez à la réception",
+    "payWhenArrivesDesc": "Pas besoin de carte. Payez à la livraison."
+  },
+  "menu": {
+    "resultsFor": "Résultats pour « {{query}} »",
+    "fullMenu": "Menu complet",
+    "everythingWeCook": "Tout ce que nous cuisinons, en un seul endroit.",
+    "all": "Tous",
+    "filters": "Filtres",
+    "clearAll": "Tout effacer",
+    "narrowDown": "Affinez le menu.",
+    "clear": "Effacer",
+    "showDishes": "Afficher {{count}} plats",
+    "sortBy": "Trier par",
+    "noDishesMatch": "Aucun plat ne correspond",
+    "tryRemovingFilter": "Essayez de retirer un filtre ou de chercher autre chose.",
+    "resetFilters": "Réinitialiser les filtres",
+    "dietaryLabels": "Régime & étiquettes",
+    "price": "Prix",
+    "tagsAria": "Tags",
+    "priceAria": "Prix",
+    "featured": "En vedette",
+    "mostLiked": "Les plus aimés",
+    "priceLowHigh": "Prix : croissant",
+    "priceHighLow": "Prix : décroissant",
+    "newest": "Nouveautés",
+    "dishCount": "{{count}} plat",
+    "dishesCount": "{{count}} plats",
+    "under10": "Moins de 10 DH",
+    "under15": "Moins de 15 DH",
+    "under20": "Moins de 20 DH"
+  },
+  "cart": {
+    "yourCart": "Votre panier",
+    "items": "{{count}} article",
+    "itemsPlural": "{{count}} articles",
+    "reviewOrder": "Vérifiez votre commande avant le paiement.",
+    "closeCart": "Fermer le panier",
+    "cartEmpty": "Votre panier est vide",
+    "hungryBrowse": "Faim ? Parcourez le menu et ajoutez quelque chose de délicieux.",
+    "browseMenu": "Parcourir le menu",
+    "addMoreForFree": "Ajoutez {{amount}} de plus pour la livraison gratuite",
+    "freeDeliveryUnlocked": "Vous avez débloqué la livraison gratuite 🎉",
+    "progressToFree": "Progression vers la livraison gratuite",
+    "each": "chacun",
+    "quantityOf": "Quantité de {{name}}",
+    "removeItem": "Retirer {{name}}",
+    "removedFromCart": "Retiré du panier",
+    "undo": "Annuler",
+    "subtotal": "Sous-total",
+    "discount": "Réduction ({{code}})",
+    "delivery": "Livraison",
+    "free": "Gratuit",
+    "total": "Total",
+    "checkout": "Commander · {{amount}}",
+    "clearCart": "Vider le panier",
+    "promoCode": "Code promo",
+    "promoAria": "Code promo",
+    "apply": "Appliquer",
+    "promoApplied": "Code appliqué",
+    "invalidCode": "Ce code n'est pas valide. Essayez WELCOME10.",
+    "remove": "Retirer"
+  },
+  "checkout": {
+    "orderConfirmed": "Commande confirmée !",
+    "thanksOrder": "Merci {{name}}. La commande {{id}} est en préparation — {{message}}",
+    "deliveryMessage": "attendez-la dans environ {{time}}.",
+    "pickupMessage": "elle sera prête pour le retrait dans environ 20 minutes.",
+    "totalPaid": "Total payé pour {{mode}}",
+    "viewMyOrders": "Voir mes commandes",
+    "sendWhatsApp": "Envoyer la commande via WhatsApp",
+    "keepBrowsing": "Continuer à naviguer",
+    "checkout": "Paiement",
+    "payOnMode": "Payez à la {{mode}} — pas besoin de carte.",
+    "fulfilment": "Livraison",
+    "delivery": "livraison",
+    "pickup": "retrait",
+    "fullName": "Nom complet",
+    "phone": "Téléphone",
+    "deliveryAddress": "Adresse de livraison",
+    "deliveryZone": "Zone de livraison",
+    "estimatedTime": "Temps estimé",
+    "mohammedia": "Mohammedia",
+    "outside": "Hors Mohammedia",
+    "pleaseEnterName": "Veuillez entrer votre nom.",
+    "enterValidPhone": "Entrez un numéro de téléphone valide.",
+    "needAddress": "Nous avons besoin d'une adresse pour la livraison.",
+    "discount": "Réduction",
+    "free": "Gratuit",
+    "total": "Total",
+    "placingOrder": "Commande en cours…",
+    "placeOrder": "Passer la commande · {{amount}}"
+  },
+  "whatsapp": {
+    "newOrder": "Nouvelle commande {{id}} — Borito Crispy",
+    "customer": "Client",
+    "phone": "Téléphone",
+    "location": "Adresse",
+    "pickupAtRestaurant": "Retrait au restaurant",
+    "items": "Articles"
+  },
+  "menus": {
+    "title": "Nos menus",
+    "subtitle": "Découvrez notre menu complet — touchez une image pour l'agrandir.",
+    "menu1": "Menu 1",
+    "menu1Alt": "Menu Borito Crispy — page 1",
+    "menu2": "Menu 2",
+    "menu2Alt": "Menu Borito Crispy — page 2",
+    "viewFullSize": "Voir en grand"
+  },
+  "product": {
+    "dishNotFound": "Plat introuvable",
+    "itemRemoved": "Cet article a peut-être été retiré du menu.",
+    "backToMenu": "Retour au menu",
+    "prepTime": "Temps de préparation",
+    "calories": "Calories",
+    "delivery": "Livraison",
+    "reviews": "avis",
+    "likes": "j'aime",
+    "save": "Économisez {{percent}}%",
+    "size": "Taille",
+    "addToCart": "Ajouter au panier · {{amount}}",
+    "like": "J'aime",
+    "liked": "Aimé",
+    "unlike": "Ne plus aimer",
+    "freeDeliveryOver": "Livraison 15 DH à Mohammedia · 25 DH ailleurs",
+    "cookedFresh": "Cuit frais à la commande — jamais réchauffé",
+    "details": "Détails",
+    "ingredients": "Ingrédients",
+    "reviewsTab": "Avis ({{count}})",
+    "allergyNote": "Veuillez nous indiquer vos allergies dans les notes de livraison.",
+    "verifiedReviews": "{{count}} avis vérifié",
+    "verifiedReviewsPlural": "{{count}} avis vérifiés",
+    "average": "· moyenne de {{avg}}. Faites défiler pour tout lire.",
+    "reviewsComments": "Avis et commentaires",
+    "youMightLike": "Vous aimerez peut-être aussi",
+    "pairsWell": "Se marie bien avec",
+    "viewProduct": "Voir {{name}}",
+    "addToCartAria": "Ajouter {{name}} au panier",
+    "quickView": "Aperçu rapide",
+    "min": "min",
+    "kcal": "kcal"
+  },
+  "favorites": {
+    "yourFavorites": "Vos favoris",
+    "nothingSaved": "Rien n'est encore enregistré",
+    "tapHeart": "Touchez le cœur sur n'importe quel plat pour le garder ici.",
+    "exploreMenu": "Explorer le menu"
+  },
+  "orders": {
+    "yourOrders": "Vos commandes",
+    "noOrdersYet": "Aucune commande pour l'instant",
+    "whenPlaceOrder": "Lorsque vous passerez une commande, elle apparaîtra ici.",
+    "startOrdering": "Commencer à commander",
+    "delivery": "Livraison",
+    "pickup": "Retrait",
+    "total": "Total"
+  },
+  "reviews": {
+    "reviewsCount": "{{count}} avis",
+    "reviewsCountPlural": "{{count}} avis",
+    "ratingBreakdown": "Répartition des notes",
+    "whatPeopleSaying": "Ce que disent les gens",
+    "sortReviews": "Trier les avis",
+    "newest": "Nouveaux",
+    "highest": "Plus élevés",
+    "lowest": "Plus bas",
+    "you": "Vous",
+    "helpful": "Utile ({{count}})",
+    "reviewDeleted": "Avis supprimé",
+    "delete": "Supprimer",
+    "writeReview": "Écrire un avis",
+    "yourRating": "Votre note",
+    "pickStarRating": "Choisissez une note en étoiles.",
+    "tellUsName": "Dites-nous votre nom.",
+    "shareMoreWords": "Partagez quelques mots de plus (10+ caractères).",
+    "myReview": "Mon avis",
+    "thanksReview": "Merci pour votre avis !",
+    "name": "Nom",
+    "headline": "Titre (optionnel)",
+    "comment": "Commentaire",
+    "submitReview": "Soumettre l'avis"
+  },
+  "catalog": {
+    "tags": {
+      "bestseller": "Best-seller",
+      "new": "Nouveau",
+      "vegan": "Végétalien",
+      "vegetarian": "Végétarien",
+      "spicy": "Épicé",
+      "gluten-free": "Sans gluten",
+      "chefs-pick": "Choix du chef",
+      "high-protein": "Riche en protéines"
+    },
+    "categories": {
+      "salades": {
+        "name": "Salades",
+        "blurb": "Frais bols Nicoise avec votre choix de garniture"
+      },
+      "family": {
+        "name": "Famille",
+        "blurb": "Festin généreux à partager pour toute la table"
+      },
+      "burritos": {
+        "name": "Burritos",
+        "blurb": "Burritos grillés et croustillants garnis"
+      },
+      "rice-bowls": {
+        "name": "Bols de riz",
+        "blurb": "Bols de riz copieux et assaisonnés"
+      },
+      "cheesy-fries": {
+        "name": "Frites au fromage",
+        "blurb": "Frites garnies au fromage et burger croustillant"
+      },
+      "tacos": {
+        "name": "Tacos",
+        "blurb": "Tacos grillés à la française servis avec des frites"
+      },
+      "half-half": {
+        "name": "Moitié-moitié",
+        "blurb": "Le meilleur des deux mondes dans un seul bol"
+      },
+      "twisters": {
+        "name": "Twisters",
+        "blurb": "Wraps croustillants roulés servis avec des frites"
+      },
+      "sandwichs": {
+        "name": "Sandwichs",
+        "blurb": "Sandwich Zinger croustillant empilé"
+      },
+      "extra": {
+        "name": "Extra",
+        "blurb": "Frites dorées croustillantes en accompagnement"
+      }
+    },
+    "products": {
+      "nicoise-avocado": {
+        "name": "Nicoise Avocado",
+        "summary": "Avocat frais en tranches, guacamole, maïs, haricots et légumes verts mélangés.",
+        "description": "Un bol de salade Nicoise vibrant garni d'avocat frais en tranches, guacamole, maïs, haricots rouges, tomates cerises, concombre, chou rouge et vinaigrette crémeuse sur des légumes verts frais.",
+        "ingredients": ["Avocat", "Guacamole", "Maïs", "Haricots rouges", "Tomates cerises", "Concombre", "Chou rouge"]
+      },
+      "nicoise-kefta": {
+        "name": "Nicoise Kefta",
+        "summary": "Kefta grillée assaisonnée sur des légumes Nicoise croquants, pommes de terre et haricots.",
+        "description": "Bœuf kefta grillé épicé servi sur un lit coloré de légumes verts mélangés, haricots rouges, pommes de terre rôties, tomates cerises, chou rouge, concombre et vinaigrette maison.",
+        "ingredients": ["Kefta grillée", "Légumes verts mélangés", "Haricots rouges", "Pommes de terre rôties", "Chou rouge", "Tomates cerises", "Concombre"]
+      },
+      "nicoise-bahja": {
+        "name": "Nicoise Bahja",
+        "summary": "Nicoise classique avec œufs durs, thon, olives, maïs et légumes croquants.",
+        "description": "Un bol Nicoise traditionnel et rafraîchissant garni d'œufs durs coupés en deux, thon, olives vertes, maïs, haricots rouges, chou rouge, tomates cerises et concombre.",
+        "ingredients": ["Œuf dur", "Thon", "Olives", "Maïs", "Haricots rouges", "Chou rouge", "Tomates cerises", "Concombre"]
+      },
+      "nicoise-crispy": {
+        "name": "Nicoise Crispy",
+        "summary": "Tenders de poulet dorés croquants sur une salade Nicoise fraîche avec jalapeños.",
+        "description": "Bandes de poulet panées croustillantes servies chaudes sur une salade fraîche de maïs, tomates cerises, chou rouge, concombre, haricots rouges, jalapeños et sauce.",
+        "ingredients": ["Poulet croustillant", "Maïs", "Haricots rouges", "Chou rouge", "Tomates cerises", "Concombre", "Jalapeños"]
+      },
+      "family-pack": {
+        "name": "Famille",
+        "summary": "Bols à partager, panier de frites dorées et une bouteille de Coca-Cola.",
+        "description": "Conçu pour partager : comprend des bols variés, un généreux panier de frites dorées et une bouteille de Coca-Cola.",
+        "ingredients": ["Bols variés", "Frites dorées", "Coca-Cola"]
+      },
+      "bouri-kefta": {
+        "name": "Bouri Kefta",
+        "summary": "Tortilla de blé grillée farcie de kefta épicée, pommes de terre, riz et sauce.",
+        "description": "Une tortilla chaude grillée garnie de kefta grillée assaisonnée, pommes de terre dorées, riz épicé moelleux, légumes croquants et sauces signature crémeuses.",
+        "ingredients": ["Tortilla de blé", "Kefta grillée", "Pommes de terre", "Riz assaisonné", "Laitue", "Sauces signature"]
+      },
+      "burrito-avocado": {
+        "name": "Burrito Avocado",
+        "summary": "Avocat crémeux, poulet tendre, riz assaisonné et fromage fondu.",
+        "description": "Tortilla grillée garnie d'avocat frais, poulet mariné tendre, riz assaisonné, légumes croquants et sauce maison riche.",
+        "ingredients": ["Tortilla de blé", "Avocat", "Poulet", "Riz assaisonné", "Fromage", "Sauce maison"]
+      },
+      "bouri-poulet": {
+        "name": "Bouri Poulet",
+        "summary": "Poulet mariné, riz épicé, fromage et sauce maison dans un wrap grillé.",
+        "description": "Poulet mariné tendre enveloppé dans une tortilla chaude avec riz assaisonné, légumes croquants et sauce signature.",
+        "ingredients": ["Tortilla de blé", "Poulet mariné", "Riz assaisonné", "Fromage", "Sauce maison"]
+      },
+      "bouri-crispy": {
+        "name": "Bouri Crispy",
+        "summary": "Burrito pané doré frit garni de poulet croustillant, riz et fromage.",
+        "description": "Notre burrito pané croustillant frit à la perfection dorée, garni de tenders de poulet croustillants, riz assaisonné, fromage fondu et servi avec des sauces pour tremper.",
+        "ingredients": ["Tortilla panée", "Poulet croustillant", "Riz assaisonné", "Fromage fondu", "Sauces pour tremper"]
+      },
+      "bowl-crispy": {
+        "name": "Bowl Crispy",
+        "summary": "Riz assaisonné garni de poulet croustillant en tranches et sauces signature.",
+        "description": "Un bol copieux de riz épicé couronné de bandes de poulet croustillant dorées et d'un généreux filet de sauces maison crémeuses et foncées.",
+        "ingredients": ["Riz épicé", "Poulet croustillant", "Sauce blanche", "Sauce maison foncée"]
+      },
+      "bowl-poulet": {
+        "name": "Bowl Poulet",
+        "summary": "Morceaux de poulet grillé mariné sur riz assaisonné avec wedges rôtis.",
+        "description": "Morceaux de poulet juteux servis sur riz assaisonné avec wedges de pommes de terre et sauce maison crémeuse.",
+        "ingredients": ["Riz assaisonné", "Poulet grillé", "Wedges de pommes de terre", "Sauce maison"]
+      },
+      "bowl-kafta": {
+        "name": "Bowl Kafta",
+        "summary": "Galettes de kefta grillée épicée sur riz assaisonné, cornichons et herbes.",
+        "description": "Galettes de kefta grillées au charbon épicées garnies de cornichons et herbes fraîches sur riz assaisonné chaud, servies avec des sauces pour tremper.",
+        "ingredients": ["Riz épicé", "Kefta grillée", "Cornichons", "Herbes fraîches", "Sauces pour tremper"]
+      },
+      "bowl-mixte": {
+        "name": "Bowl Mixte",
+        "summary": "Bol mixte avec poulet croustillant, kefta grillée et riz assaisonné.",
+        "description": "Un bol mixte garni combinant poulet croustillant et kefta grillée sur riz assaisonné, terminé avec cornichons et sauces maison.",
+        "ingredients": ["Riz assaisonné", "Poulet croustillant", "Kefta grillée", "Cornichons", "Sauces maison"]
+      },
+      "mexi-bowl": {
+        "name": "Mexi Bowl",
+        "summary": "Bol à la mexicaine avec riz assaisonné, haricots, maïs, guacamole et poulet.",
+        "description": "Un bol coloré inspiré du Mexique garni de riz aux herbes, haricots noirs, maïs, guacamole, salsa de tomates en dés, poulet grillé et filet crémeux.",
+        "ingredients": ["Riz aux herbes", "Haricots noirs", "Maïs", "Guacamole", "Salsa de tomates", "Poulet grillé"]
+      },
+      "burger-crispy": {
+        "name": "Burger Crispy",
+        "summary": "Double burger de poulet croustillant avec cheddar, sauce, laitue et frites.",
+        "description": "Deux filets de poulet frits croustillants empilés avec cheddar fondu, sauce crémeuse, laitue fraîche et pain au sésame, servis avec frites dorées et sauces.",
+        "ingredients": ["Filets de poulet croustillants", "Pain au sésame", "Cheddar", "Sauce crémeuse", "Laitue", "Frites"]
+      },
+      "frite-kefta": {
+        "name": "Frite Kefta",
+        "summary": "Frites dorées garnies de kefta assaisonnée, fromage fondu et sauce.",
+        "description": "Frites croustillantes garnies de kefta assaisonnée, sauce au fromage fondu et filet maison.",
+        "ingredients": ["Frites", "Kefta assaisonnée", "Sauce au fromage", "Filet maison"]
+      },
+      "frite-poulet": {
+        "name": "Frite Poulet",
+        "summary": "Frites croustillantes garnies de poulet savoureux, fromage et sauce maison.",
+        "description": "Frites dorées chaudes garnies de morceaux de poulet assaisonnés, fromage fondu et sauce maison crémeuse.",
+        "ingredients": ["Frites", "Poulet assaisonné", "Fromage", "Sauce maison"]
+      },
+      "frite-crispy": {
+        "name": "Frite Crispy",
+        "summary": "Frites garnies de poulet croustillant haché, cornichons, fromage et sauces.",
+        "description": "Frites croustillantes empilées de poulet croustillant doré en bouchées, cornichons, sauce au fromage fondu, herbes et filet maison foncé.",
+        "ingredients": ["Frites", "Poulet croustillant", "Cornichons", "Sauce au fromage", "Herbes", "Filet maison"]
+      },
+      "frita-crispy": {
+        "name": "Frita Crispy",
+        "summary": "Frites croustillantes garnies de poulet croustillant, cornichons, herbes et sauces.",
+        "description": "Un bol généreux de frites dorées garnies de morceaux de poulet croustillant, cornichons, herbes et sauces riches.",
+        "ingredients": ["Frites", "Poulet croustillant", "Cornichons", "Herbes", "Sauces"]
+      },
+      "tacos-kefta": {
+        "name": "Tacos Kefta",
+        "summary": "Tacos français grillés garnis de kefta épicée, frites et sauce au fromage.",
+        "description": "Tortilla de blé pressée et grillée garnie de kefta grillée, frites croustillantes et sauce au fromage fondu, servie avec frites supplémentaires et sauces pour tremper.",
+        "ingredients": ["Tortilla", "Kefta grillée", "Frites", "Sauce au fromage", "Sauces pour tremper"]
+      },
+      "tacos-poulet": {
+        "name": "Tacos Poulet",
+        "summary": "Tacos français grillés avec poulet mariné, frites et sauce au fromage.",
+        "description": "Tortilla pressée dorée farcie de poulet mariné tendre, frites et riche sauce au fromage, servie avec frites supplémentaires et trempette.",
+        "ingredients": ["Tortilla", "Poulet mariné", "Frites", "Sauce au fromage", "Sauce pour tremper"]
+      },
+      "tacos-crispy": {
+        "name": "Tacos Crispy",
+        "summary": "Tacos grillés garnis de tenders de poulet croustillants, frites et sauce au fromage.",
+        "description": "Tortilla pressée garnie de bandes de poulet panées croustillantes, frites et sauce au fromage crémeuse, accompagnée de frites dorées et trempettes.",
+        "ingredients": ["Tortilla", "Poulet croustillant", "Frites", "Sauce au fromage", "Sauces pour tremper"]
+      },
+      "tacos-mixte": {
+        "name": "Tacos Mixte",
+        "summary": "Tacos français à la viande mixte avec kefta, poulet, frites et sauce au fromage.",
+        "description": "Un mélange copieux de kefta épicée et poulet tendre enveloppé avec frites et sauce au fromage fondue dans une tortilla pressée, servi avec frites et sauces.",
+        "ingredients": ["Tortilla", "Kefta grillée", "Poulet", "Frites", "Sauce au fromage", "Sauces pour tremper"]
+      },
+      "half-kefta": {
+        "name": "Half Kefta",
+        "summary": "Moitié salade Nicoise fraîche, moitié frites garnies de kefta grillée.",
+        "description": "Un bol combo équilibré associant légumes Nicoise frais avec frites et kefta grillée, terminé avec sauces maison.",
+        "ingredients": ["Salade Nicoise", "Frites", "Kefta grillée", "Sauces maison"]
+      },
+      "half-crispy": {
+        "name": "Half Crispy",
+        "summary": "Moitié salade Nicoise fraîche, moitié frites garnies de poulet croustillant.",
+        "description": "Un bol combo combinant salade Nicoise fraîche et frites dorées garnies de morceaux de poulet croustillant et sauce maison.",
+        "ingredients": ["Salade Nicoise", "Frites", "Poulet croustillant", "Sauce maison"]
+      },
+      "haf-poulet": {
+        "name": "Haf Poulet",
+        "summary": "Moitié salade fraîche, moitié frites garnies de poulet mariné.",
+        "description": "Moitié salade de légumes croquante et moitié frites dorées, terminée avec poulet assaisonné et sauce crémeuse.",
+        "ingredients": ["Salade fraîche", "Frites", "Poulet", "Sauce crémeuse"]
+      },
+      "twi-kefta": {
+        "name": "Twi-Kefta",
+        "summary": "Wrap croustillant roulé garni de kefta épicée, fromage et frites en accompagnement.",
+        "description": "Un rouleau twister doré croustillant farci de kefta assaisonnée, fromage fondu et sauce crémeuse, servi avec frites croustillantes et trempettes.",
+        "ingredients": ["Wrap croustillant", "Kefta épicée", "Fromage fondu", "Frites", "Sauces pour tremper"]
+      },
+      "twi-poulet": {
+        "name": "Twi-Poulet",
+        "summary": "Wrap croustillant doré garni de poulet tendre, fromage et frites.",
+        "description": "Wrap roulé croustillant garni de poulet mariné, fromage et sauce signature, accompagné de frites dorées et trempettes.",
+        "ingredients": ["Wrap croustillant", "Poulet mariné", "Fromage", "Frites", "Sauces pour tremper"]
+      },
+      "twi-crispy": {
+        "name": "Twi-Crispy",
+        "summary": "Wrap roulé croustillant garni de poulet croustillant, fromage et frites.",
+        "description": "Wrap roulé doré croustillant garni de tenders de poulet croustillants, fromage fondu et sauce crémeuse, servi avec frites et trempettes.",
+        "ingredients": ["Wrap croustillant", "Poulet croustillant", "Fromage fondu", "Frites", "Sauces pour tremper"]
+      },
+      "zinger-gambo": {
+        "name": "Zinger Gambo",
+        "summary": "Sub jumbo garni de poulet Zinger croustillant, fromage, tomate, laitue et frites.",
+        "description": "Un long sub au sésame grillé garni de filets de poulet Zinger croustillants, fromage fondu, tranches de tomate fraîches et laitue croquante, servi avec frites et sauces.",
+        "ingredients": ["Long sub au sésame", "Poulet Zinger croustillant", "Fromage", "Tomate", "Laitue", "Frites", "Sauces"]
+      },
+      "frite": {
+        "name": "Frite",
+        "summary": "Portion de frites dorées croustillantes chaudes.",
+        "description": "Un panier de frites dorées et croustillantes — l'ajout parfait à n'importe quelle commande.",
+        "ingredients": ["Pommes de terre", "Sel de mer"]
+      }
+    },
+    "hero": {
+      "mexiBowl": {
+        "title": "Mexi Bowl",
+        "subtitle": "Bol fraîchement garni de riz assaisonné, haricots, maïs, avocat et garnitures croustillantes.",
+        "ctaLabel": "Commander Mexi Bowl"
+      },
+      "bouriCrispy": {
+        "title": "Chaud. Rapide. Frais. Livré en 30 min.",
+        "subtitle": "Burrito Bouri Crispy — doré, croustillant et cuit à la commande.",
+        "ctaLabel": "Commander Bouri Crispy"
+      },
+      "familyPack": {
+        "title": "Pack Famille Festin",
+        "subtitle": "Bols à partager, frites dorées et une bouteille de Coca-Cola pour toute la table.",
+        "ctaLabel": "Obtenir le Pack Famille"
+      }
+    }
+  },
+  "common": {
+    "minutes": "min",
+    "kcal": "kcal",
+    "addToCart": "Ajouter au panier",
+    "viewCart": "Voir le panier",
+    "addedToCart": "Ajouté au panier",
+    "removedFromCart": "Retiré du panier",
+    "undo": "Annuler",
+    "free": "Gratuit",
+    "total": "Total",
+    "subtotal": "Sous-total",
+    "discount": "Réduction",
+    "delivery": "Livraison",
+    "pickup": "Retrait",
+    "standard": "Standard",
+    "any": "Tous"
+  }
+}
