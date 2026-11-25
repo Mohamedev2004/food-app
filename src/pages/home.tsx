@@ -74,14 +74,14 @@ export function HomePage() {
           <div className="relative mx-auto w-full max-w-xl lg:col-span-6 lg:max-w-none">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-12 sm:items-stretch">
               {/* Main Featured Card */}
-              <div className="group relative min-h-[340px] overflow-hidden rounded-3xl border bg-card shadow-xl sm:col-span-7 sm:min-h-[420px]">
+              <div className="group relative h-85 overflow-hidden rounded-3xl border bg-card shadow-xl sm:col-span-7 sm:h-105">
                 <LazyImage
                   photoId={heroMain.image}
                   alt={heroMain.title}
                   priority
                   sizes="(min-width: 1024px) 360px, 100vw"
                   className="h-full w-full"
-                  imgClassName="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105 [&+div]:h-full"
+                  imgClassName="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                 />
 
                 {/* Top-left delivery pill */}
@@ -102,7 +102,7 @@ export function HomePage() {
 
               {/* Right Stacked Cards */}
               <div className="grid grid-cols-2 gap-4 sm:col-span-5 sm:grid-cols-1">
-                <div className="group relative min-h-[180px] overflow-hidden rounded-3xl border bg-card shadow-xl sm:min-h-[202px]">
+                <div className="group relative h-[180px] overflow-hidden rounded-3xl border bg-card shadow-xl sm:h-[202px]">
                   <LazyImage
                     photoId={heroSecondary.image}
                     alt="Burrito Crispy"
@@ -116,7 +116,7 @@ export function HomePage() {
                   </div>
                 </div>
 
-                <div className="group relative min-h-[180px] overflow-hidden rounded-3xl border bg-card shadow-xl sm:min-h-[202px]">
+                <div className="group relative h-[180px] overflow-hidden rounded-3xl border bg-card shadow-xl sm:h-[202px]">
                   <LazyImage
                     photoId={heroAccent.image}
                     alt="Bowl Crispy"
