@@ -71,59 +71,63 @@ export function HomePage() {
           </div>
 
           {/* Balanced Hero Image Showcase */}
-          <div className="relative mx-auto w-full max-w-xl pb-6 sm:pb-0 lg:col-span-6 lg:max-w-none">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-12">
-              <div className="group relative overflow-hidden rounded-3xl border bg-card shadow-xl sm:col-span-7">
+          <div className="relative mx-auto w-full max-w-xl lg:col-span-6 lg:max-w-none">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-12 sm:items-stretch">
+              {/* Main Featured Card */}
+              <div className="group relative min-h-[340px] overflow-hidden rounded-3xl border bg-card shadow-xl sm:col-span-7 sm:min-h-[420px]">
                 <LazyImage
                   photoId={heroMain.image}
                   alt={heroMain.title}
-                  ratio={4 / 4}
                   priority
-                  sizes="(min-width: 1024px) 340px, 100vw"
-                  imgClassName="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                  sizes="(min-width: 1024px) 360px, 100vw"
+                  className="h-full w-full"
+                  imgClassName="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105 [&+div]:h-full"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent p-4 pt-10 text-white">
-                  <p className="font-heading text-base font-semibold">{heroMain.title}</p>
-                  <p className="line-clamp-1 text-xs text-white/85">{heroMain.subtitle}</p>
+
+                {/* Top-left delivery pill */}
+                <div className="absolute start-3.5 top-3.5 z-10 flex items-center gap-2.5 rounded-2xl border bg-background/95 px-3.5 py-2 shadow-md backdrop-blur">
+                  <span className="grid size-8 shrink-0 place-items-center rounded-full bg-primary/10 text-primary">
+                    <HugeiconsIcon icon={Clock01Icon} strokeWidth={2} className="size-4" />
+                  </span>
+                  <p className="text-xs font-semibold leading-tight sm:text-sm">
+                    {t("home.hotIn")}
+                  </p>
+                </div>
+
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent p-5 pt-12 text-white">
+                  <p className="font-heading text-lg font-semibold">{heroMain.title}</p>
+                  <p className="line-clamp-2 text-xs text-white/85">{heroMain.subtitle}</p>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-4 sm:col-span-5">
-                <div className="group relative overflow-hidden rounded-3xl border bg-card shadow-xl">
+              {/* Right Stacked Cards */}
+              <div className="grid grid-cols-2 gap-4 sm:col-span-5 sm:grid-cols-1">
+                <div className="group relative min-h-[180px] overflow-hidden rounded-3xl border bg-card shadow-xl sm:min-h-[202px]">
                   <LazyImage
                     photoId={heroSecondary.image}
-                    alt={heroSecondary.title}
-                    ratio={4 / 3}
+                    alt="Burrito Crispy"
                     priority
-                    sizes="(min-width: 1024px) 240px, 100vw"
+                    sizes="(min-width: 1024px) 240px, 50vw"
+                    className="h-full w-full"
                     imgClassName="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3 text-white">
-                    <p className="font-heading text-sm font-semibold">Bouri Crispy</p>
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3.5 pt-8 text-white">
+                    <p className="truncate font-heading text-sm font-semibold">Burrito Crispy</p>
                   </div>
                 </div>
 
-                <div className="group relative overflow-hidden rounded-3xl border bg-card shadow-xl">
+                <div className="group relative min-h-[180px] overflow-hidden rounded-3xl border bg-card shadow-xl sm:min-h-[202px]">
                   <LazyImage
                     photoId={heroAccent.image}
-                    alt={heroAccent.title}
-                    ratio={4 / 3}
-                    sizes="(min-width: 1024px) 240px, 100vw"
+                    alt="Bowl Crispy"
+                    sizes="(min-width: 1024px) 240px, 50vw"
+                    className="h-full w-full"
                     imgClassName="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3 text-white">
-                    <p className="font-heading text-sm font-semibold">{heroAccent.title}</p>
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3.5 pt-8 text-white">
+                    <p className="truncate font-heading text-sm font-semibold">Bowl Crispy</p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="mt-4 flex items-center gap-3 rounded-2xl border bg-background/95 px-4 py-3 shadow-lg backdrop-blur sm:absolute sm:end-4 sm:bottom-4 sm:mt-0 sm:max-w-56">
-              <span className="grid size-10 shrink-0 place-items-center rounded-full bg-primary/10 text-primary">
-                <HugeiconsIcon icon={Clock01Icon} strokeWidth={2} />
-              </span>
-              <div className="text-sm leading-tight">
-                <p className="font-semibold">{t("home.hotIn")}</p>
               </div>
             </div>
           </div>
