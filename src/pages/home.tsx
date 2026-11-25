@@ -178,34 +178,6 @@ export function HomePage() {
         </Grid>
       </section>
 
-      {/* Promo */}
-      <section className="mx-auto max-w-7xl px-4 pt-20 sm:px-6">
-        <div className="relative overflow-hidden rounded-3xl bg-primary text-primary-foreground">
-          <div className="grid items-center md:grid-cols-2">
-            <div className="flex flex-col items-start gap-4 p-8 sm:p-12">
-              <Badge className="bg-primary-foreground/15 text-primary-foreground">{t("home.firstOrder")}</Badge>
-              <h2 className="font-heading text-3xl font-bold text-balance sm:text-4xl">{t("home.take10Off")}</h2>
-              <p className="max-w-md text-primary-foreground/80">
-                {t("home.promoText")}
-              </p>
-              <Button size="lg" variant="secondary" className="h-11 px-6" render={<a href={href.menu} />}>
-                {t("home.startOrdering")}
-              </Button>
-            </div>
-            <div className="max-md:hidden md:h-full">
-              <LazyImage
-                photoId="family-feast-pack.png"
-                alt={t("catalog.hero.familyPack.title")}
-                ratio={16 / 10}
-                sizes="(min-width: 768px) 50vw, 100vw"
-                className="h-full w-full"
-                imgClassName="h-full w-full object-cover object-center"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="mx-auto max-w-7xl px-4 pt-20 sm:px-6">
         <SectionHeading eyebrow={t("home.staffFavourites")} title={t("home.chefsPicks")} />
         <Grid>
