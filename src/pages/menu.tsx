@@ -77,8 +77,8 @@ export function MenuPage({ category }: { category?: string }) {
       </div>
 
       {/* Category pills */}
-      <div className="-mx-4 mb-6 overflow-x-auto px-4 sm:mx-0 sm:px-0" role="navigation" aria-label={t("nav.categories")}>
-        <div className="flex w-max gap-2 pb-1">
+      <div className="-mx-4 mb-6 overflow-x-auto px-4 pb-1 mask-[linear-gradient(to_right,transparent,black_16px,black_calc(100%-16px),transparent)] rtl:mask-[linear-gradient(to_left,transparent,black_16px,black_calc(100%-16px),transparent)] scrollbar-none sm:mx-0 sm:px-0 sm:mask-none [&::-webkit-scrollbar]:hidden" role="navigation" aria-label={t("nav.categories")}>
+        <div className="flex w-max gap-2">
           <Button size="sm" className="rounded-full" variant={!cat ? "default" : "outline"} render={<a href={href.menu} />}>{t("menu.all")}</Button>
           {CATEGORIES.map((c) => (
             <Button key={c.id} size="sm" className="rounded-full" variant={cat?.id === c.id ? "default" : "outline"} render={<a href={href.category(c.id)} />}>{t(`catalog.categories.${c.id}.name`)}</Button>
@@ -98,11 +98,11 @@ export function MenuPage({ category }: { category?: string }) {
         </aside>
 
         <section aria-label={t("product.dishNotFound")}>
-          <div className="mb-5 flex items-center justify-between gap-3">
+          <div className="mb-5 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
             <p className="text-sm text-muted-foreground" aria-live="polite">{results.length === 1 ? t("menu.dishCount", { count: results.length }) : t("menu.dishesCount", { count: results.length })}</p>
-            <div className="flex items-center gap-2">
+            <div className="flex min-w-0 flex-1 items-center justify-end gap-2 sm:flex-none">
               <Sheet>
-                <SheetTrigger render={<Button variant="outline" className="lg:hidden" />}>
+                <SheetTrigger render={<Button variant="outline" className="shrink-0 lg:hidden" />}>
                   <HugeiconsIcon icon={FilterHorizontalIcon} data-icon="inline-start" strokeWidth={2} />
                   {t("menu.filters")}
                   {activeFilters > 0 && <Badge className="ms-1 size-5 justify-center rounded-full p-0">{activeFilters}</Badge>}
@@ -120,7 +120,7 @@ export function MenuPage({ category }: { category?: string }) {
                 </SheetContent>
               </Sheet>
               <Select value={sort} onValueChange={(v) => setSort(v as Sort)} items={SORTS.map((s) => ({ value: s.value, label: t(s.labelKey) }))}>
-                <SelectTrigger className="w-48" aria-label={t("menu.sortBy")}>
+                <SelectTrigger className="min-w-0 flex-1 sm:w-48 sm:flex-none" aria-label={t("menu.sortBy")}>
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>

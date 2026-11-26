@@ -4,7 +4,7 @@
     "menu": "Menú",
     "categories": "Categorías",
     "orders": "Pedidos",
-    "menus": "Menús",
+    "menus": "Cartas",
     "favorites": "Favoritos",
     "fullMenu": "Menú completo",
     "myOrders": "Mis pedidos",
@@ -54,6 +54,7 @@
     "categories": "Categorías",
     "dishesCount": "{{count}} platos",
     "mostLoved": "Los más amados",
+    "menuCards": "Cartas",
     "bestsellers": "Más vendidos",
     "viewAll": "Ver todo",
     "firstOrder": "Envío gratis",
@@ -172,8 +173,8 @@
     "items": "Artículos"
   },
   "menus": {
-    "title": "Nuestros menús",
-    "subtitle": "Explora nuestro menú completo — toca una imagen para verla en tamaño completo.",
+    "title": "Nuestras cartas",
+    "subtitle": "Explora nuestras cartas completas — toca una imagen para verla en tamaño completo.",
     "menu1": "Menú 1",
     "menu1Alt": "Menú de Burrito Crispy — página 1",
     "menu2": "Menú 2",
@@ -509,7 +510,7 @@
     "product": "Plato — Burrito Crispy",
     "favorites": "Favoritos — Burrito Crispy",
     "orders": "Mis pedidos — Burrito Crispy",
-    "menus": "Nuestros menús — Burrito Crispy"
+    "menus": "Cartas — Burrito Crispy"
   },
   "common": {
     "minutes": "min",

@@ -36,7 +36,7 @@ export function LazyImage({ photoId, alt, ratio = 4 / 3, sizes = "(min-width: 10
 
   return (
     <div className={cn("relative overflow-hidden bg-muted", className)} style={{ aspectRatio: ratio }}>
-      {!loaded && !failed && <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-muted via-accent to-muted" aria-hidden />}
+      {!loaded && !failed && <div className="absolute inset-0 animate-pulse bg-linear-to-br from-muted via-accent to-muted" aria-hidden />}
       {failed ? (
         <div className="absolute inset-0 grid place-items-center text-xs text-muted-foreground">Image unavailable</div>
       ) : (

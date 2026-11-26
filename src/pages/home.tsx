@@ -25,7 +25,7 @@ export function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden border-b bg-gradient-to-b from-primary/10 via-background to-background">
+      <section className="relative overflow-hidden border-b bg-linear-to-b from-primary/10 via-background to-background">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-12 lg:py-16">
           <div className="flex flex-col items-start gap-6 lg:col-span-6">
             <Badge variant="secondary" className="gap-1.5 py-3 ps-2 pe-3">
@@ -94,7 +94,7 @@ export function HomePage() {
                   </p>
                 </div>
 
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent p-5 pt-12 text-white">
+                <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/85 via-black/45 to-transparent p-5 pt-12 text-white">
                   <p className="font-heading text-lg font-semibold">{heroMain.title}</p>
                   <p className="line-clamp-2 text-xs text-white/85">{heroMain.subtitle}</p>
                 </div>
@@ -111,7 +111,7 @@ export function HomePage() {
                     className="h-full w-full"
                     imgClassName="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3.5 pt-8 text-white">
+                  <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/80 via-black/30 to-transparent p-3.5 pt-8 text-white">
                     <p className="truncate font-heading text-sm font-semibold">Burrito Crispy</p>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export function HomePage() {
                     className="h-full w-full"
                     imgClassName="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3.5 pt-8 text-white">
+                  <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/80 via-black/30 to-transparent p-3.5 pt-8 text-white">
                     <p className="truncate font-heading text-sm font-semibold">Bowl Crispy</p>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export function HomePage() {
                   sizes="(min-width: 1024px) 20vw, 33vw"
                   imgClassName="h-full w-full object-cover object-center transition-transform duration-300 group-hover/cat:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 flex flex-col p-3 text-white sm:p-4">
                   <span className="font-heading text-base font-semibold sm:text-lg">{t(`catalog.categories.${c.id}.name`)}</span>
                   <span className="text-xs text-white/80">{t("home.dishesCount", { count: PRODUCTS.filter((p) => p.category === c.id).length })}</span>
@@ -161,6 +161,39 @@ export function HomePage() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* Menu cards */}
+      <section className="mx-auto max-w-7xl px-4 pt-20 sm:px-6">
+        <SectionHeading
+          eyebrow={t("nav.menus")}
+          title={t("home.menuCards")}
+          action={
+            <Button variant="ghost" render={<a href={href.menus} />}>
+              {t("home.viewAll")}
+              <HugeiconsIcon icon={ArrowRight01Icon} data-icon="inline-end" strokeWidth={2} />
+            </Button>
+          }
+        />
+        <div className="grid gap-4 sm:grid-cols-2">
+          {["/menu1.jpeg", "/menu2.jpeg"].map((src, i) => (
+            <a
+              key={src}
+              href={href.menus}
+              className="group relative block overflow-hidden rounded-2xl border bg-card shadow-sm transition-shadow hover:shadow-md"
+            >
+              <img
+                src={src}
+                alt={t(`menus.menu${i + 1}Alt`)}
+                loading="lazy"
+                className="w-full transition-transform duration-300 group-hover:scale-[1.02]"
+              />
+              <span className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/70 to-transparent px-4 pt-10 pb-3 text-sm font-semibold text-white">
+                {t(`menus.menu${i + 1}`)}
+              </span>
+            </a>
+          ))}
+        </div>
       </section>
 
       <section id="bestsellers" className="mx-auto max-w-7xl scroll-mt-24 px-4 pt-20 sm:px-6">
