@@ -25,7 +25,7 @@ export const HERO_PHOTOS: HeroPhoto[] = [
     slot: "Hero Image 1 - Main Feature",
     title: "Bowl Mixte",
     subtitle: "Mixed bowl with crispy chicken, grilled kefta and seasoned rice.",
-    image: "mixibo.jpeg",
+    image: "mixibo.webp",
     ctaLabel: "Order Bowl Mixte",
     productId: "bowl-mixte",
   },
@@ -34,7 +34,7 @@ export const HERO_PHOTOS: HeroPhoto[] = [
     slot: "Hero Image 2 - Value Proposition",
     title: "Hot. Fast. Fresh. Delivered in 30 mins.",
     subtitle: "Bouri Crispy Burrito — golden, crunchy and cooked to order.",
-    image: "bouri-crispy.jpeg",
+    image: "bouri-crispy.webp",
     ctaLabel: "Order Bouri Crispy",
     productId: "bouri-crispy",
   },
@@ -43,7 +43,7 @@ export const HERO_PHOTOS: HeroPhoto[] = [
     slot: "Hero Image 3 - Rice Bowl",
     title: "Bowl Crispy",
     subtitle: "Seasoned rice topped with golden crispy chicken and signature sauces.",
-    image: "bowl-crispy.jpeg",
+    image: "bowl-crispy.webp",
     ctaLabel: "Order Bowl Crispy",
     productId: "bowl-crispy",
   },
@@ -94,16 +94,16 @@ export type Category = {
 }
 
 export const CATEGORIES: Category[] = [
-  { id: "salades", name: "Salades", blurb: "Fresh Nicoise bowls with your choice of topping", image: "niswaz-avocado.jpeg" },
-  { id: "family", name: "Family", blurb: "Generous sharing feast for the whole table", image: "family-feast-pack.jpeg" },
-  { id: "burritos", name: "Burritos", blurb: "Loaded grilled & crispy burritos", image: "bouri-crispy.jpeg" },
-  { id: "rice-bowls", name: "Rice Bowls", blurb: "Hearty seasoned rice bowls", image: "bowl-crispy.jpeg" },
-  { id: "cheesy-fries", name: "Cheesy Fries", blurb: "Loaded cheesy fries and crispy burger", image: "frite-crispy.jpeg" },
-  { id: "tacos", name: "Tacos", blurb: "French-style grilled tacos served with fries", image: "tacos-mix.jpeg" },
-  { id: "half-half", name: "Half Half", blurb: "The best of both worlds in one bowl", image: "half-kefta.jpeg" },
-  { id: "twisters", name: "Twisters", blurb: "Crispy rolled wraps served with fries", image: "twi-crispy.jpeg" },
-  { id: "sandwichs", name: "Sandwichs", blurb: "Crispy stacked Zinger sandwich", image: "zinger-gambo.jpeg" },
-  { id: "extra", name: "Extra", blurb: "Golden crispy fries on the side", image: "frite.jpeg" },
+  { id: "salades", name: "Salades", blurb: "Fresh Nicoise bowls with your choice of topping", image: "niswaz-avocado.webp" },
+  { id: "family", name: "Family", blurb: "Generous sharing feast for the whole table", image: "family-feast-pack.webp" },
+  { id: "burritos", name: "Burritos", blurb: "Loaded grilled & crispy burritos", image: "bouri-crispy.webp" },
+  { id: "rice-bowls", name: "Rice Bowls", blurb: "Hearty seasoned rice bowls", image: "bowl-crispy.webp" },
+  { id: "cheesy-fries", name: "Cheesy Fries", blurb: "Loaded cheesy fries and crispy burger", image: "frite-crispy.webp" },
+  { id: "tacos", name: "Tacos", blurb: "French-style grilled tacos served with fries", image: "tacos-mix.webp" },
+  { id: "half-half", name: "Half Half", blurb: "The best of both worlds in one bowl", image: "half-kefta.webp" },
+  { id: "twisters", name: "Twisters", blurb: "Crispy rolled wraps served with fries", image: "twi-crispy.webp" },
+  { id: "sandwichs", name: "Sandwichs", blurb: "Crispy stacked Zinger sandwich", image: "zinger-gambo.webp" },
+  { id: "extra", name: "Extra", blurb: "Golden crispy fries on the side", image: "frite.webp" },
 ]
 
 export type SizeOption = { id: string; label: string; extra: number }
@@ -137,7 +137,7 @@ export const PRODUCTS: Product[] = [
     name: "Nicoise Avocado",
     category: "salades",
     price: 40,
-    image: "niswaz-avocado.jpeg",
+    image: "niswaz-avocado.webp",
     summary: "Fresh sliced avocado, guacamole, sweetcorn, beans and mixed greens.",
     description:
       "A vibrant Nicoise salad bowl topped with ripe sliced avocado, guacamole, sweetcorn, kidney beans, cherry tomatoes, cucumber, red cabbage and creamy dressing over fresh greens.",
@@ -155,7 +155,7 @@ export const PRODUCTS: Product[] = [
     name: "Nicoise Kefta",
     category: "salades",
     price: 40,
-    image: "nicoise-kofta.jpeg",
+    image: "nicoise-kofta.webp",
     summary: "Seasoned grilled kefta over crisp Nicoise vegetables, potatoes and beans.",
     description:
       "Spiced grilled beef kefta served atop a colourful bed of mixed greens, kidney beans, roasted potatoes, cherry tomatoes, red cabbage, cucumber and house dressing.",
@@ -173,7 +173,7 @@ export const PRODUCTS: Product[] = [
     name: "Nicoise Bahja",
     category: "salades",
     price: 35,
-    image: "niswaz-bahja.jpeg",
+    image: "niswaz-bahja.webp",
     summary: "Classic Nicoise with boiled eggs, tuna, olives, sweetcorn and crisp veggies.",
     description:
       "A traditional, refreshing Nicoise bowl loaded with halved boiled eggs, tuna, green olives, sweetcorn, kidney beans, red cabbage, cherry tomatoes and cucumber.",
@@ -191,7 +191,7 @@ export const PRODUCTS: Product[] = [
     name: "Nicoise Crispy",
     category: "salades",
     price: 40,
-    image: "niswaz-crispy.jpeg",
+    image: "niswaz-crispy.webp",
     summary: "Crunchy golden chicken tenders over fresh Nicoise salad with jalapenos.",
     description:
       "Crispy breaded chicken strips served warm over a fresh salad of sweetcorn, cherry tomatoes, red cabbage, cucumber, kidney beans, jalapenos and sauce.",
@@ -211,7 +211,7 @@ export const PRODUCTS: Product[] = [
     name: "Family",
     category: "family",
     price: 130,
-    image: "family-feast-pack.jpeg",
+    image: "family-feast-pack.webp",
     summary: "Sharing bowls, basket of golden fries and a Coca-Cola bottle.",
     description:
       "Built for sharing: includes assorted bowls, a generous basket of golden fries and a bottle of Coca-Cola.",
@@ -231,7 +231,7 @@ export const PRODUCTS: Product[] = [
     name: "Bouri Kefta",
     category: "burritos",
     price: 45,
-    image: "burrito-kafta.jpeg",
+    image: "burrito-kafta.webp",
     summary: "Grilled flour tortilla stuffed with spiced kefta, potatoes, rice and sauce.",
     description:
       "A warm toasted tortilla packed with seasoned grilled kefta, golden potatoes, fluffy spiced rice, crisp greens and creamy signature sauces.",
@@ -249,7 +249,7 @@ export const PRODUCTS: Product[] = [
     name: "Burrito Avocado",
     category: "burritos",
     price: 45,
-    image: "burrito-avocado.jpeg",
+    image: "burrito-avocado.webp",
     summary: "Creamy avocado, tender chicken, seasoned rice and melted cheese.",
     description:
       "Grilled tortilla loaded with fresh avocado, tender marinated chicken, seasoned rice, crisp veggies and rich house sauce.",
@@ -267,7 +267,7 @@ export const PRODUCTS: Product[] = [
     name: "Bouri Poulet",
     category: "burritos",
     price: 45,
-    image: "bouri-poulet.jpeg",
+    image: "bouri-poulet.webp",
     summary: "Marinated chicken, spiced rice, cheese and house sauce in a toasted wrap.",
     description:
       "Tender marinated chicken wrapped in a warm tortilla with seasoned rice, crisp veggies and signature sauce.",
@@ -285,7 +285,7 @@ export const PRODUCTS: Product[] = [
     name: "Bouri Crispy",
     category: "burritos",
     price: 45,
-    image: "bouri-crispy.jpeg",
+    image: "bouri-crispy.webp",
     summary: "Deep-fried golden breaded burrito stuffed with crispy chicken, rice and cheese.",
     description:
       "Our crunchy breaded burrito fried to golden perfection, filled with crispy chicken tenders, seasoned rice, melted cheese and served with dipping sauces.",
@@ -305,7 +305,7 @@ export const PRODUCTS: Product[] = [
     name: "Bowl Crispy",
     category: "rice-bowls",
     price: 50,
-    image: "bowl-crispy.jpeg",
+    image: "bowl-crispy.webp",
     summary: "Seasoned rice topped with sliced crispy chicken and signature sauces.",
     description:
       "A hearty bowl of spiced rice crowned with golden crispy chicken strips and a generous drizzle of creamy and dark house sauces.",
@@ -323,7 +323,7 @@ export const PRODUCTS: Product[] = [
     name: "Bowl Poulet",
     category: "rice-bowls",
     price: 50,
-    image: "chicken-bowl.jpeg",
+    image: "chicken-bowl.webp",
     summary: "Marinated grilled chicken chunks over seasoned rice with roasted wedges.",
     description:
       "Juicy chicken pieces served over seasoned rice with potato wedges and creamy house sauce.",
@@ -341,7 +341,7 @@ export const PRODUCTS: Product[] = [
     name: "Bowl Kefta",
     category: "rice-bowls",
     price: 50,
-    image: "bowl-kefta.jpeg",
+    image: "bowl-kefta.webp",
     summary: "Grilled spiced kefta patties over seasoned rice, pickles and herbs.",
     description:
       "Chargrilled spiced kefta patties topped with pickles and fresh herbs over warm seasoned rice, served with dipping sauces.",
@@ -359,7 +359,7 @@ export const PRODUCTS: Product[] = [
     name: "Bowl Mixte",
     category: "rice-bowls",
     price: 50,
-    image: "mixibo.jpeg",
+    image: "mixibo.webp",
     summary: "Mixed bowl with crispy chicken, grilled kefta and seasoned rice.",
     description:
       "A loaded mixed bowl combining crispy chicken and grilled kefta over seasoned rice, finished with pickles and house sauces.",
@@ -379,7 +379,7 @@ export const PRODUCTS: Product[] = [
     name: "Burger Crispy",
     category: "cheesy-fries",
     price: 40,
-    image: "burger-crispy.jpeg",
+    image: "burger-crispy.webp",
     summary: "Double crispy chicken burger with cheddar, sauce, lettuce and fries.",
     description:
       "Two crunchy fried chicken fillets stacked with melted cheddar, creamy sauce, fresh lettuce and sesame bun, served with golden fries and sauces.",
@@ -397,7 +397,7 @@ export const PRODUCTS: Product[] = [
     name: "Frite Kefta",
     category: "cheesy-fries",
     price: 35,
-    image: "frite-kefta.jpeg",
+    image: "frite-kefta.webp",
     summary: "Golden fries loaded with seasoned kefta, melted cheese and sauce.",
     description:
       "Crispy fries topped with seasoned kefta, melted cheese sauce and house drizzle.",
@@ -415,7 +415,7 @@ export const PRODUCTS: Product[] = [
     name: "Frite Poulet",
     category: "cheesy-fries",
     price: 35,
-    image: "potato-and-chicken.jpeg",
+    image: "potato-and-chicken.webp",
     summary: "Crispy fries topped with savoury chicken, cheese and house sauce.",
     description:
       "Hot golden fries loaded with seasoned chicken bites, melted cheese and creamy house sauce.",
@@ -433,7 +433,7 @@ export const PRODUCTS: Product[] = [
     name: "Frite Crispy",
     category: "cheesy-fries",
     price: 35,
-    image: "frite-crispy.jpeg",
+    image: "frite-crispy.webp",
     summary: "Loaded fries with chopped crispy chicken, pickles, cheese and sauces.",
     description:
       "Crispy fries piled high with bite-sized golden crispy chicken, pickles, melted cheese sauce, herbs and dark house drizzle.",
@@ -453,7 +453,7 @@ export const PRODUCTS: Product[] = [
     name: "Tacos Kefta",
     category: "tacos",
     price: 40,
-    image: "tacos-kefte.jpeg",
+    image: "tacos-kefte.webp",
     summary: "Grilled French tacos filled with spiced kefta, fries and cheese sauce.",
     description:
       "Pressed and toasted flour tortilla packed with grilled kefta, crispy fries and melted cheese sauce, served with extra fries and dipping sauces.",
@@ -471,7 +471,7 @@ export const PRODUCTS: Product[] = [
     name: "Tacos Poulet",
     category: "tacos",
     price: 40,
-    image: "tacos-poulet.jpeg",
+    image: "tacos-poulet.webp",
     summary: "Toasted French tacos with marinated chicken, fries and cheese sauce.",
     description:
       "Golden-pressed tortilla stuffed with tender marinated chicken, french fries and rich cheese sauce, served alongside extra fries and dip.",
@@ -489,7 +489,7 @@ export const PRODUCTS: Product[] = [
     name: "Tacos Crispy",
     category: "tacos",
     price: 40,
-    image: "tacos-crispy.jpeg",
+    image: "tacos-crispy.webp",
     summary: "Grilled tacos packed with crunchy chicken tenders, fries and cheese sauce.",
     description:
       "Pressed tortilla loaded with crispy breaded chicken strips, fries and creamy cheese sauce, plated with a side of golden fries and dips.",
@@ -507,7 +507,7 @@ export const PRODUCTS: Product[] = [
     name: "Tacos Mixte",
     category: "tacos",
     price: 40,
-    image: "tacos-mix.jpeg",
+    image: "tacos-mix.webp",
     summary: "Mixed meat French tacos with kefta, chicken, fries and cheese sauce.",
     description:
       "A hearty mix of spiced kefta and tender chicken wrapped with fries and molten cheese sauce in a pressed tortilla, served with fries and sauces.",
@@ -527,7 +527,7 @@ export const PRODUCTS: Product[] = [
     name: "Half Kefta",
     category: "half-half",
     price: 40,
-    image: "half-kefta.jpeg",
+    image: "half-kefta.webp",
     summary: "Half fresh Nicoise salad, half fries topped with grilled kefta.",
     description:
       "A balanced combo bowl pairing fresh Nicoise greens with fries and grilled kefta, finished with house sauces.",
@@ -545,7 +545,7 @@ export const PRODUCTS: Product[] = [
     name: "Half Crispy",
     category: "half-half",
     price: 40,
-    image: "half-crispy.jpeg",
+    image: "half-crispy.webp",
     summary: "Half fresh Nicoise salad, half fries loaded with crispy chicken.",
     description:
       "A combo bowl combining fresh Nicoise salad and golden fries topped with crispy chicken bites and house sauce.",
@@ -563,7 +563,7 @@ export const PRODUCTS: Product[] = [
     name: "Half Poulet",
     category: "half-half",
     price: 40,
-    image: "half-poulet.jpeg",
+    image: "half-poulet.webp",
     summary: "Half fresh salad, half fries topped with marinated chicken.",
     description:
       "Half crisp vegetable salad and half golden fries, finished with seasoned chicken and creamy sauce.",
@@ -583,7 +583,7 @@ export const PRODUCTS: Product[] = [
     name: "Twi-Kefta",
     category: "twisters",
     price: 40,
-    image: "twi-kefta.jpeg",
+    image: "twi-kefta.webp",
     summary: "Crispy rolled wrap filled with spiced kefta, cheese and fries on the side.",
     description:
       "A crunchy golden twister roll stuffed with seasoned kefta, melted cheese and creamy sauce, served with crispy fries and dips.",
@@ -601,7 +601,7 @@ export const PRODUCTS: Product[] = [
     name: "Twi-Poulet",
     category: "twisters",
     price: 40,
-    image: "twi-poulet.jpeg",
+    image: "twi-poulet.webp",
     summary: "Golden crunchy wrap stuffed with tender chicken, cheese and fries.",
     description:
       "Crisp rolled wrap filled with marinated chicken, cheese and signature sauce, accompanied by golden fries and dips.",
@@ -619,7 +619,7 @@ export const PRODUCTS: Product[] = [
     name: "Twi-Crispy",
     category: "twisters",
     price: 40,
-    image: "twi-crispy.jpeg",
+    image: "twi-crispy.webp",
     summary: "Crunchy rolled wrap loaded with crispy chicken, cheese and fries.",
     description:
       "Golden crunchy rolled wrap packed with crispy chicken tenders, melted cheese and creamy sauce, served with fries and dips.",
@@ -639,7 +639,7 @@ export const PRODUCTS: Product[] = [
     name: "Zinger Gambo",
     category: "sandwichs",
     price: 40,
-    image: "zinger-gambo.jpeg",
+    image: "zinger-gambo.webp",
     summary: "Jumbo sub loaded with crispy Zinger chicken, cheese, tomato, lettuce and fries.",
     description:
       "A long toasted sesame sub packed with crunchy Zinger chicken fillets, melted cheese, fresh tomato slices and crisp lettuce, served with fries and sauces.",
@@ -659,7 +659,7 @@ export const PRODUCTS: Product[] = [
     name: "Frite",
     category: "extra",
     price: 7,
-    image: "frite.jpeg",
+    image: "frite.webp",
     summary: "Portion of hot, crispy golden french fries.",
     description:
       "A basket of golden, crispy french fries—the perfect addition to any order.",

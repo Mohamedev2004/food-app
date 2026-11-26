@@ -176,7 +176,7 @@ export function HomePage() {
           }
         />
         <div className="grid gap-4 sm:grid-cols-2">
-          {["/menu1.jpeg", "/menu2.jpeg"].map((src, i) => (
+          {["/menu1.webp", "/menu2.webp"].map((src, i) => (
             <a
               key={src}
               href={href.menus}

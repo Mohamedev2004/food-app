@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { href } from "@/lib/router"
 import { Crumbs } from "@/components/shop/page-header"
 
-const MENUS = ["/menu1.jpeg", "/menu2.jpeg"]
+const MENUS = ["/menu1.webp", "/menu2.webp"]
 
 export function MenusPage() {
   const { t } = useTranslation()
